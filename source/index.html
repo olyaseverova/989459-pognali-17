@@ -1,12 +1,161 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="page-header">
+    <h1>Погнали?</h1>
+    <button class="button header-right-icon">
+      <img class="header-right-icon" src="img/header-right-icon.ai" width="25" height="11" alt="Главное меню">
+    </button>
+    <ul class="header-menu-list">
+      <li class="header-menu-item"><a href="#">О СЕРВИСЕ</a></li>
+      <li class="header-menu-item"><a href="catalog.html">НАПРАВЛЕНИЯ</a></li>
+      <li class="header-menu-item"><a href="form.html">ПОПУТЧИКИ</a></li>
+    </ul>
+    <ul class="header-contacts">
+      <li class="header-contact"><a href="#">АВТОРИЗАЦИЯ</a></li>
+      <li class="header-contact"><button class="button mobile-header">8 800 555-86-28</button></li>
+      <li class="header-contact"><a href="https://htmlacademy.ru/email">MAIL@HTMLACADEMY.RU</a></li>
+    </ul>
+    <ul class="header-social-buttons">
+      <li><a class="social-button fb" href="#" aria-label="Facebook">
+          <!-- <img src="img/facebook-header.svg" width="11" height="21"> -->
+        </a></li>
+      <li><a class="social-button vk" href="#" aria-label="VK">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15" /> -->
+        </a></li>
+      <li><a class="social-button inst" href="#" aria-label="Instagram">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" /> -->
+        </a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+
+    <section class="intro">
+      <h2>В путешествие с крутыми попутчиками!</h2>
+      <ul class="intro-contacts">
+        <li class="intro-contact"><a href="#">АВТОРИЗАЦИЯ</a></li>
+        <li class="intro-contact"><button class="button mobile-header">8 800 555-86-28</button></li>
+        <li class="intro-contact"><a href="https://htmlacademy.ru/email">MAIL@HTMLACADEMY.RU</a></li>
+      </ul>
+      <ul class="review">
+        <li class="review-item">«Лучшее приложение, что я видел в жизни!»</li>
+        <li class="review-item">Мурат Эльтазин главный редактор газеты «гаджетлайф»</li>
+      </ul>
+      <ul class="steps">
+        <li class="step">Выберите направление</li>
+        <li class="step">Изучите идеи путешественников</li>
+        <li class="step">Найдите тех, кто похож на вас</li>
+        <li class="step">Путешествуйте вместе!</li>
+      </ul>
+    </section>
+
+    <section class="about">
+      <h2>О сервисе</h2>
+      <p>Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
+        черпайте вдохновение в чужих.</p>
+      <h3>А если найдете кого-то близкого по духу - скорее зовите в совместный трип!</h3>
+    </section>
+
+    <section class="countries">
+      <h2>Направления</h2>
+      <p>Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно
+        там заняться.</p>
+      <ul class="countries-list">
+        <li class="country">
+          <img src="img/thailand-foto.jpg" width="270" height="110" alt="Тайланд">
+          <h3>Тайланд</h3>
+          <p>Джунгли зовут!</p>
+          <p>18321</p>
+        </li>
+        <li class="country">
+          <img src="img/france-foto.jpg" width="270" height="110" alt="Франция">
+          <h3>Франция</h3>
+          <p>Трэ бьен, манифик!</p>
+          <p>12518</p>
+        </li>
+        <li class="country">
+          <img src="img/czech-foto.jpg" width="270" height="110" alt="Чехия">
+          <h3>Чехия</h3>
+          <p>Закоулки старой Европы</p>
+          <p>5326</p>
+        </li>
+      </ul>
+      <a href="form.html">Показать все</a>
+    </section>
+
+    <section class="travelmates">
+      <h2>Попутчики</h2>
+      <p>Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому
+        маршрут для хайкинга.</p>
+      <h3>Теперь можно легко найти единомышленников!</h3>
+      <ul class="travelmates-list">
+        <li class="travelmate">
+          <img src="img/girl-travel.jpg" width="270" height="270" alt="Фото Тани Фирсовой">
+          <h3>Таня Фирсова</h3>
+          <p>#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          <ul class="travelmate-transport">
+            <!-- не вставила svg, так как не знаю как экспортить -->
+          </ul>
+        </li>
+        <li class="travelmate">
+          <img src="img/boy-travel.jpg" width="270" height="270" alt="Фото Пети Демина">
+          <h3>Петя Демин</h3>
+          <p>#бургер #бар #футбол #концерт #крафт</p>
+          <ul class="travelmate-transport">
+            <!-- не вставила svg, так как не знаю как экспортить -->
+          </ul>
+        </li>
+      </ul>
+      <a href="catalog.html">Показать всех</a>
+    </section>
+
+    <section class="rates">
+      <h2>Добавьте свой профиль</h2>
+      <ul class="rates-list">
+        <li class="rate">Базовое размещение Бесплатно</li>
+        <li class="rate">Вывод на первых позициях 99 руб./мес</li>
+        <li class="rate">Кастомный цвет карточки 59 руб./мес</li>
+      </ul>
+      <button class="button">Показать тарифы для бизнеса</button>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <h1>Погнали?</h1>
+    <ul class="footer-social-buttons">
+      <li><a class="social-button fb" href="#" aria-label="Facebook">
+          <!-- <img src="img/facebook-header.svg" width="11" height="21"> -->
+        </a></li>
+      <li><a class="social-button vk" href="#" aria-label="VK">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15" /> -->
+        </a></li>
+      <li><a class="social-button inst" href="#" aria-label="Instagram">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" /> -->
+        </a></li>
+    </ul>
+    <p>Разработано</p>
+    <!-- логотип академии svg -->
+  </footer>
+
+  <section class="rates-popup">
+    <h2>Бизнес-тарифы</h2>
+    <ul class="promotion-list">
+      <li class="promotion-item">Реклама у блоггера 300 000 руб./пост</li>
+      <li class="promotion-item">Накрутка подписчиков от 1 руб./шт.</li>
+      <li class="promotion-item">Лайки от ботов от 20 коп./лайк</li>
+      <li class="promotion-item">Ваш продакт-плейсмент Индивидуально</li>
+      <button class="button" type="submit">ЗАКРЫТЬ ОКНО</button>
+    </ul>
+  </section>
+
+</body>
+
 </html>
