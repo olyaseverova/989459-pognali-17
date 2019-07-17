@@ -9,7 +9,7 @@
 <body>
 
   <header class="page-header">
-    <h1 class="logo">Погнали?</h1>
+    <h1 class="page-header__logo">Погнали?</h1>
     <button class="button header-right-icon">
       <img class="header-right-icon" src="img/header-right-icon.ai" width="25" height="11" alt="Главное меню">
     </button>
@@ -18,10 +18,10 @@
       <li class="header-menu-item"><a href="form.html">НАПРАВЛЕНИЯ</a></li>
       <li class="header-menu-item"><a href="catalog.html">ПОПУТЧИКИ</a></li>
     </ul>
+    <a class="page-header__authorization" href="#">АВТОРИЗАЦИЯ</a>
     <ul class="header-contacts">
-      <li class="header-contact"><a href="#">АВТОРИЗАЦИЯ</a></li>
-      <li class="header-contact"><button class="button mobile-header">8 800 555-86-28</button></li>
-      <li class="header-contact"><a href="https://htmlacademy.ru/email">MAIL@HTMLACADEMY.RU</a></li>
+      <li class="header-contacts__item"><a href="tel: 8 800 555-86-28">8 800 555-86-28</a></li>
+      <li class="header-contacts__item"><a href="mailto: MAIL@HTMLACADEMY.RU">MAIL@HTMLACADEMY.RU</a></li>
     </ul>
     <ul class="header-social-buttons">
       <li><a class="social-button fb" href="#" aria-label="Facebook">
@@ -39,89 +39,96 @@
   <main class="container">
 
     <section class="intro">
-      <h2>В путешествие с крутыми попутчиками!</h2>
-      <ul class="intro-contacts">
-        <li class="intro-contact"><a href="#">АВТОРИЗАЦИЯ</a></li>
-        <li class="intro-contact"><button class="button mobile-header">8 800 555-86-28</button></li>
-        <li class="intro-contact"><a href="https://htmlacademy.ru/email">MAIL@HTMLACADEMY.RU</a></li>
+      <h2 class="intro__healine">В путешествие с крутыми попутчиками!</h2>
+      <a class="intro__authorization" href="#">АВТОРИЗАЦИЯ</a>
+      <ul class="intro__contacts">
+        <li class="intro__contacts__item"><a href="tel: 8 800 555-86-28">8 800 555-86-28</a></li>
+        <li class="intro__contacts__item"><a href="mailto: MAIL@HTMLACADEMY.RU">MAIL@HTMLACADEMY.RU</a></li>
       </ul>
       <ul class="review">
-        <li class="review-item">«Лучшее приложение, что я видел в жизни!»</li>
-        <li class="review-item">Мурат Эльтазин главный редактор газеты «гаджетлайф»</li>
+        <li class="review__item">
+          <blockquote>«Лучшее приложение, что я видел в жизни!»</blockquote>
+        </li>
+        <li class="review__item">
+          <cite>Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+        </li>
       </ul>
       <ul class="steps">
-        <li class="step">Выберите направление</li>
-        <li class="step">Изучите идеи путешественников</li>
-        <li class="step">Найдите тех, кто похож на вас</li>
-        <li class="step">Путешествуйте вместе!</li>
+        <li class="steps__item">Выберите направление</li>
+        <li class="steps__item">Изучите идеи путешественников</li>
+        <li class="steps__item">Найдите тех, кто похож на вас</li>
+        <li class="steps__item">Путешествуйте вместе!</li>
       </ul>
     </section>
 
     <section class="about">
-      <h2>О сервисе</h2>
-      <p>Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
+      <h2 class="about__healine">О сервисе</h2>
+      <p class="about__description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь
+        своими идеями путешествий и
         черпайте вдохновение в чужих.</p>
-      <h3>А если найдете кого-то близкого по духу - скорее зовите в совместный трип!</h3>
+      <span class="about__kick">А если найдете кого-то близкого по духу - скорее зовите в совместный трип!</span>
     </section>
 
     <section class="countries">
-      <h2>Направления</h2>
-      <p>Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно
+      <h2 class="countries__headline">Направления</h2>
+      <p class="countries__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда
+        хотели бы отправиться и чем можно
         там заняться.</p>
-      <ul class="countries-list">
-        <li class="country">
-          <img src="img/thailand-foto.jpg" width="270" height="110" alt="Тайланд">
-          <h3>Тайланд</h3>
-          <p>Джунгли зовут!</p>
-          <p>18321</p>
+      <ul class="countries__list">
+        <li class="countries__list__item">
+          <img class="countries__foto" src="img/thailand-foto.jpg" width="270" height="110" alt="Тайланд">
+          <h3 class="countries__name">Тайланд</h3>
+          <p class="countries__quote">Джунгли зовут!</p>
+          <span class="views">18321</span>
         </li>
-        <li class="country">
-          <img src="img/france-foto.jpg" width="270" height="110" alt="Франция">
-          <h3>Франция</h3>
-          <p>Трэ бьен, манифик!</p>
-          <p>12518</p>
+        <li class="countries__list__item">
+          <img class="countries__foto" src="img/france-foto.jpg" width="270" height="110" alt="Франция">
+          <h3 class="countries__name">Франция</h3>
+          <p class="countries__quote">Трэ бьен, манифик!</p>
+          <span class="views">12518</span>
         </li>
-        <li class="country">
-          <img src="img/czech-foto.jpg" width="270" height="110" alt="Чехия">
-          <h3>Чехия</h3>
-          <p>Закоулки старой Европы</p>
-          <p>5326</p>
+        <li class="countries__list__item">
+          <img class="countries__foto" src="img/czech-foto.jpg" width="270" height="110" alt="Чехия">
+          <h3 class="countries__name">Чехия</h3>
+          <p class="countries__quote">Закоулки старой Европы</p>
+          <span class="views">5326</span>
         </li>
       </ul>
-      <a href="form.html">Показать все</a>
+      <a class="countries__show" href="form.html">Показать все</a>
     </section>
 
     <section class="travelmates">
-      <h2>Попутчики</h2>
-      <p>Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому
+      <h2 class="travelmates__headline">Попутчики</h2>
+      <p class="travelmates__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен
+        пляж и коктейль, а другому
         маршрут для хайкинга.</p>
-      <h3>Теперь можно легко найти единомышленников!</h3>
-      <ul class="travelmates-list">
-        <li class="travelmate">
-          <img src="img/girl-travel.jpg" width="270" height="270" alt="Фото Тани Фирсовой">
-          <h3>Таня Фирсова</h3>
+      <span class="travelmates__kick">Теперь можно легко найти единомышленников!</span>
+      <ul class="travelmates__list">
+        <li class="travelmates__list__item">
+          <img class="travelmate__image" src="img/girl-travel.jpg" width="270" height="270" alt="Фото Тани Фирсовой">
+          <h3 class="travelmate__healine">Таня Фирсова</h3>
           <ul class="hashtag-list">
-            <li class="hashtag">#ЗОЖ</li>
-            <li class="hashtag">#ПП</li>
-            <li class="hashtag">#Фитнес</li>
-            <li class="hashtag">#пляж</li>
-            <li class="hashtag">#авокадо</li>
+            <li class="hashtag-item">#ЗОЖ</li>
+            <li class="hashtag-item">#ПП</li>
+            <li class="hashtag-item">#Фитнес</li>
+            <li class="hashtag-item">#пляж</li>
+            <li class="hashtag-item">#авокадо</li>
           </ul>
-          <ul class="travelmate-transport">
+          <ul class="travelmate__transport">
             <!-- не вставила svg, так как не знаю как экспортить -->
           </ul>
         </li>
-        <li class="travelmate">
-          <img src="img/boy-travel.jpg" width="270" height="270" alt="Фото Пети Демина">
-          <h3>Петя Демин</h3>
+        <li class="travelmates__list__item">
+          <img class="travelmate__image" src="img/boy-travel.jpg" width="270" height="270" alt="Фото Пети Демина">
+          <h3 class="travelmate__healine">Петя Демин</h3>
           <ul class="hashtag-list">
-            <li class="hashtag">#бургер</li>
-            <li class="hashtag">#бар</li>
-            <li class="hashtag">#футбол</li>
-            <li class="hashtag">#концерт</li>
-            <li class="hashtag">#крафт</li>
+            <li class="hashtag-item">#бургер</li>
+            <li class="hashtag-item">#бар</li>
+            <li class="hashtag-item">#футбол</li>
+            <li class="hashtag-item">#концерт</li>
+            <li class="hashtag-item">#крафт</li>
           </ul>
-          <ul class="travelmate-transport">
+          <ul class="travelmate__transport">
             <!-- не вставила svg, так как не знаю как экспортить -->
           </ul>
         </li>
@@ -130,42 +137,55 @@
     </section>
 
     <section class="rates">
-      <h2>Добавьте свой профиль</h2>
-      <ul class="rates-list">
-        <li class="rate">Базовое размещение Бесплатно</li>
-        <li class="rate">Вывод на первых позициях 99 руб./мес</li>
-        <li class="rate">Кастомный цвет карточки 59 руб./мес</li>
-      </ul>
-      <button class="button">Показать тарифы для бизнеса</button>
+      <h2 class="rates__headline">Добавьте свой профиль</h2>
+      <dl class="rates__list">
+        <dt class="rates__list__item">Базовое размещение</dt>
+        <dd class="rates__list__item">Бесплатно</dd>
+
+        <dt class="rates__list__item">Вывод на первых позициях</dt>
+        <dd class="rates__list__item">99 руб./мес</dd>
+
+        <dt class="rates__list__item">Кастомный цвет карточки</dt>
+        <dd class="rates__list__item">59 руб./мес</dd>
+      </dl>
+      <button class="rates__button">Показать тарифы для бизнеса</button>
     </section>
   </main>
 
   <footer class="main-footer">
-    <h1>Погнали?</h1>
+    <h1 class="main-footer__logo">Погнали?</h1>
     <ul class="footer-social-buttons">
-      <li><a class="social-button fb" href="#" aria-label="Facebook">
+      <li><a class="main-footer__social-button fb" href="#" aria-label="Facebook">
           <!-- <img src="img/facebook-header.svg" width="11" height="21"> -->
         </a></li>
-      <li><a class="social-button vk" href="#" aria-label="VK">
+      <li><a class="main-footer__social-button vk" href="#" aria-label="VK">
           <!-- <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15" /> -->
         </a></li>
-      <li><a class="social-button inst" href="#" aria-label="Instagram">
+      <li><a class="main-footer__social-button inst" href="#" aria-label="Instagram">
           <!-- <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" /> -->
         </a></li>
     </ul>
-    <p>Разработано</p>
+    <p class="Academy">Разработано</p>
     <!-- логотип академии svg -->
   </footer>
 
   <section class="rates-popup">
-    <h2>Бизнес-тарифы</h2>
-    <ul class="promotion-list">
-      <li class="promotion-item">Реклама у блоггера 300 000 руб./пост</li>
-      <li class="promotion-item">Накрутка подписчиков от 1 руб./шт.</li>
-      <li class="promotion-item">Лайки от ботов от 20 коп./лайк</li>
-      <li class="promotion-item">Ваш продакт-плейсмент Индивидуально</li>
-      <button class="button" type="submit">ЗАКРЫТЬ ОКНО</button>
-    </ul>
+    <h2 class="rates-popup__healine">Бизнес-тарифы</h2>
+    <dl class="promotion-list">
+      <dt class="promotion-item">Реклама у блоггера</dt>
+      <dd class="promotion-item">300 000 руб./пост</dd>
+
+      <dt class="promotion-item">Накрутка подписчиков</dt>
+      <dd class="promotion-item">от 1 руб./шт.</dd>
+
+      <dt class="promotion-item">Лайки от ботов</dt>
+      <dd class="promotion-item">от 20 коп./лайк</dd>
+
+      <dt class="promotion-item">Ваш продакт-плейсмент</dt>
+      <dd class="promotion-item">Индивидуально</dd>
+
+      <button class="rates-popup__button">ЗАКРЫТЬ ОКНО</button>
+    </dl>
   </section>
 
 </body>
