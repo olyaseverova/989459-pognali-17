@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -12,7 +14,13 @@
   <header class="page-header center">
     <h1 class="page-header__logo healine">Погнали?</h1>
     <button class="page-header__icon button">
-      <img class="menu-icon" src="img/menu.svg" width="25" height="11" alt="Главное меню">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" viewBox="0 0 25 11" fill="currentColor" xml:space="preserve">
+        <g>
+          <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z" />
+          <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z" />
+        </g>
+      </svg>
     </button>
     <section class="scroll-menu visually-hidden">
       <button class="page-header__icon-close button">
@@ -44,29 +52,37 @@
 
   <main class="container">
 
-    <section class="intro">
-      <h2 class="intro__healine">В путешествие с крутыми попутчиками!</h2>
-      <a class="intro__authorization up" href="#">Авторизация</a>
-      <ul class="intro__contacts list">
-        <li class="intro__contacts__item"><a href="tel:+7-800-555-86-28"><img src="img/topmenu-phone.svg" width="18"
-              height="18" alt="8 800 555-86-28"></a></li>
-        <li class="intro__contacts__item"><a href="mailto:mail@htmlacademy.ru"><img src="img/topmenu-mail.svg"
-              width="18" height="14" alt="mail@htmlacademy.ru"></a></li>
-      </ul>
-      <ul class="review-list list">
-        <li class="review-list__item">
-          <blockquote>«Лучшее приложение, что я видел в жизни!»</blockquote>
-        </li>
-        <li class="review-list__item">
-          <cite>Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
-        </li>
-      </ul>
-      <ul class="steps-list list">
-        <li class="steps-list__item">Выберите направление</li>
-        <li class="steps-list__item">Изучите идеи путешественников</li>
-        <li class="steps-list__item">Найдите тех, кто похож на вас</li>
-        <li class="steps-list__item">Путешествуйте вместе!</li>
-      </ul>
+    <section class="intro center">
+      <h2 class="intro__healine center">В путешествие с крутыми попутчиками!</h2>
+      <section class="intro__connection center">
+        <ul class="intro__contacts list">
+          <li class="intro__contacts__item"><a href="tel:+7-800-555-86-28"><img src="img/topmenu-phone.svg" width="18"
+                height="18" alt="8 800 555-86-28"></a></li>
+          <li class="intro__contacts__item"><a href="mailto:mail@htmlacademy.ru"><img src="img/topmenu-mail.svg"
+                width="18" height="14" alt="mail@htmlacademy.ru"></a></li>
+        </ul>
+        <a class="intro__connection__authorization up" href="#">Авторизация</a>
+      </section>
+      <section class="intro__darkblue">
+        <ul class="review-list list">
+          <li class="review-list__item">
+            <blockquote>«Лучшее приложение, что я видел в жизни!»</blockquote>
+          </li>
+          <li class="review-list__item">
+            <p>Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+          </li>
+        </ul>
+      </section>
+      <section class="intro__lightblue">
+        <div class="steps">
+          <ul class="steps__list list">
+            <li class="steps__list__item">Выберите<br> направление</li>
+            <li class="steps__list__item">Изучите идеи путешественников</li>
+            <li class="steps__list__item">Найдите тех,<br> кто похож на вас</li>
+            <li class="steps__list__item">Путешествуйте вместе!</li>
+          </ul>
+        </div>
+      </section>
     </section>
 
     <section class="about">
