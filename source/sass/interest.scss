@@ -1,0 +1,129 @@
+.interest {
+  height: 504px;
+  box-sizing: border-box;
+
+  padding-top: 75px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  color: white;
+}
+
+.interest__healine {
+  width: 210px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #ff8d30;
+}
+
+.interest__registration {
+  text-align: center;
+  width: 200px;
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+.interest__registration__authorization {
+  color: #f0cb4b;
+  text-decoration: underline;
+}
+
+.interest__form {
+  position: relative;
+}
+
+.interest__form__email {
+  position: relative;
+  padding: 0;
+  padding-left: 25px;
+  margin-bottom: 30px;
+
+  width: 100%;
+  height: 62px;
+  box-sizing: border-box;
+
+  border-radius: 15px;
+  border: none;
+  color: #c7c7c7;
+  background-color: white;
+}
+
+.interest__form__email:hover {
+  color: #98999d;
+  background-color: #edeff6;
+}
+
+.interest__form__email:focus {
+  border: 4px solid #ffffff;
+  color: white;
+  background-color: #192144;
+}
+
+.interest__button {
+  position: absolute;
+  width: 60px;
+  height: 62px;
+  border-radius: 15px;
+  border: none;
+  background-color: #ffd74b;
+  right: 0;
+}
+
+.interest__questions {
+  width: 220px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.interest__contacts {
+  padding-left: 60px;
+}
+
+.interest__contacts__item a {
+  color: #ffd74b;
+}
+
+.interest__contacts__icon {
+  position: absolute;
+  display: block;
+  margin-left: -50px;
+  margin-top: 0px;
+}
+
+.interest__contacts__icon:hover {
+  color: #ffbd30;
+}
+
+.interest__contacts__item:first-child {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.interest__contacts__item:last-child {
+  position: relative;
+}
+
+.interest__contacts__item:first-child::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -64px;
+
+  width: 45px;
+  height: 45px;
+  background-color: #121936;
+  border-radius: 50%;
+}
+
+.interest__contacts__item:last-child::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -64px;
+
+  width: 45px;
+  height: 45px;
+  background-color: #121936;
+  border-radius: 50%;
+}

@@ -1,0 +1,30 @@
+.container .about {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: -50px;
+
+  width: 320px;
+  height: 352px;
+  box-sizing: border-box;
+
+  color: white;
+  background-color: #141b3b;
+  border-radius: 15px 15px 25px 25px;
+
+  background-image: url("../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 20px 5px;
+  background-size: 292px 352px;
+}
+
+.about__healine {
+  margin: 0;
+  width: 110px;
+  color: #ff8d30;
+}
+
+.about__description {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

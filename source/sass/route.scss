@@ -1,0 +1,90 @@
+.route {
+  height: 206px;
+  box-sizing: border-box;
+
+  padding-top: 35px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.route__adress {
+  position: relative;
+  width: 160px;
+  padding-left: 60px;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  color: #1d2e5b;
+}
+
+.route__adress::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0px;
+
+  width: 45px;
+  height: 45px;
+  background-image: url("../img/route-location.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.route__button {
+  position: relative;
+  width: 270px;
+  height: 62px;
+  box-sizing: border-box;
+  text-align: left;
+  padding-right: 0;
+  padding-left: 21px;
+
+  color: #1d2e5b;
+  background-color: #ffd74b;
+  border: 3px solid #192144;
+  border-radius: 15px;
+}
+
+.route__button:hover {
+  background-color: #192144;
+  color: white;
+}
+
+.route__button:active p {
+  opacity: 0.3;
+}
+
+.route__button::before {
+  content: "";
+  position: absolute;
+
+  top: 22px;
+  left: 235px;
+  opacity: 1;
+
+  width: 10px;
+  height: 14px;
+  background-image: url("../img/arrow-right-white.png");
+  background-repeat: no-repeat;
+}
+
+.route__button:active::before {
+  opacity: 0.3;
+}
+
+.route__button::after {
+  content: "";
+  position: absolute;
+
+  top: 22px;
+  left: 235px;
+
+  width: 10px;
+  height: 14px;
+  background-image: url("../img/arrow-right.png");
+  background-repeat: no-repeat;
+}
+
+.route__button:hover::after {
+  opacity: 0;
+}
