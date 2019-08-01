@@ -1,0 +1,158 @@
+.countries {
+  padding-top: 55px;
+  position: relative;
+  box-sizing: border-box;
+
+  width: 270px;
+  height: 985px;
+
+  color: black;
+}
+
+.countries__headline {
+  margin-top: 0;
+  margin-left: 25px;
+  margin-bottom: 30px;
+}
+
+.countries__description {
+  margin-top: 0;
+  margin-left: 25px;
+  margin-right: 45px;
+  margin-bottom: 65px;
+}
+
+.countries__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.countries__list__item {
+  position: relative;
+  height: 190px;
+  margin-bottom: 10px;
+}
+
+.countries__foto {
+  border-radius: 15px 15px 0 0;
+}
+
+.countries__specification {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  height: 90px;
+  background-color: white;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+}
+
+.countries__specification__name {
+  position: relative;
+  width: 80px;
+  margin: 0;
+}
+
+.countries__list__item:nth-child(1) .countries__specification__name::before {
+  content: "";
+  position: absolute;
+
+  top: -38px;
+  left: 0;
+
+  width: 35px;
+  height: 24px;
+
+  background-image: url("../img/thailand-flag.png");
+  background-repeat: no-repeat;
+}
+
+.countries__list__item:nth-child(2) .countries__specification__name::before {
+  content: "";
+  position: absolute;
+
+  top: -38px;
+  left: 0;
+
+  width: 35px;
+  height: 24px;
+
+  background-image: url("../img/france-flag.png");
+  background-repeat: no-repeat;
+}
+
+.countries__list__item:nth-child(3) .countries__specification__name::before {
+  content: "";
+  position: absolute;
+
+  top: -38px;
+  left: 0;
+
+  width: 35px;
+  height: 24px;
+
+  background-image: url("../img/czech-flag.png");
+  background-repeat: no-repeat;
+}
+
+.countries__specification__views {
+  position: relative;
+  margin-left: 100px;
+  margin-top: 2px;
+}
+
+.countries__specification__views::before {
+  content: "";
+  position: absolute;
+
+  top: 4px;
+  left: -21px;
+
+  width: 11px;
+  height: 11px;
+
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+}
+
+.countries__specification__quote {
+  width: 170px;
+  margin: 0;
+}
+
+.countries__show {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+
+  width: 270px;
+  height: 62px;
+  border-radius: 10px;
+
+  padding-left: 25px;
+  padding-top: 20px;
+
+  color: #1d2e5b;
+  background-color: #ffd74b;
+}
+
+.countries__show::after {
+  content: "";
+  position: absolute;
+
+  top: 24px;
+  left: 225px;
+
+  width: 10px;
+  height: 14px;
+
+  background-image: url("../img/triangle-arrow-right.svg");
+  background-repeat: no-repeat;
+}

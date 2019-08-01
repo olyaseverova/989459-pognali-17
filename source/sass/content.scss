@@ -18,3 +18,12 @@ a {
 .healine {
   font-size: 24px;
 }
+
+.yellow-btn:hover {
+  background-color: #ffbd30;
+}
+
+.yellow-btn:active {
+  opacity: 0.3;
+  background-color: #ffbd30;
+}

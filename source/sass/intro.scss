@@ -1,6 +1,6 @@
 .container .intro {
   padding-top: 50px;
-  margin-top: -20px;
+  margin-top: 0px;
 
   width: 320px;
   height: 994px;
@@ -58,6 +58,15 @@
   padding-top: 10px;
 }
 
+.intro__contacts .intro__contacts__item:first-child:hover {
+  background-color: #f26926;
+}
+
+.intro__contacts .intro__contacts__item:first-child:active {
+  opacity: 0.3;
+  background-color: #f26926;
+}
+
 .intro__contacts .intro__contacts__item:last-child {
   margin-top: -16px;
   background-color: #ffbd30;
@@ -68,6 +77,15 @@
   padding-top: 12px;
 }
 
+.intro__contacts .intro__contacts__item:last-child:hover {
+  background-color: #ff8d30;
+}
+
+.intro__contacts .intro__contacts__item:last-child:active {
+  opacity: 0.3;
+  background-color: #ff8d30;
+}
+
 .intro__connection__authorization {
   background-color: #ffd74b;
   width: 189px;
@@ -75,6 +93,15 @@
   box-sizing: border-box;
   padding-top: 10px;
   border-radius: 25px;
+}
+
+.intro__connection__authorization:hover {
+  background-color: #ffbd30;
+}
+
+.intro__connection__authorization:active {
+  opacity: 0.3;
+  background-color: #ffbd30;
 }
 
 .intro__darkblue {
@@ -117,6 +144,7 @@
   width: 270px;
   height: 320px;
   box-sizing: border-box;
+  counter-reset: section;
 }
 
 .steps__list__item {
@@ -125,6 +153,15 @@
   padding-top: 20px;
   padding-left: 25px;
   box-sizing: border-box;
+}
+
+.steps__list__item::after {
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  counter-increment: section;
+  content: counter(section);
 }
 
 .steps__list__item:first-child {

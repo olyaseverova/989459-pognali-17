@@ -1,0 +1,157 @@
+.rates {
+  height: 500px;
+  box-sizing: border-box;
+
+  padding-top: 50px;
+  padding-left: 50px;
+
+  color: #192144;
+}
+
+.rates__headline {
+  position: relative;
+  margin: 0;
+  color: #ff8d30;
+  padding-right: 150px;
+  margin-bottom: 60px;
+}
+
+.rates__headline:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 145px;
+
+  width: 99px;
+  height: 99px;
+
+  background-image: url("../img/rates.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.rates__list {
+  margin: 0;
+}
+
+.rates__list dt {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.rates__list dt:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0px;
+
+  width: 200px;
+  height: 1px;
+
+  background-image: url("../img/table-line.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.rate-number-1 {
+  position: relative;
+}
+
+.rate-number-1::after {
+  content: "1";
+  color: white;
+  text-align: center;
+  padding-top: 7px;
+  box-sizing: border-box;
+  position: absolute;
+  top: -7px;
+  left: 210px;
+
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  background-color: #ffa530;
+}
+
+.rate-number-2 {
+  position: relative;
+}
+
+.rate-number-2::after {
+  content: "2";
+  color: white;
+  text-align: center;
+  padding-top: 7px;
+  box-sizing: border-box;
+  position: absolute;
+  top: -7px;
+  left: 210px;
+
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  background-color: #ffbd30;
+}
+
+.rate-number-3 {
+  position: relative;
+}
+
+.rate-number-3::after {
+  content: "3";
+  color: white;
+  text-align: center;
+  padding-top: 7px;
+  box-sizing: border-box;
+  position: absolute;
+  top: -7px;
+  left: 210px;
+
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  background-color: #ffd74b;
+}
+
+.rates__list dd {
+  position: relative;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
+
+.rates__list dd:last-child::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0px;
+
+  width: 200px;
+  height: 1px;
+
+  background-image: url("../img/table-line.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.rates__list dd:last-child {
+  margin-bottom: 50px;
+}
+
+.rates__button {
+  padding: 0;
+  background-color: #edeff6;
+  border: none;
+  color: #192144;
+}
+
+.rates__button:hover {
+  opacity: 0.8;
+}
+
+.rates__button:active {
+  opacity: 0.4;
+}
