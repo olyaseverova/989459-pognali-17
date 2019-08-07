@@ -15,10 +15,6 @@
   background-size: 320px 405px;
 }
 
-.travelmates__headline {
-  margin: 0;
-}
-
 .travelmates__description {
   margin-top: 25px;
   margin-bottom: 30px;
@@ -87,24 +83,15 @@
   text-align: center;
 }
 
-.travelmate__healine {
+.firsova-headline {
   position: relative;
   color: #1d2e5b;
-  margin: 0;
-}
-
-.travelmate__healine:hover {
-  opacity: 0.8;
-}
-
-.travelmate__healine:hover {
-  opacity: 0.4;
 }
 
 .firsova-headline::before {
   content: "";
   position: absolute;
-  top: 9px;
+  top: 8px;
   left: -15px;
 
   width: 5px;
@@ -114,10 +101,15 @@
   background-color: #f97676;
 }
 
+.demin-headline {
+  position: relative;
+  color: #1d2e5b;
+}
+
 .demin-headline::before {
   content: "";
   position: absolute;
-  top: 9px;
+  top: 8px;
   left: -15px;
 
   width: 5px;
@@ -154,14 +146,14 @@
   margin-left: 20px;
 }
 
-.travelmate__transport {
+.travelmate__traffic {
   width: 125px;
   display: flex;
   padding: 0;
   color: #1d2e5b;
 }
 
-.travelmate__transport__item:not(:nth-child(4)) {
+.travelmate__traffic__item:not(:nth-child(4)) {
   margin-right: 15px;
 }
 

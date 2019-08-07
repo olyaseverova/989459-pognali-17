@@ -12,7 +12,7 @@
 <body>
 
   <header class="page-header center">
-    <a class="page-header__logo healine" href="index.html">Погнали?</a>
+    <a class="page-header__logo headline" href="index.html">Погнали?</a>
     <button class="page-header__icon button">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         x="0px" y="0px" viewBox="0 0 25 11" fill="currentColor" xml:space="preserve">
@@ -24,17 +24,19 @@
     </button>
   </header>
 
-  <main class="container">
-    <h1 class="container__healine">Попутчики</h1>
-    <!-- здесь будет форма -->
+  <div class="gray-background center">
+    <main class="container center">
+      <section class="catalog-filter">
+        <h1 class="catalog-filter__headline">Попутчики</h1>
+        <!-- здесь будет форма -->
+      </section>
 
-    <section class="travelmates-catalog">
-      <div class="travelmates-list">
+      <section class="travelmates-catalog">
         <article class="travelmate">
-          <a class="travelmate__image" href="#"><img src="img/girl-travel.jpg" width="70" height="70"
-              alt="Фото Тани Фирсовой"></a>
+          <a class="travelmate__image travelmate__image-firsova" href="#"><img src="img/firsova-mobile@1x.jpg"
+              width="70" height="70" alt="Фото Тани Фирсовой"></a>
           <a href="#">
-            <h3 class="travelmate__healine">Таня Фирсова</h3>
+            <h3 class="travelmate__headline">Таня Фирсова</h3>
           </a>
           <span class="travelmate__likes">1,5 М</span>
           <ul class="travelmate__description list">
@@ -45,18 +47,19 @@
                 <li class="hashtag-list__item">#Фитнес</li>
                 <li class="hashtag-list__item">#пляж</li>
                 <li class="hashtag-list__item">#авокадо</li>
+                <li class="hashtag-list__item">#смузи</li>
               </ul>
             </li>
             <li class="travelmate__description__item">
               <span class="travelmate__countries-headline">хочет посетить:</span>
-              <ul class="travelmate__countries list">
-                <li class="travelmate__countries__item">Шри Ланка</li>
-                <li class="travelmate__countries__item">Тайланд</li>
-                <li class="travelmate__countries__item">Сейшилы</li>
+              <ul class="travelmate__countries list up">
+                <li class="travelmate__countries__item sri-lanka-firsova">Шри Ланка</li>
+                <li class="travelmate__countries__item thailand-firsova">Тайланд</li>
+                <li class="travelmate__countries__item seychelles-firsova">Сейшилы</li>
               </ul>
             </li>
             <li class="travelmate__description__item">
-              <span class="travelmate__transport-healine">траспорт:</span>
+              <span class="travelmate__transport-headline">траспорт:</span>
               <ul class="travelmate__transport list">
                 <li class="travelmate__transport__item"><img src="img/plane.svg" width="19" height="21"
                     alt="Иконка самолета"></li>
@@ -68,19 +71,18 @@
                     alt="Иконка бегущего человека"></li>
               </ul>
             </li>
-            <li class="travelmate__description__item">
-              <span class="level-headline">левел:</span>
-              <span class="level">99</span>
+            <li class="travelmate__description__item long-level">
+              <span class="level-headline-99">левел:</span>
             </li>
           </ul>
-          <a href="#" class="travelmate__button button">Позвать!</a>
+          <a href="#" class="travelmate__button button up">Позвать!</a>
         </article>
 
-        <article class="travelmate">
-          <a class="travelmate__image" href="#"><img src="img/boy-travel.jpg" width="70" height="70"
+        <article class="travelmate travelmate-short">
+          <a class="travelmate__image" href="#"><img src="img/demin-mobile@1x.jpg" width="70" height="70"
               alt="Фото Пети Демина"></a>
           <a href="#">
-            <h3 class="travelmate__healine">Петя Демин</h3>
+            <h3 class="travelmate__headline">Петя Демин</h3>
           </a>
           <span class="travelmate__likes">150</span>
           <ul class="travelmate__description list">
@@ -94,13 +96,14 @@
               </ul>
             </li>
             <li class="travelmate__description__item">
-              <span class="travelmate__countries-healine">хочет посетить:</span>
-              <ul class="travelmate__countries list">
-                <li class="travelmate__countries__item">Бельгия</li>
-                <li class="travelmate__countries__item">Чехия</li>
+              <span class="travelmate__countries-headline">хочет посетить:</span>
+              <ul class="travelmate__countries list up">
+                <li class="travelmate__countries__item belgium-demin">Бельгия</li>
+                <li class="travelmate__countries__item czech-demin">Чехия</li>
               </ul>
             </li>
             <li class="travelmate__description__item">
+              <span class="travelmate__transport-headline">траспорт:</span>
               <ul class="travelmate__transport list">
                 <li class="travelmate__transport__item"><img src="img/plane.svg" width="19" height="21"
                     alt="Иконка самолета"></li>
@@ -112,64 +115,63 @@
                     alt="Иконка бегущего человека"></li>
               </ul>
             </li>
-            <li class="travelmate__description__item">
-              <span class="level-headline">левел:</span>
-              <span class="level">80</span>
+            <li class="travelmate__description__item short-level">
+              <span class="level-headline-80">левел:</span>
             </li>
           </ul>
-          <a href="#" class="travelmate__button button">Позвать!</a>
-          </li>
-
-          <li class="travelmate">
-            <a class="travelmate__image" href="#"><img src="img/smolov-travel.jpg" width="70" height="70"
-                alt="Фото Марка Смолова"></a>
-            <a href="#">
-              <h3 class="travelmate__healine">Марк Смолов</h3>
-            </a>
-            <span class="travelmate__likes">1700</span>
-            <ul class="travelmate__description list">
-              <li class="travelmate__description__item">
-                <ul class="hashtag-list list">
-                  <li class="hashtag-list__item">#рэп</li>
-                  <li class="hashtag-list__item">#тату</li>
-                  <li class="hashtag-list__item">#хайпбист</li>
-                  <li class="hashtag-list__item">#кроссовки</li>
-                  <li class="hashtag-list__item">#суприм</li>
-                </ul>
-              </li>
-              <li class="travelmate__description__item">
-                <span class="travelmate__countries-healine">хочет посетить:</span>
-                <ul class="travelmate__countries list">
-                  <li class="travelmate__countries__item">США</li>
-                  <li class="travelmate__countries__item">Австралия</li>
-                  <li class="travelmate__countries__item">Доминикана</li>
-                </ul>
-              </li>
-              <li class="travelmate-description__item">
-                <ul class="travelmate__transport list">
-                  <li class="travelmate__transport__item"><img src="img/plane.svg" width="19" height="21"
-                      alt="Иконка самолета"></li>
-                  <li class="travelmate__transport__item"><img src="img/bus.svg" width="17" height="21"
-                      alt="Иконка автобуса"></li>
-                  <li class="travelmate__transport__item"><img src="img/bike.svg" width="24" height="21"
-                      alt="Иконка велосипеда"></li>
-                  <li class="travelmate__transport__item"><img src="img/run.svg" width="20" height="21"
-                      alt="Иконка бегущего человека"></li>
-                </ul>
-              </li>
-              <li class="travelmate__description__item">
-                <span class="level-headline">левел:</span>
-                <span class="level">25</span>
-              </li>
-            </ul>
-            <a href="#" class="travelmate__button button">Позвать!</a>
+          <a href="#" class="travelmate__button button up">Позвать!</a>
         </article>
 
         <article class="travelmate">
-          <a class="travelmate__image" href="#"><img src="img/rogovaya-travel.jpg" width="70" height="70"
-              alt="Фото Ларисы Роговой"></a>
+          <a class="travelmate__image" href="#"><img src="img/smolov-travel.jpg" width="70" height="70"
+              alt="Фото Марка Смолова"></a>
           <a href="#">
-            <h3 class="travelmate__healine">Лариса Роговая</h3>
+            <h3 class="travelmate__headline">Марк Смолов</h3>
+          </a>
+          <span class="travelmate__likes">1700</span>
+          <ul class="travelmate__description list">
+            <li class="travelmate__description__item">
+              <ul class="hashtag-list list">
+                <li class="hashtag-list__item">#рэп</li>
+                <li class="hashtag-list__item">#тату</li>
+                <li class="hashtag-list__item">#хайпбист</li>
+                <li class="hashtag-list__item">#кроссовки</li>
+                <li class="hashtag-list__item">#суприм</li>
+              </ul>
+            </li>
+            <li class="travelmate__description__item">
+              <span class="travelmate__countries-headline">хочет посетить:</span>
+              <ul class="travelmate__countries list up">
+                <li class="travelmate__countries__item america-smolov">США</li>
+                <li class="travelmate__countries__item australia-smolov">Австралия</li>
+                <li class="travelmate__countries__item dominica-smolov">Доминикана</li>
+              </ul>
+            </li>
+            <li class="travelmate-description__item">
+              <span class="travelmate__transport-headline">траспорт:</span>
+              <ul class="travelmate__transport list">
+                <li class="travelmate__transport__item"><img src="img/plane.svg" width="19" height="21"
+                    alt="Иконка самолета"></li>
+                <li class="travelmate__transport__item"><img src="img/bus.svg" width="17" height="21"
+                    alt="Иконка автобуса"></li>
+                <li class="travelmate__transport__item"><img src="img/bike.svg" width="24" height="21"
+                    alt="Иконка велосипеда"></li>
+                <li class="travelmate__transport__item"><img src="img/run.svg" width="20" height="21"
+                    alt="Иконка бегущего человека"></li>
+              </ul>
+            </li>
+            <li class="travelmate__description__item long-level">
+              <span class="level-headline-25">левел:</span>
+            </li>
+          </ul>
+          <a href="#" class="travelmate__button button up">Позвать!</a>
+        </article>
+
+        <article class="travelmate travelmate-short">
+          <a class="travelmate__image travelmate__image-rogovaya" href="#"><img src="img/rogovaya-travel.jpg" width="70"
+              height="70" alt="Фото Ларисы Роговой"></a>
+          <a href="#">
+            <h3 class="travelmate__headline">Лариса Роговая</h3>
           </a>
           <span class="travelmate__likes">23</span>
           <ul class="travelmate__description list">
@@ -182,13 +184,14 @@
               </ul>
             </li>
             <li class="travelmate__description__item">
-              <span class="travelmate__countries__healine">хочет посетить:</span>
-              <ul class="travelmate-countries list">
-                <li class="travelmate-countries__item">Великобритания</li>
-                <li class="travelmate-countries__item">Германия</li>
+              <span class="travelmate__countries-headline">хочет посетить:</span>
+              <ul class="travelmate__countries list up">
+                <li class="travelmate__countries__item united-kindom-rogovaya">Великобритания</li>
+                <li class="travelmate__countries__item germany-rogovaya">Германия</li>
               </ul>
             </li>
             <li class="travelmate__description__item">
+              <span class="travelmate__transport-headline">траспорт:</span>
               <ul class="travelmate__transport list">
                 <li class="travelmate__transport__item"><img src="img/plane.svg" width="19" height="21"
                     alt="Иконка самолета"></li>
@@ -200,44 +203,43 @@
                     alt="Иконка бегущего человека"></li>
               </ul>
             </li>
-            <li class="travelmate__description__item">
-              <span class="level-headline">левел:</span>
-              <span class="level">50</span>
+            <li class="travelmate__description__item short-level">
+              <span class="level-headline-50">левел:</span>
             </li>
           </ul>
-          <a href="#" class="travelmate__button button">Позвать!</a>
+          <a href="#" class="travelmate__button button up">Позвать!</a>
         </article>
-      </div>
-    </section>
+      </section>
 
-    <section class="pages">
-      <a class="pages__show" href="#">Показать ещё</a>
-      <ul class="pages__list list">
-        <li class="pages__list__item page-previous"><a href="#"><img src="img/triangle-arrow-left.svg" width="10"
-              height="20" alt="Предыдущая страница"></a></li>
-        <li class="pages__list__item page-next"><a href="#"><img src="img/triangle-arrow-right.svg" width="10"
-              height="20" alt="Следующая страница"></a></li>
+      <section class="pages">
+        <a class="pages__show up" href="#">Показать еще</a>
+        <ul class="pages__list list">
+          <li class="pages__list__item page-previous"><a href="#"><img src="img/arrow-left.png" width="10" height="20"
+                alt="Предыдущая страница"></a></li>
+          <li class="pages__list__item page-next"><a href="#"><img src="img/arrow-right.png" width="10" height="20"
+                alt="Следующая страница"></a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="main-footer center">
+      <a class="main-footer__logo center" href="index.html">Погнали?</a>
+      <ul class="footer-social-buttons center list">
+        <li><a class="footer-social-buttons__item fb" href="#" aria-label="Facebook">
+            <img src="img/facebook.svg" width="11" height="21" alt="Facebook">
+          </a></li>
+        <li><a class="footer-social-buttons__item vk" href="#" aria-label="VK">
+            <img src="img/vk.svg" width="23" height="12" alt="VK">
+          </a></li>
+        <li><a class="footer-social-buttons__item inst" href="#" aria-label="Instagram">
+            <img src="img/instagram.svg" width="18" height="18" alt="Instagram">
+          </a></li>
       </ul>
-    </section>
-  </main>
-
-  <footer class="main-footer">
-    <a class="main-footer__logo" href="index.html">Погнали?</a>
-    <ul class="footer-social-buttons list">
-      <li><a class="footer-social-buttons__item fb" href="#" aria-label="Facebook">
-          <img src="img/facebook.svg" width="11" height="21" alt="Facebook">
-        </a></li>
-      <li><a class="footer-social-buttons__item vk" href="#" aria-label="VK">
-          <img src="img/vk.svg" width="23" height="12" alt="VK">
-        </a></li>
-      <li><a class="footer-social-buttons__item inst" href="#" aria-label="Instagram">
-          <img src="img/instagram.svg" width="18" height="18" alt="Instagram">
-        </a></li>
-    </ul>
-    <p class="main-footer__academy">Разработано</p>
-    <a class="main-footer__academy-icon" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg"
-        width="27" height="34" alt="HTML Academy"></a>
-  </footer>
+      <p class="main-footer__academy">Разработано</p>
+      <a class="main-footer__academy-icon" href="https://htmlacademy.ru/intensive/adaptive"><img
+          src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a>
+    </footer>
+  </div>
 
   <section class="scroll-menu visually-hidden">
     <button class="page-header__icon-close button">

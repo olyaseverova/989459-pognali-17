@@ -5,6 +5,8 @@
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 40px;
+  padding-bottom: 25px;
+  box-sizing: border-box;
 
   color: #192144;
   background-color: #ffffff;
@@ -12,10 +14,11 @@
 }
 
 .main-footer__logo {
-  width: 100px;
+  display: block;
+  width: 120px;
   font-size: 27px;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .footer-social-buttons {
@@ -85,6 +88,6 @@
 
 .main-footer__academy-icon {
   display: block;
-  margin-left: 290px;
   margin-top: -20px;
+  margin-left: 220px;
 }
