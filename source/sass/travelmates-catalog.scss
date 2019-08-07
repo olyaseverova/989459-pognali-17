@@ -1,0 +1,534 @@
+.travelmates-catalog {
+  height: 1649px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
+}
+
+.travelmate {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 16px;
+  padding-bottom: 22px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.travelmate-short {
+  height: 393px;
+}
+
+.travelmate__image {
+  position: relative;
+}
+
+.travelmate__image img {
+  border-radius: 50%;
+  margin-left: -5px;
+}
+
+.travelmate__image::before {
+  content: "";
+  position: absolute;
+
+  top: -16px;
+  left: 45px;
+
+  width: 31px;
+  height: 31px;
+
+  background-image: url("../img/heart-mobile.png");
+}
+
+.travelmate__image-firsova::before {
+  content: "";
+  position: absolute;
+
+  top: -16px;
+  left: 45px;
+
+  width: 31px;
+  height: 31px;
+
+  background-image: url("../img/heart.png");
+}
+
+.travelmate__image::after {
+  content: "";
+  position: absolute;
+
+  top: -45px;
+  left: 218px;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: #f97676;
+  border-radius: 50%;
+}
+
+.travelmate__image-rogovaya::after {
+  content: "";
+  position: absolute;
+
+  top: -45px;
+  left: 218px;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: #81e31e;
+  border-radius: 50%;
+}
+
+.travelmate__headline {
+  position: absolute;
+  width: 80px;
+  flex-wrap: wrap;
+  margin-left: 83px;
+  margin-top: -75px;
+  font-size: 20px;
+  color: #1d2e5b;
+}
+
+.travelmate__likes {
+  position: absolute;
+  top: 64px;
+  left: 110px;
+  color: #161c35;
+  font-size: 14px;
+}
+
+.travelmate__description {
+  padding: 0;
+  margin: 0;
+}
+
+.hashtag-list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #444444;
+}
+
+.travelmate__countries-headline {
+  position: relative;
+  font-size: 15px;
+}
+
+.travelmate__countries-headline::before {
+  content: "";
+  position: absolute;
+
+  top: 10px;
+  left: -25px;
+
+  width: 14px;
+  height: 1px;
+
+  background-color: #edeff6;
+}
+
+.travelmate__countries-headline::after {
+  content: "";
+  position: absolute;
+
+  top: 10px;
+  left: 115px;
+
+  width: 138px;
+  height: 1px;
+
+  background-color: #edeff6;
+}
+
+.travelmate__countries {
+  padding-left: 0;
+  margin-left: 41px;
+  margin-top: 11px;
+  margin-bottom: 13px;
+  font-size: 15px;
+}
+
+.travelmate__countries__item {
+  position: relative;
+}
+
+.sri-lanka-firsova {
+  margin-bottom: 15px;
+}
+
+.sri-lanka-firsova::before {
+  content: "";
+  position: absolute;
+
+  top: 0px;
+  left: -40px;
+
+  width: 26px;
+  height: 18px;
+
+  background-image: url("../img/sri-lanka-firsova.png");
+}
+
+.thailand-firsova {
+  margin-bottom: 15px;
+}
+
+.thailand-firsova::before {
+  content: "";
+  position: absolute;
+
+  top: 0px;
+  left: -40px;
+
+  width: 26px;
+  height: 18px;
+
+  background-image: url("../img/thailand-firsova.png");
+}
+
+.seychelles-firsova::before {
+  content: "";
+  position: absolute;
+
+  top: 0px;
+  left: -40px;
+
+  width: 26px;
+  height: 18px;
+
+  background-image: url("../img/seychelles-firsova.png");
+}
+
+.belgium-demin {
+  margin-top: 15px;
+  margin-bottom: 21px;
+}
+
+.belgium-demin::before {
+  content: "";
+  position: absolute;
+
+  top: 0px;
+  left: -40px;
+
+  width: 26px;
+  height: 18px;
+
+  background-image: url("../img/belgium-demin.png");
+}
+
+.czech-demin {
+  margin-bottom: 15px;
+}
+
+.czech-demin::before {
+  content: "";
+  position: absolute;
+
+  top: 0px;
+  left: -40px;
+
+  width: 26px;
+  height: 18px;
+
+  background-image: url("../img/czech-demin.png");
+}
+
+.america-smolov {
+  margin-bottom: 16px;
+}
+
+.america-smolov::before {
+  content: "";
+  position: absolute;
+
+  top: 0px;
+  left: -40px;
+
+  width: 26px;
+  height: 18px;
+
+  background-image: url("../img/america-smolov.png");
+}
+
+.australia-smolov {
+  margin-bottom: 15px;
+}
+
+.australia-smolov::before {
+  content: "";
+  position: absolute;
+
+  top: 0px;
+  left: -40px;
+
+  width: 26px;
+  height: 18px;
+
+  background-image: url("../img/australia-smolov.png");
+}
+
+.dominica-smolov::before {
+  content: "";
+  position: absolute;
+
+  top: 0px;
+  left: -40px;
+
+  width: 26px;
+  height: 18px;
+
+  background-image: url("../img/dominica-smolov.png");
+}
+
+.united-kindom-rogovaya {
+  margin-top: 13px;
+  margin-bottom: 20px;
+}
+
+.united-kindom-rogovaya::before {
+  content: "";
+  position: absolute;
+
+  top: 0px;
+  left: -40px;
+
+  width: 26px;
+  height: 18px;
+
+  background-image: url("../img/united-kindom-rogovaya.png");
+}
+
+.germany-rogovaya {
+  margin-bottom: 18px;
+}
+
+.germany-rogovaya::before {
+  content: "";
+  position: absolute;
+
+  top: 0px;
+  left: -40px;
+
+  width: 26px;
+  height: 18px;
+
+  background-image: url("../img/germany-rogovaya.png");
+}
+
+.travelmate__transport-headline {
+  position: relative;
+  font-size: 15px;
+}
+
+.travelmate__transport-headline::before {
+  content: "";
+  position: absolute;
+
+  top: 10px;
+  left: -25px;
+
+  width: 14px;
+  height: 1px;
+
+  background-color: #edeff6;
+}
+
+.travelmate__transport-headline::after {
+  content: "";
+  position: absolute;
+
+  top: 10px;
+  left: 80px;
+
+  width: 91px;
+  height: 1px;
+
+  background-color: #edeff6;
+}
+
+.travelmate__description__item:nth-child(3) {
+  width: 130px;
+}
+
+.travelmate__transport {
+  margin-top: 10px;
+  display: flex;
+  padding-left: 0;
+  width: 130px;
+}
+
+.travelmate__transport__item {
+  width: 32px;
+  height: 32px;
+  background-color: #edeff6;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.long-level {
+  position: absolute;
+  width: 65px;
+  height: 55px;
+  box-sizing: border-box;
+  left: 207px;
+  top: 270px;
+  width: 45px;
+  flex-wrap: wrap;
+}
+
+.short-level {
+  position: absolute;
+  width: 65px;
+  height: 55px;
+  box-sizing: border-box;
+  left: 207px;
+  top: 250px;
+  width: 45px;
+  flex-wrap: wrap;
+}
+
+.level-headline-99 {
+  font-size: 15px;
+  position: relative;
+}
+
+.level-headline-99::before {
+  content: "";
+  position: absolute;
+
+  top: 20px;
+  left: -3px;
+
+  width: 45px;
+  height: 45px;
+
+  background-image: url("../img/99-firsova.png");
+}
+
+.level-headline-99::after {
+  content: "";
+  position: absolute;
+
+  top: 11px;
+  left: 52px;
+
+  width: 11px;
+  height: 1px;
+
+  background-color: #edeff6;
+}
+
+.level-headline-80 {
+  font-size: 15px;
+  position: relative;
+}
+
+.level-headline-80::before {
+  content: "";
+  position: absolute;
+
+  top: 20px;
+  left: -3px;
+
+  width: 45px;
+  height: 45px;
+
+  background-image: url("../img/80-demin.png");
+}
+
+.level-headline-80::after {
+  content: "";
+  position: absolute;
+
+  top: 11px;
+  left: 52px;
+
+  width: 11px;
+  height: 1px;
+
+  background-color: #edeff6;
+}
+
+.level-headline-25 {
+  font-size: 15px;
+  position: relative;
+}
+
+.level-headline-25::before {
+  content: "";
+  position: absolute;
+
+  top: 20px;
+  left: 3px;
+
+  width: 35px;
+  height: 32px;
+
+  background-image: url("../img/25-smolov.png");
+}
+
+.level-headline-25::after {
+  content: "";
+  position: absolute;
+
+  top: 11px;
+  left: 52px;
+
+  width: 11px;
+  height: 1px;
+
+  background-color: #edeff6;
+}
+
+.level-headline-50 {
+  font-size: 15px;
+  position: relative;
+}
+
+.level-headline-50::before {
+  content: "";
+  position: absolute;
+
+  top: 20px;
+  left: 5px;
+
+  width: 35px;
+  height: 45px;
+
+  background-image: url("../img/50-rogovaya.png");
+}
+
+.level-headline-50::after {
+  content: "";
+  position: absolute;
+
+  top: 11px;
+  left: 52px;
+
+  width: 11px;
+  height: 1px;
+
+  background-color: #edeff6;
+}
+
+.travelmate__button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  height: 40px;
+  box-sizing: border-box;
+  font-size: 17px;
+  background-color: #ffd74b;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
