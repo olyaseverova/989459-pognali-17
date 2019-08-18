@@ -16,7 +16,7 @@
   padding-top: 16px;
   padding-bottom: 22px;
   box-sizing: border-box;
-  background-color: white;
+  background-color: $color-white;
 }
 
 .travelmate-short {
@@ -68,7 +68,7 @@
   width: 6px;
   height: 6px;
 
-  background-color: #f97676;
+  background-color: $bg-pink;
   border-radius: 50%;
 }
 
@@ -82,7 +82,7 @@
   width: 6px;
   height: 6px;
 
-  background-color: #81e31e;
+  background-color: $bg-brightgreen;
   border-radius: 50%;
 }
 
@@ -93,18 +93,18 @@
   margin-left: 83px;
   margin-top: -75px;
   font-size: 20px;
-  color: #1d2e5b;
+  color: $bg-blue;
 }
 
 .travelmate__likes {
   position: absolute;
   top: 64px;
   left: 110px;
-  color: #161c35;
+  color: $bg-darkblue1635;
   font-size: 14px;
 }
 
-.travelmate__description {
+.travelmate-description {
   padding: 0;
   margin: 0;
 }
@@ -112,15 +112,15 @@
 .hashtag-list {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #444444;
+  color: $bg-darkgrey;
 }
 
-.travelmate__countries-headline {
+.travelmate-countries__headline {
   position: relative;
   font-size: 15px;
 }
 
-.travelmate__countries-headline::before {
+.travelmate-countries__headline::before {
   content: "";
   position: absolute;
 
@@ -130,10 +130,10 @@
   width: 14px;
   height: 1px;
 
-  background-color: #edeff6;
+  background-color: $bg-grey;
 }
 
-.travelmate__countries-headline::after {
+.travelmate-countries__headline::after {
   content: "";
   position: absolute;
 
@@ -143,10 +143,10 @@
   width: 138px;
   height: 1px;
 
-  background-color: #edeff6;
+  background-color: $bg-grey;
 }
 
-.travelmate__countries {
+.travelmate-countries {
   padding-left: 0;
   margin-left: 41px;
   margin-top: 11px;
@@ -154,7 +154,7 @@
   font-size: 15px;
 }
 
-.travelmate__countries__item {
+.travelmate-countries__item {
   position: relative;
 }
 
@@ -322,12 +322,12 @@
   background-image: url("../img/germany-rogovaya.png");
 }
 
-.travelmate__transport-headline {
+.travelmate-transport__headline {
   position: relative;
   font-size: 15px;
 }
 
-.travelmate__transport-headline::before {
+.travelmate-transport__headline::before {
   content: "";
   position: absolute;
 
@@ -337,10 +337,10 @@
   width: 14px;
   height: 1px;
 
-  background-color: #edeff6;
+  background-color: $bg-grey;
 }
 
-.travelmate__transport-headline::after {
+.travelmate-transport__headline::after {
   content: "";
   position: absolute;
 
@@ -350,21 +350,21 @@
   width: 91px;
   height: 1px;
 
-  background-color: #edeff6;
+  background-color: $bg-grey;
 }
 
-.travelmate__description__item:nth-child(3) {
+.travelmate-description__item:nth-child(3) {
   width: 130px;
 }
 
-.travelmate__transport {
+.travelmate-transport {
   margin-top: 10px;
   display: flex;
   padding-left: 0;
   width: 130px;
 }
 
-.travelmate__transport__item {
+.travelmate-transport__item {
   width: 32px;
   height: 32px;
   background-color: #edeff6;
@@ -424,7 +424,7 @@
   width: 11px;
   height: 1px;
 
-  background-color: #edeff6;
+  background-color: $bg-grey;
 }
 
 .level-headline-80 {
@@ -455,7 +455,7 @@
   width: 11px;
   height: 1px;
 
-  background-color: #edeff6;
+  background-color: $bg-grey;
 }
 
 .level-headline-25 {
@@ -486,7 +486,7 @@
   width: 11px;
   height: 1px;
 
-  background-color: #edeff6;
+  background-color: $bg-grey;
 }
 
 .level-headline-50 {
@@ -517,7 +517,7 @@
   width: 11px;
   height: 1px;
 
-  background-color: #edeff6;
+  background-color: $bg-grey;
 }
 
 .travelmate__button {
@@ -527,7 +527,7 @@
   height: 40px;
   box-sizing: border-box;
   font-size: 17px;
-  background-color: #ffd74b;
+  background-color: $bg-yellow-d7;
   border-radius: 20px;
   text-align: center;
   padding-top: 10px;

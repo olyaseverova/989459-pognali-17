@@ -9,7 +9,7 @@
 
 .pages__show {
   position: relative;
-  color: #1d2e5b;
+  color: $bg-blue;
   font-size: 17px;
   margin-left: 90px;
 }
@@ -27,15 +27,15 @@
   background-image: url("../img/show-more.png");
 }
 
-.pages__list {
+.pages-list {
   padding-left: 0;
   display: flex;
 }
 
-.pages__list__item {
+.pages-list__item {
   width: 135px;
   height: 50px;
-  background-color: white;
+  background-color: $color-white;
   box-sizing: border-box;
   text-align: center;
   padding-top: 15px;

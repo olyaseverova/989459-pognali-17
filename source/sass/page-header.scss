@@ -1,19 +1,19 @@
 .page-header {
   display: flex;
-  color: white;
+  color: $color-white;
   height: 50px;
   width: 320px;
   padding-left: 26px;
   padding-top: 29px;
   box-sizing: border-box;
 
-  background-color: #161c36;
+  background-color: $bg-darkblue;
 }
 
 .page-header__logo {
   width: 100px;
   margin-right: 120px;
-  color: white;
+  color: $color-white;
   font-size: 24px;
   height: 25px;
   margin-top: -5px;
@@ -22,7 +22,7 @@
 .page-header__icon {
   width: 50px;
   height: 20px;
-  color: white;
-  background-color: #161c36;
+  color: #ffffff;
+  background-color: $bg-darkblue;
   border: none;
 }

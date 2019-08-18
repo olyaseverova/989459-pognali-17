@@ -14,7 +14,7 @@
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 35px;
-  color: #1d2e5b;
+  color: $bg-blue;
 }
 
 .route__adress::before {
@@ -39,15 +39,15 @@
   padding-right: 0;
   padding-left: 21px;
 
-  color: #1d2e5b;
-  background-color: #ffd74b;
-  border: 3px solid #192144;
+  color: $bg-blue;
+  background-color: $bg-yellow-d7;
+  border: 3px solid $bg-darkblue19;
   border-radius: 15px;
 }
 
 .route__button:hover {
-  background-color: #192144;
-  color: white;
+  background-color: $bg-darkblue19;
+  color: $color-white;
 }
 
 .route__button:active p {

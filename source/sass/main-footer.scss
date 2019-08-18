@@ -8,8 +8,8 @@
   padding-bottom: 25px;
   box-sizing: border-box;
 
-  color: #192144;
-  background-color: #ffffff;
+  color: $bg-darkblue19;
+  background-color: $color-white;
   border-radius: 15px 15px 0 0;
 }
 
@@ -21,7 +21,7 @@
   margin-bottom: 30px;
 }
 
-.footer-social-buttons {
+.main-footer-buttons {
   position: relative;
   display: flex;
   padding: 0;
@@ -29,7 +29,7 @@
   margin-bottom: 60px;
 }
 
-.footer-social-buttons::after {
+.main-footer-buttons::after {
   content: "";
   position: absolute;
 
@@ -44,41 +44,27 @@
   background-position: 0 0;
 }
 
-.footer-social-buttons .fb {
+.main-footer-buttons {
   display: block;
   text-align: center;
   padding-top: 11px;
   box-sizing: border-box;
   width: 45px;
   height: 45px;
-  background-color: #ffd74b;
+  background-color: $bg-yellow-d7;
   border-radius: 50%;
 }
 
-.footer-social-buttons .vk {
-  display: block;
-  text-align: center;
+.main-footer-buttons .vk {
   padding-top: 15px;
-  box-sizing: border-box;
-  width: 45px;
-  height: 45px;
-  background-color: #ffd74b;
-  border-radius: 50%;
 }
 
-.footer-social-buttons .inst {
-  display: block;
-  text-align: center;
+.main-footer-buttons .inst {
   padding-top: 13px;
-  box-sizing: border-box;
-  width: 45px;
-  height: 45px;
-  background-color: #ffd74b;
-  border-radius: 50%;
 }
 
-.footer-social-buttons__item:hover {
-  background-color: #192144;
+.main-footer-buttons__item:hover {
+  background-color: $bg-darkblue19;
 }
 
 .main-footer__academy {
