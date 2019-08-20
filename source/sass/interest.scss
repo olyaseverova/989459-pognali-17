@@ -6,33 +6,33 @@
   padding-left: 25px;
   padding-right: 25px;
 
-  color: white;
+  color: $color-white;
 }
 
 .interest__healine {
   width: 210px;
   margin-top: 0;
   margin-bottom: 25px;
-  color: #ff8d30;
+  color: $bg-orange;
 }
 
-.interest__registration {
+.interest-registration {
   text-align: center;
   width: 200px;
   margin-top: 0;
   margin-bottom: 33px;
 }
 
-.interest__registration__authorization {
-  color: #f0cb4b;
+.interest-registration__authorization {
+  color: $color-yellow;
   text-decoration: underline;
 }
 
-.interest__form {
+.interest-form {
   position: relative;
 }
 
-.interest__form__email {
+.interest-form__email {
   position: relative;
   padding: 0;
   padding-left: 25px;
@@ -44,67 +44,64 @@
 
   border-radius: 15px;
   border: none;
-  color: #c7c7c7;
-  background-color: white;
+  color: $color-lightgrey;
+  background-color: $color-white;
 }
 
-.interest__form__email:hover {
-  color: #98999d;
-  background-color: #edeff6;
+.interest-form__email:hover {
+  color: $color-grey;
+  background-color: $bg-grey;
 }
 
-.interest__form__email:focus {
-  border: 4px solid #ffffff;
-  color: white;
-  background-color: #192144;
+.interest-form__email:focus {
+  border: 4px solid $color-white;
+  color: $color-white;
+  background-color: $bg-darkblue19;
 }
 
-.interest__button {
+.interest-button {
   position: absolute;
   width: 60px;
   height: 62px;
   border-radius: 15px;
   border: none;
-  background-color: #ffd74b;
+  background-color: $bg-yellow-d7;
   right: 0;
 }
 
 .interest__questions {
   width: 220px;
   text-align: center;
-  margin-top: 0;
   margin-bottom: 35px;
 }
 
-.interest__contacts {
+.interest-contacts {
   padding-left: 60px;
 }
 
-.interest__contacts__item a {
-  color: #ffd74b;
+.interest-contacts__item a {
+  color: $bg-yellow-d7;
 }
 
-.interest__contacts__icon {
+.interest-contacts__icon {
   position: absolute;
   display: block;
   margin-left: -50px;
   margin-top: 0px;
 }
 
-.interest__contacts__icon:hover {
-  color: #ffbd30;
+.interest-contacts__icon:hover {
+  color: $bg-yellow-bd;
+}
+.interest-contacts__item {
+  position: relative;
 }
 
-.interest__contacts__item:first-child {
-  position: relative;
+.interest-contacts__item:first-child {
   margin-bottom: 30px;
 }
 
-.interest__contacts__item:last-child {
-  position: relative;
-}
-
-.interest__contacts__item:first-child::before {
+.interest-contacts__item::before {
   content: "";
   position: absolute;
   top: -11px;
@@ -112,18 +109,10 @@
 
   width: 45px;
   height: 45px;
-  background-color: #121936;
+  background-color: $bg-darkblue-12;
   border-radius: 50%;
 }
 
-.interest__contacts__item:last-child::before {
-  content: "";
-  position: absolute;
+.interest-contacts__item:last-child::before {
   top: -15px;
-  left: -64px;
-
-  width: 45px;
-  height: 45px;
-  background-color: #121936;
-  border-radius: 50%;
 }

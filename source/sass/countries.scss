@@ -6,7 +6,7 @@
   width: 270px;
   height: 985px;
 
-  color: black;
+  color: $color-black;
 }
 
 .countries__headline {
@@ -22,13 +22,13 @@
   margin-bottom: 65px;
 }
 
-.countries__list {
+.countries-list {
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
 }
 
-.countries__list__item {
+.countries-list__item {
   position: relative;
   height: 190px;
   margin-bottom: 10px;
@@ -38,7 +38,7 @@
   border-radius: 15px 15px 0 0;
 }
 
-.countries__specification {
+.countries-specification {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -47,20 +47,20 @@
   box-sizing: border-box;
   border-radius: 15px;
   height: 90px;
-  background-color: white;
+  background-color: $color-white;
   padding-left: 25px;
   padding-top: 25px;
   padding-right: 25px;
   padding-bottom: 15px;
 }
 
-.countries__specification__name {
+.countries-specification__name {
   position: relative;
   width: 80px;
   margin: 0;
 }
 
-.countries__list__item:nth-child(1) .countries__specification__name::before {
+.countries-list__item:nth-child(1) .countries-specification__name::before {
   content: "";
   position: absolute;
 
@@ -74,7 +74,7 @@
   background-repeat: no-repeat;
 }
 
-.countries__list__item:nth-child(2) .countries__specification__name::before {
+.countries-list__item:nth-child(2) .countries-specification__name::before {
   content: "";
   position: absolute;
 
@@ -88,7 +88,7 @@
   background-repeat: no-repeat;
 }
 
-.countries__list__item:nth-child(3) .countries__specification__name::before {
+.countries-list__item:nth-child(3) .countries-specification__name::before {
   content: "";
   position: absolute;
 
@@ -102,13 +102,13 @@
   background-repeat: no-repeat;
 }
 
-.countries__specification__views {
+.countries-specification__views {
   position: relative;
   margin-left: 100px;
   margin-top: 2px;
 }
 
-.countries__specification__views::before {
+.countries-specification__views::before {
   content: "";
   position: absolute;
 
@@ -122,7 +122,7 @@
   background-repeat: no-repeat;
 }
 
-.countries__specification__quote {
+.countries-specification__quote {
   width: 170px;
   margin: 0;
 }
@@ -139,8 +139,8 @@
   padding-left: 25px;
   padding-top: 20px;
 
-  color: #1d2e5b;
-  background-color: #ffd74b;
+  color: $bg-blue;
+  background-color: $bg-yellow-d7;
 }
 
 .countries__show::after {

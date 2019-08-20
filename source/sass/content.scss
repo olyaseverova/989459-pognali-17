@@ -1,6 +1,6 @@
 a {
   text-decoration: none;
-  color: #161c35;
+  color: $bg-darkblue1635;
 }
 
 .list {
@@ -16,10 +16,10 @@ a {
 }
 
 .yellow-btn:hover {
-  background-color: #ffbd30;
+  background-color: $bg-yellow-bd;
 }
 
 .yellow-btn:active {
   opacity: 0.3;
-  background-color: #ffbd30;
+  background-color: $bg-yellow-bd;
 }

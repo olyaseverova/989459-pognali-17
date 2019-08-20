@@ -8,8 +8,8 @@
   height: 352px;
   box-sizing: border-box;
 
-  color: white;
-  background-color: #141b3b;
+  color: $color-white;
+  background-color: $bg-darkblue14;
   border-radius: 15px 15px 25px 25px;
 
   background-image: url("../img/about-mobile@1x.png");
@@ -21,7 +21,7 @@
 .about__healine {
   margin: 0;
   width: 110px;
-  color: #ff8d30;
+  color: $color-orange;
 }
 
 .about__description {

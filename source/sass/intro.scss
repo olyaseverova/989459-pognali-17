@@ -6,7 +6,7 @@
   height: 994px;
   box-sizing: border-box;
 
-  color: white;
+  color: $color-white;
 
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@
   background-position: 0 0;
 }
 
-.intro__connection {
+.intro-connection {
   position: relative;
   margin-top: 251px;
   display: flex;
@@ -43,14 +43,14 @@
   text-align: center;
 }
 
-.intro__contacts {
+.intro-contacts {
   display: flex;
 }
 
-.intro__contacts .intro__contacts__item:first-child {
+.intro-contacts .intro-contacts__item:first-child {
   margin-top: -16px;
   margin-left: -40px;
-  background-color: #ff8d30;
+  background-color: $bg-yellow-bd;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -58,18 +58,18 @@
   padding-top: 10px;
 }
 
-.intro__contacts .intro__contacts__item:first-child:hover {
-  background-color: #f26926;
+.intro-contacts .intro-contacts__item:first-child:hover {
+  background-color: $bg-darkorange;
 }
 
-.intro__contacts .intro__contacts__item:first-child:active {
+.intro-contacts .intro-contacts__item:first-child:active {
   opacity: 0.3;
-  background-color: #f26926;
+  background-color: $bg-darkorange;
 }
 
-.intro__contacts .intro__contacts__item:last-child {
+.intro-contacts .intro-contacts__item:last-child {
   margin-top: -16px;
-  background-color: #ffbd30;
+  background-color: $bg-yellow-bd;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -77,17 +77,17 @@
   padding-top: 12px;
 }
 
-.intro__contacts .intro__contacts__item:last-child:hover {
-  background-color: #ff8d30;
+.intro-contacts .intro-contacts__item:last-child:hover {
+  background-color: $bg-orange;
 }
 
-.intro__contacts .intro__contacts__item:last-child:active {
+.intro-contacts .intro-contacts__item:last-child:active {
   opacity: 0.3;
-  background-color: #ff8d30;
+  background-color: $bg-orange;
 }
 
-.intro__connection__authorization {
-  background-color: #ffd74b;
+.intro-connection__authorization {
+  background-color: $bg-yellow-d7;
   width: 189px;
   height: 40px;
   box-sizing: border-box;
@@ -95,18 +95,18 @@
   border-radius: 25px;
 }
 
-.intro__connection__authorization:hover {
-  background-color: #ffbd30;
+.intro-connection__authorization:hover {
+  background-color: $bg-yellow-bd;
 }
 
-.intro__connection__authorization:active {
+.intro-connection__authorization:active {
   opacity: 0.3;
-  background-color: #ffbd30;
+  background-color: $bg-yellow-bd;
 }
 
-.intro__darkblue {
+.intro-darkblue {
   margin-top: -20px;
-  background-color: #161c35;
+  background-color: $bg-darkblue1635;
   height: 285px;
   padding-top: 40px;
   box-sizing: border-box;
@@ -127,11 +127,11 @@
   margin-top: 20px;
 }
 
-.intro__lightblue {
+.intro-lightblue {
   position: relative;
   margin-top: -16px;
   height: 290px;
-  background-color: #192144;
+  background-color: $bg-darkblue19;
 }
 
 .intro .steps {
@@ -139,7 +139,7 @@
   position: absolute;
 }
 
-.intro .steps__list {
+.intro .steps-list {
   position: relative;
   width: 270px;
   height: 320px;
@@ -147,16 +147,16 @@
   counter-reset: section;
 }
 
-.steps__list__item {
-  color: #161c35;
+.steps-list__item {
+  color: $bg-darkblue1635;
   border-radius: 10px;
   padding-top: 20px;
   padding-left: 25px;
   box-sizing: border-box;
 }
 
-.steps__list__item::after {
-  color: white;
+.steps-list__item::after {
+  color: $color-white;
   position: absolute;
   right: 20px;
   top: 20px;
@@ -164,32 +164,32 @@
   content: counter(section);
 }
 
-.steps__list__item:first-child {
+.steps-list__item:first-child {
   position: absolute;
   width: 230px;
-  background-color: #ff8d30;
+  background-color: $bg-orange;
   height: 100px;
 }
 
-.steps__list__item:nth-child(2) {
+.steps-list__item:nth-child(2) {
   position: absolute;
   top: 80px;
-  background-color: #ffa530;
+  background-color: $bg-lightorange;
   height: 100px;
 }
 
-.steps__list__item:nth-child(3) {
+.steps-list__item:nth-child(3) {
   position: absolute;
   top: 160px;
-  background-color: #ffbd30;
+  background-color: $bg-yellow-bd;
   height: 100px;
   width: 230px;
 }
 
-.steps__list__item:nth-child(4) {
+.steps-list__item:nth-child(4) {
   position: absolute;
   top: 240px;
-  background-color: #ffd74b;
+  background-color: $bg-yellow-d7;
   height: 80px;
   padding-right: 100px;
 }

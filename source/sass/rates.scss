@@ -5,13 +5,13 @@
   padding-top: 50px;
   padding-left: 50px;
 
-  color: #192144;
+  color: $bg-darkblue19;
 }
 
 .rates__headline {
   position: relative;
   margin: 0;
-  color: #ff8d30;
+  color: $bg-orange;
   padding-right: 150px;
   margin-bottom: 60px;
 }
@@ -30,16 +30,16 @@
   background-position: 0 0;
 }
 
-.rates__list {
+.rates-list {
   margin: 0;
 }
 
-.rates__list dt {
+.rates-list dt {
   position: relative;
   margin-bottom: 10px;
 }
 
-.rates__list dt:before {
+.rates-list dt:before {
   content: "";
   position: absolute;
   top: -15px;
@@ -59,7 +59,7 @@
 
 .rate-number-1::after {
   content: "1";
-  color: white;
+  color: $color-white;
   text-align: center;
   padding-top: 7px;
   box-sizing: border-box;
@@ -71,7 +71,7 @@
   height: 34px;
   border-radius: 50%;
 
-  background-color: #ffa530;
+  background-color: $bg-lightorange;
 }
 
 .rate-number-2 {
@@ -80,7 +80,7 @@
 
 .rate-number-2::after {
   content: "2";
-  color: white;
+  color: $color-white;
   text-align: center;
   padding-top: 7px;
   box-sizing: border-box;
@@ -92,7 +92,7 @@
   height: 34px;
   border-radius: 50%;
 
-  background-color: #ffbd30;
+  background-color: $bg-yellow-bd;
 }
 
 .rate-number-3 {
@@ -101,7 +101,7 @@
 
 .rate-number-3::after {
   content: "3";
-  color: white;
+  color: $color-white;
   text-align: center;
   padding-top: 7px;
   box-sizing: border-box;
@@ -113,17 +113,17 @@
   height: 34px;
   border-radius: 50%;
 
-  background-color: #ffd74b;
+  background-color: $bg-yellow-d7;
 }
 
-.rates__list dd {
+.rates-list dd {
   position: relative;
   margin-left: 0;
   margin-bottom: 30px;
 }
 
 
-.rates__list dd:last-child::after {
+.rates-list dd:last-child::after {
   content: "";
   position: absolute;
   top: 35px;
@@ -137,15 +137,15 @@
   background-position: 0 0;
 }
 
-.rates__list dd:last-child {
+.rates-list dd:last-child {
   margin-bottom: 50px;
 }
 
 .rates__button {
   padding: 0;
-  background-color: #edeff6;
+  background-color: $bg-grey;
   border: none;
-  color: #192144;
+  color: $bg-darkblue19;
 }
 
 .rates__button:hover {
