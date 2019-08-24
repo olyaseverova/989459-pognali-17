@@ -1,8 +1,19 @@
 body {
   min-width: 320px;
   margin: 0;
-
   background-color: $color-white;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    background-color: $color-white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    background-color: $color-white;
+  }
 }
 
 img {
