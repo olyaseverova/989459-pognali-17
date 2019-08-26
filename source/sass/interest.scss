@@ -1,6 +1,5 @@
 .interest {
   height: 504px;
-  box-sizing: border-box;
 
   padding-top: 75px;
   padding-left: 25px;
@@ -34,13 +33,12 @@
 
 .interest-form__email {
   position: relative;
-  padding: 0;
-  padding-left: 25px;
-  margin-bottom: 30px;
-
   width: 100%;
   height: 62px;
-  box-sizing: border-box;
+  margin-bottom: 30px;
+  padding: 0;
+  padding-left: 25px;
+
 
   border-radius: 15px;
   border: none;
@@ -87,7 +85,7 @@
   position: absolute;
   display: block;
   margin-left: -50px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .interest-contacts__icon:hover {

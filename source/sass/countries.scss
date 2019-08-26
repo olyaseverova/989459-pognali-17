@@ -1,9 +1,7 @@
 .countries {
   padding-top: 55px;
   position: relative;
-  box-sizing: border-box;
 
-  width: 270px;
   height: 985px;
 
   color: $color-black;
@@ -39,19 +37,20 @@
 }
 
 .countries-specification {
-  display: flex;
-  flex-wrap: wrap;
   position: absolute;
+  display: flex;
   width: 100%;
-  top: 100px;
-  box-sizing: border-box;
-  border-radius: 15px;
   height: 90px;
-  background-color: $color-white;
+  top: 100px;
+
   padding-left: 25px;
   padding-top: 25px;
   padding-right: 25px;
   padding-bottom: 15px;
+
+  border-radius: 15px;
+  flex-wrap: wrap;
+  background-color: $color-white;
 }
 
 .countries-specification__name {
@@ -130,7 +129,6 @@
 .countries__show {
   position: relative;
   display: block;
-  box-sizing: border-box;
 
   width: 270px;
   height: 62px;

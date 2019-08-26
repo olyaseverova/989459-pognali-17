@@ -1,8 +1,8 @@
 .travelmates-catalog {
   height: 1649px;
+
   padding-left: 25px;
   padding-right: 25px;
-  box-sizing: border-box;
 }
 
 .travelmate {
@@ -10,12 +10,13 @@
   width: 100%;
   height: 415px;
   margin-bottom: 10px;
-  border-radius: 15px;
+
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 16px;
   padding-bottom: 22px;
-  box-sizing: border-box;
+
+  border-radius: 15px;
   background-color: $color-white;
 }
 
@@ -367,32 +368,32 @@
 .travelmate-transport__item {
   width: 32px;
   height: 32px;
-  background-color: #edeff6;
-  box-sizing: border-box;
-  border-radius: 50%;
   text-align: center;
   padding-top: 5px;
+
+  border-radius: 50%;
+  background-color: #edeff6;
 }
 
 .long-level {
   position: absolute;
-  width: 65px;
+  width: 45px;
   height: 55px;
-  box-sizing: border-box;
+
   left: 207px;
   top: 270px;
-  width: 45px;
+
   flex-wrap: wrap;
 }
 
 .short-level {
   position: absolute;
-  width: 65px;
+  width: 45px;
   height: 55px;
-  box-sizing: border-box;
+
   left: 207px;
   top: 250px;
-  width: 45px;
+
   flex-wrap: wrap;
 }
 
@@ -523,12 +524,12 @@
 .travelmate__button {
   display: block;
   width: 100%;
-  margin-top: 20px;
   height: 40px;
-  box-sizing: border-box;
+  margin-top: 20px;
+  padding-top: 10px;
+
+  text-align: center;
   font-size: 17px;
   background-color: $bg-yellow-d7;
   border-radius: 20px;
-  text-align: center;
-  padding-top: 10px;
 }

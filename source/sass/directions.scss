@@ -2,12 +2,12 @@
   position: relative;
   height: 94px;
   margin: 0;
-  box-sizing: border-box;
-  border-radius: 0 0 15px 15px;
-  background-color: $bg-darkblue1635;
-  color: $color-white;
   padding-top: 40px;
   padding-left: 25px;
+
+  border-radius: 0 0 15px 15px;
+  color: $color-white;
+  background-color: $bg-darkblue1635;
   font-size: 36px;
 }
 

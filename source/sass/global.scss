@@ -1,16 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   min-width: 320px;
   margin: 0;
+  font-size: 16px;
   background-color: $color-white;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: $tablet-width) {
   body {
+    font-size: 28px;
     background-color: $color-white;
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: $desktop-width) {
   body {
     background-color: $color-white;
   }

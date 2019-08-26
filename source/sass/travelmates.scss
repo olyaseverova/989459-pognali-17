@@ -1,11 +1,9 @@
 .travelmates {
   width: 270px;
   height: 1320px;
-  box-sizing: border-box;
-
-  padding-top: 75px;
   margin-left: 25px;
   margin-right: 25px;
+  padding-top: 75px;
 
   color: $color-white;
 
@@ -34,7 +32,6 @@
 .travelmates-list__item {
   display: block;
   position: relative;
-  box-sizing: border-box;
   height: 427px;
   margin-bottom: 10px;
 }
@@ -44,14 +41,14 @@
 }
 
 .travelmate__specification {
-  box-sizing: border-box;
-  background-color: $color-white;
-  margin-top: -5px;
   width: 100%;
   height: 157px;
-  border-radius: 0 0 10px 10px;
+  margin-top: -5px;
   padding-top: 30px;
+
+  border-radius: 0 0 10px 10px;
   text-align: center;
+  background-color: $color-white;
 }
 
 .firsova-headline {
@@ -91,14 +88,15 @@
 }
 
 .hashtag-list {
-  margin-top: 15px;
-  padding-left: 0px;
-  margin-bottom: 15px;
-  width: 210px;
-  box-sizing: border-box;
-  color: $color-black;
   display: flex;
   flex-wrap: wrap;
+
+  width: 210px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 0px;
+
+  color: $color-black;
 }
 
 .travelmates-list__item:last-child .hashtag-list {
@@ -131,15 +129,14 @@
 .travelmates__button {
   position: relative;
   display: block;
-  box-sizing: border-box;
 
   width: 270px;
   height: 62px;
-  border-radius: 10px;
 
   padding-left: 25px;
   padding-top: 20px;
 
+  border-radius: 10px;
   color: $bg-blue;
   background-color: $bg-yellow-d7;
 }

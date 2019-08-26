@@ -1,29 +1,43 @@
 .container .intro {
-  padding-top: 50px;
+  height: 999px;
+  padding-top: 60px;
   margin-top: 0px;
-
-  width: 320px;
-  height: 994px;
-  box-sizing: border-box;
 
   color: $color-white;
 
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 320px 405px;
+  background-size: 100% 430px;
+
+  @media (min-width: $tablet-width) {
+    height: 904px;
+    background-image: url("../img/globe-back-tablet@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 904px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/globe-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 612px;
+  }
 }
 
 .intro__healine {
   position: relative;
-  width: 240px;
+  width: 250px;
+
+  font-size: 36px;
   text-align: center;
 }
 
 .intro__healine::after {
   content: "";
   position: absolute;
-  top: 100px;
+  top: 110px;
   left: 35px;
 
   width: 195px;
@@ -32,150 +46,152 @@
   background-image: url("../img/traveller-illustration-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
 
-.intro-connection {
-  position: relative;
-  margin-top: 251px;
-  display: flex;
-  width: 269px;
-  height: 40px;
-  text-align: center;
-}
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: 255px;
+    left: 35px;
 
-.intro-contacts {
-  display: flex;
-}
+    width: 372px;
+    height: 451px;
 
-.intro-contacts .intro-contacts__item:first-child {
-  margin-top: -16px;
-  margin-left: -40px;
-  background-color: $bg-yellow-bd;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  padding-top: 10px;
-}
-
-.intro-contacts .intro-contacts__item:first-child:hover {
-  background-color: $bg-darkorange;
-}
-
-.intro-contacts .intro-contacts__item:first-child:active {
-  opacity: 0.3;
-  background-color: $bg-darkorange;
-}
-
-.intro-contacts .intro-contacts__item:last-child {
-  margin-top: -16px;
-  background-color: $bg-yellow-bd;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  padding-top: 12px;
-}
-
-.intro-contacts .intro-contacts__item:last-child:hover {
-  background-color: $bg-orange;
-}
-
-.intro-contacts .intro-contacts__item:last-child:active {
-  opacity: 0.3;
-  background-color: $bg-orange;
-}
-
-.intro-connection__authorization {
-  background-color: $bg-yellow-d7;
-  width: 189px;
-  height: 40px;
-  box-sizing: border-box;
-  padding-top: 10px;
-  border-radius: 25px;
-}
-
-.intro-connection__authorization:hover {
-  background-color: $bg-yellow-bd;
-}
-
-.intro-connection__authorization:active {
-  opacity: 0.3;
-  background-color: $bg-yellow-bd;
+    background-image: url("../img/traveller-illustration-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .intro-darkblue {
-  margin-top: -20px;
-  background-color: $bg-darkblue1635;
   height: 285px;
+  margin-top: 245px;
   padding-top: 40px;
-  box-sizing: border-box;
+
+  background-color: $bg-darkblue1635;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 140px;
+    padding-top: 0;
+    background: none;
+  }
 }
 
 .intro .review-list {
   padding: 0;
   margin-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 70px;
+  }
 }
 
 .review-list blockquote {
   width: 160px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 270px;
+  }
 }
 
 .review-list p {
   width: 160px;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    font-weight: bold;
+    font-size: 21px;
+  }
 }
 
 .intro-lightblue {
   position: relative;
-  margin-top: -16px;
   height: 290px;
   background-color: $bg-darkblue19;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
 }
 
 .intro .steps {
-  top: -90px;
   position: absolute;
+  width: 270px;
+  top: -95px;
+
+  @media (min-width: $tablet-width) {
+    top: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 690px;
+    height: 280px;
+  }
 }
 
 .intro .steps-list {
   position: relative;
-  width: 270px;
   height: 320px;
-  box-sizing: border-box;
+  padding-left: 0;
+  margin-left: 7%;
   counter-reset: section;
 }
 
 .steps-list__item {
-  color: $bg-darkblue1635;
-  border-radius: 10px;
   padding-top: 20px;
   padding-left: 25px;
-  box-sizing: border-box;
+
+  border-radius: 10px;
+  color: $bg-darkblue1635;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
 }
 
 .steps-list__item::after {
-  color: $color-white;
   position: absolute;
+  color: $color-white;
   right: 20px;
   top: 20px;
+  font-size: 18px;
   counter-increment: section;
   content: counter(section);
+
+  @media (min-width: $tablet-width) {
+    left: 25px;
+    top: 80px;
+    font-size: 30px;
+  }
 }
 
 .steps-list__item:first-child {
   position: absolute;
-  width: 230px;
+  width: 270px;
   background-color: $bg-orange;
   height: 100px;
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    height: 140px;
+    border-radius: 10px 10px 0 0;
+  }
 }
 
 .steps-list__item:nth-child(2) {
   position: absolute;
   top: 80px;
+  width: 270px;
   background-color: $bg-lightorange;
   height: 100px;
+
+  @media (min-width: $tablet-width) {
+    height: 140px;
+    width: 345px;
+    top: 0;
+    left: 350px;
+    border-radius: 10px 10px 0 0;
+  }
 }
 
 .steps-list__item:nth-child(3) {
@@ -183,13 +199,29 @@
   top: 160px;
   background-color: $bg-yellow-bd;
   height: 100px;
-  width: 230px;
+  width: 270px;
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    height: 140px;
+    top: 140px;
+    border-radius: 0 0 10px 10px;
+  }
 }
 
 .steps-list__item:nth-child(4) {
   position: absolute;
   top: 240px;
   background-color: $bg-yellow-d7;
+  width: 270px;
   height: 80px;
   padding-right: 100px;
+
+  @media (min-width: $tablet-width) {
+    width: 345px;
+    height: 140px;
+    top: 140px;
+    left: 350px;
+    border-radius: 0 0 10px 10px;
+  }
 }

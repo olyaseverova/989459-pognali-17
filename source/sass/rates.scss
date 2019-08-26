@@ -1,6 +1,5 @@
 .rates {
   height: 500px;
-  box-sizing: border-box;
 
   padding-top: 50px;
   padding-left: 50px;
@@ -59,18 +58,18 @@
 
 .rate-number-1::after {
   content: "1";
-  color: $color-white;
+  position: absolute;
+  width: 34px;
+  height: 34px;
   text-align: center;
   padding-top: 7px;
-  box-sizing: border-box;
-  position: absolute;
+
   top: -7px;
   left: 210px;
 
-  width: 34px;
-  height: 34px;
   border-radius: 50%;
 
+  color: $color-white;
   background-color: $bg-lightorange;
 }
 
@@ -80,18 +79,18 @@
 
 .rate-number-2::after {
   content: "2";
-  color: $color-white;
+  position: absolute;
+  width: 34px;
+  height: 34px;
   text-align: center;
   padding-top: 7px;
-  box-sizing: border-box;
-  position: absolute;
+
   top: -7px;
   left: 210px;
 
-  width: 34px;
-  height: 34px;
   border-radius: 50%;
 
+  color: $color-white;
   background-color: $bg-yellow-bd;
 }
 
@@ -101,18 +100,18 @@
 
 .rate-number-3::after {
   content: "3";
-  color: $color-white;
+  position: absolute;
+  width: 34px;
+  height: 34px;
   text-align: center;
   padding-top: 7px;
-  box-sizing: border-box;
-  position: absolute;
+
   top: -7px;
   left: 210px;
 
-  width: 34px;
-  height: 34px;
   border-radius: 50%;
 
+  color: $color-white;
   background-color: $bg-yellow-d7;
 }
 
