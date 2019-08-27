@@ -5,12 +5,30 @@
   height: 985px;
 
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    height: 1095px;
+    padding-top: 80px;
+
+    background-image: url("../img/countries-back-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 40px 80px;
+    background-size: 688px 575px;
+  }
 }
 
 .countries__headline {
   margin-top: 0;
   margin-left: 25px;
   margin-bottom: 30px;
+  color: $bg-orange;
+  font-size: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    margin-left: 75px;
+    margin-bottom: 75px;
+  }
 }
 
 .countries__description {
@@ -18,22 +36,44 @@
   margin-left: 25px;
   margin-right: 45px;
   margin-bottom: 65px;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    margin-left: 75px;
+    margin-bottom: 110px;
+  }
 }
 
 .countries-list {
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 75px;
+    margin-bottom: 45px;
+  }
 }
 
 .countries-list__item {
   position: relative;
   height: 190px;
-  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    height: 140px;
+    margin-bottom: 10px;
+    display: flex;
+  }
 }
 
 .countries__foto {
   border-radius: 15px 15px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 350px;
+    border-radius: 0 15px 15px 0;
+  }
 }
 
 .countries-specification {
@@ -51,12 +91,28 @@
   border-radius: 15px;
   flex-wrap: wrap;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 432px;
+    height: 140px;
+    padding-top: 30px;
+    top: 0;
+    border-radius: 15px 0 0 15px;
+  }
 }
 
 .countries-specification__name {
   position: relative;
   width: 80px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    height: 25px;
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
 }
 
 .countries-list__item:nth-child(1) .countries-specification__name::before {
@@ -71,6 +127,19 @@
 
   background-image: url("../img/thailand-flag.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -19px;
+    left: 373px;
+
+    width: 70px;
+    height: 47px;
+    background-image: url("../img/thailand-tablet.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .countries-list__item:nth-child(2) .countries-specification__name::before {
@@ -85,6 +154,19 @@
 
   background-image: url("../img/france-flag.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -19px;
+    left: 373px;
+
+    width: 70px;
+    height: 47px;
+    background-image: url("../img/france-tablet.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .countries-list__item:nth-child(3) .countries-specification__name::before {
@@ -99,12 +181,30 @@
 
   background-image: url("../img/czech-flag.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -19px;
+    left: 373px;
+
+    width: 70px;
+    height: 47px;
+    background-image: url("../img/czech-tablet.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .countries-specification__views {
   position: relative;
   margin-left: 100px;
   margin-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-left: 35px;
+  }
 }
 
 .countries-specification__views::before {
@@ -119,16 +219,31 @@
 
   background-image: url("../img/user.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: -35px;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .countries-specification__quote {
   width: 170px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 210px;
+    height: 20px;
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
 }
 
 .countries__show {
   position: relative;
   display: block;
+  font-size: 18px;
 
   width: 270px;
   height: 62px;
@@ -139,6 +254,23 @@
 
   color: $bg-blue;
   background-color: $bg-yellow-d7;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: block;
+    font-size: 24px;
+
+    width: 618px;
+    height: 81px;
+    margin-left: 75px;
+    border-radius: 15px;
+
+    padding-left: 35px;
+    padding-top: 25px;
+
+    color: $bg-blue;
+    background-color: $bg-yellow-d7;
+  }
 }
 
 .countries__show::after {
@@ -151,6 +283,20 @@
   width: 10px;
   height: 14px;
 
-  background-image: url("../img/triangle-arrow-right.svg");
+  background-image: url("../img/countries-right.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: 32px;
+    left: 580px;
+
+    width: 10px;
+    height: 14px;
+
+    background-image: url("../img/countries-right.png");
+    background-repeat: no-repeat;
+  }
 }

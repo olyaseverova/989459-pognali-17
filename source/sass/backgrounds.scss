@@ -1,11 +1,15 @@
 .about-countries {
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: $bg-grey;
 }
 
 .countries-travelmates {
   border-radius: 20px;
   background-color: $bg-darkblue19;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0;
+  }
 }
 
 .travelmates-rates {

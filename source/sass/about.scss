@@ -18,13 +18,14 @@
   @media (min-width: $tablet-width) {
     height: 920px;
     padding-top: 280px;
+    padding-left: 75px;
     background-color: $bg-darkblue19;
-    border-radius: 0px 0px;
+    border-radius: 0 0 25px 25px;
 
-    background-image: url("../img/about-tablet@1x.png");
+    background-image: url("../img/about-back-tablet.png");
     background-repeat: no-repeat;
-    background-position: 405px 310px;
-    background-size: 376px 548px;
+    background-position: 40px 240px;
+    background-size: 720px 596px;
   }
 }
 
@@ -60,13 +61,55 @@
 
   @media (min-width: $tablet-width) {
     width: 335px;
-    margin-top: 60px;
-    margin-bottom: 45px;
+    margin-top: 50px;
+    margin-bottom: 40px;
     font-size: 28px;
   }
 }
 
 .about__kick {
   flex-wrap: nowrap;
+  font-size: 21px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.about__link {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: block;
+    font-size: 24px;
+
+    width: 274px;
+    height: 81px;
+    border-radius: 15px;
+
+    margin-top: 50px;
+    padding-left: 25px;
+    padding-top: 22px;
+
+    color: $bg-blue;
+    background-color: $bg-yellow-d7;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about__link::after {
+    content: "";
+    position: absolute;
+
+    top: 30px;
+    left: 225px;
+
+    width: 10px;
+    height: 14px;
+
+    background-image: url("../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+  }
 }
