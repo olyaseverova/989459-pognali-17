@@ -1,19 +1,36 @@
 .route {
+  width: 320px;
   height: 206px;
 
   padding-top: 35px;
   padding-left: 25px;
   padding-right: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 325px;
+
+    padding-top: 70px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
 }
 
 .route__adress {
   position: relative;
   width: 160px;
-  padding-left: 60px;
-  font-size: 16px;
+
   margin-top: 0;
   margin-bottom: 35px;
+  padding-left: 60px;
+
   color: $bg-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 530px;
+    margin-bottom: 65px;
+    padding-left: 95px;
+  }
 }
 
 .route__adress::before {
@@ -27,20 +44,45 @@
   background-image: url("../img/route-location.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 0px;
+
+    width: 68px;
+    height: 68px;
+    background-image: url("../img/route-location-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .route__button {
   position: relative;
-  width: 270px;
+  width: 100%;
   height: 62px;
   text-align: left;
   padding-right: 0;
   padding-left: 21px;
 
+  font-size: 18px;
   color: $bg-blue;
   background-color: $bg-yellow-d7;
   border: 3px solid $bg-darkblue19;
-  border-radius: 15px;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    height: 81px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .route__button p {
+    margin: 0;
+  }
 }
 
 .route__button:hover {
@@ -64,6 +106,20 @@
   height: 14px;
   background-image: url("../img/arrow-right-white.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: 33px;
+    left: 570px;
+    opacity: 1;
+
+    width: 10px;
+    height: 14px;
+    background-image: url("../img/arrow-right-white.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .route__button:active::before {
@@ -81,6 +137,19 @@
   height: 14px;
   background-image: url("../img/triangle-arrow-right.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: 33px;
+    left: 570px;
+
+    width: 10px;
+    height: 14px;
+    background-image: url("../img/triangle-arrow-right.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .route__button:hover::after {

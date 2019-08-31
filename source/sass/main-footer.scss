@@ -1,15 +1,24 @@
 .main-footer {
   height: 239px;
-  width: 320px;
 
   padding-left: 25px;
   padding-right: 25px;
-  padding-top: 40px;
-  padding-bottom: 25px;
+  padding-top: 38px;
+  padding-bottom: 15px;
 
   color: $bg-darkblue19;
   background-color: $color-white;
   border-radius: 15px 15px 0 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 768px;
+    height: 155px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 48px;
+    padding-bottom: 45px;
+  }
 }
 
 .main-footer__logo {
@@ -17,7 +26,15 @@
   width: 120px;
   font-size: 27px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    width: 164px;
+    margin-right: 90px;
+    padding-top: 15px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
 }
 
 .main-footer-buttons {
@@ -26,21 +43,29 @@
   padding: 0;
   width: 140px;
   margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 180px;
+    margin-left: 0;
+    margin-right: 100px;
+  }
 }
 
 .main-footer-buttons::after {
   content: "";
   position: absolute;
 
-  top: 85px;
+  top: 70px;
   left: -65px;
 
   width: 270px;
   height: 1px;
 
-  background-image: url("../img/footer-line.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-color: $bg-lightgrey-f2;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-footer-buttons__item {
@@ -52,27 +77,74 @@
 
   border-radius: 50%;
   background-color: $bg-yellow-d7;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
 }
 
-.main-footer-buttons .vk {
-  padding-top: 15px;
+.main-footer-buttons .fb img {
+  width: 11px;
+  height: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 14px;
+    height: 28px;
+    margin-top: 5px;
+  }
 }
 
-.main-footer-buttons .inst {
-  padding-top: 13px;
+.main-footer-buttons .vk img {
+  width: 23px;
+  height: 12px;
+  margin-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    width: 31px;
+    height: 16px;
+  }
+}
+
+.main-footer-buttons .inst img {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+    margin-top: 7px;
+  }
 }
 
 .main-footer-buttons__item:hover {
   background-color: $bg-darkblue19;
 }
 
-.main-footer__academy {
-  width: 85px;
-  margin: 0;
+.main-footer-copyright {
+  display: flex;
+  justify-content: space-between;
 }
 
-.main-footer__academy-icon {
-  display: block;
+.main-footer-copyright__academy {
+  width: 85px;
   margin-top: -20px;
-  margin-left: 220px;
+
+  @media (min-width: $tablet-width) {
+    width: 115px;
+    padding-top: 20px;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+}
+
+.main-footer-copyright__academy-icon {
+  display: block;
+  margin-top: -26px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
+    margin-top: 15px;
+  }
 }

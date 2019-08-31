@@ -1,18 +1,43 @@
 .rates {
-  height: 500px;
+  width: 320px;
+  height: 451px;
 
-  padding-top: 50px;
+  padding-top: 37px;
   padding-left: 50px;
+  padding-right: 25px;
 
   color: $bg-darkblue19;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 644px;
+    padding-top: 75px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    background-image: url("../img/rates-back-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 530px 185px;
+    background-size: 198px 285px;
+  }
 }
 
 .rates__headline {
   position: relative;
   margin: 0;
   color: $bg-orange;
-  padding-right: 150px;
+  padding-right: 140px;
+  margin-top: 15px;
   margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+
+    margin-top: 0;
+    margin-bottom: 105px;
+    padding-left: 90px;
+    padding-right: 100px;
+  }
 }
 
 .rates__headline:after {
@@ -27,15 +52,38 @@
   background-image: url("../img/rates.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    top: 365px;
+    left: 540px;
+  }
 }
 
 .rates-list {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 90px;
+    width: 565px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .rates-list__item-big {
+    display: flex;
+    width: 565px;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
 }
 
 .rates-list dt {
   position: relative;
-  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    height: 30px;
+  }
 }
 
 .rates-list dt:before {
@@ -47,9 +95,19 @@
   width: 200px;
   height: 1px;
 
-  background-image: url("../img/table-line.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-color: $bg-lightgrey;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0px;
+
+    width: 562px;
+    height: 1px;
+
+    background-color: $bg-lightgrey;
+  }
 }
 
 .rate-number-1 {
@@ -71,6 +129,23 @@
 
   color: $color-white;
   background-color: $bg-lightorange;
+
+  @media (min-width: $tablet-width) {
+    content: "1";
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    text-align: center;
+    padding-top: 17px;
+
+    top: -6px;
+    left: -90px;
+
+    border-radius: 50%;
+
+    color: $color-white;
+    background-color: $bg-lightorange;
+  }
 }
 
 .rate-number-2 {
@@ -92,6 +167,23 @@
 
   color: $color-white;
   background-color: $bg-yellow-bd;
+
+  @media (min-width: $tablet-width) {
+    content: "2";
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    text-align: center;
+    padding-top: 17px;
+
+    top: -13px;
+    left: -90px;
+
+    border-radius: 50%;
+
+    color: $color-white;
+    background-color: $bg-yellow-bd;
+  }
 }
 
 .rate-number-3 {
@@ -113,14 +205,35 @@
 
   color: $color-white;
   background-color: $bg-yellow-d7;
+
+  @media (min-width: $tablet-width) {
+    content: "3";
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    text-align: center;
+    padding-top: 17px;
+
+    top: -20px;
+    left: -90px;
+
+    border-radius: 50%;
+
+    color: $color-white;
+    background-color: $bg-yellow-d7;
+  }
 }
 
 .rates-list dd {
   position: relative;
   margin-left: 0;
   margin-bottom: 30px;
-}
 
+  @media (min-width: $tablet-width) {
+    height: 25px;
+    margin-bottom: 0px;
+  }
+}
 
 .rates-list dd:last-child::after {
   content: "";
@@ -131,20 +244,56 @@
   width: 200px;
   height: 1px;
 
-  background-image: url("../img/table-line.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
+  background-color: $bg-lightgrey;
 
-.rates-list dd:last-child {
-  margin-bottom: 50px;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .rates__button {
+  margin-top: 10px;
   padding: 0;
-  background-color: $bg-grey;
   border: none;
+  font-weight: bold;
   color: $bg-darkblue19;
+  background-color: $bg-grey;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    font-size: 20px;
+    margin-top: 33px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .rates__button::before {
+    content: "";
+    position: absolute;
+
+    width: 67px;
+    height: 67px;
+
+    top: -20px;
+    left: -87px;
+
+    background-image: url("../img/business-rates-tablet.png");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .rates__button::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 0px;
+
+    width: 562px;
+    height: 1px;
+
+    background-color: $bg-lightgrey;
+  }
 }
 
 .rates__button:hover {

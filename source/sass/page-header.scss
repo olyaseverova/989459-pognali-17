@@ -42,15 +42,20 @@
 .page-header__connection {
   position: absolute;
   display: flex;
-  padding-left: initial;
   z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
 
-  top: 460px;
+  top: 473px;
+  width: 269px;
   height: 40px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     position: static;
+    width: 189px;
+    left: 0;
+    transform: translateX(0);
   }
 }
 

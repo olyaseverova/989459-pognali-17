@@ -6,6 +6,13 @@
   padding-right: 25px;
 
   color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    height: 714px;
+    padding-top: 85px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .interest__healine {
@@ -13,6 +20,13 @@
   margin-top: 0;
   margin-bottom: 25px;
   color: $bg-orange;
+  font-size: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 395px;
+    font-size: 45px;
+    margin-bottom: 65px;
+  }
 }
 
 .interest-registration {
@@ -20,6 +34,12 @@
   width: 200px;
   margin-top: 0;
   margin-bottom: 33px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    width: 100%;
+  }
 }
 
 .interest-registration__authorization {
@@ -29,21 +49,33 @@
 
 .interest-form {
   position: relative;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+    margin-left: 75px;
+    margin-right: 75px;
+  }
 }
 
 .interest-form__email {
   position: relative;
   width: 100%;
   height: 62px;
-  margin-bottom: 30px;
   padding: 0;
   padding-left: 25px;
+  font-size: 18px;
 
 
   border-radius: 15px;
   border: none;
   color: $color-lightgrey;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    height: 81px;
+    font-size: 24px;
+  }
 }
 
 .interest-form__email:hover {
@@ -65,52 +97,65 @@
   border: none;
   background-color: $bg-yellow-d7;
   right: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 81px;
+  }
 }
 
 .interest__questions {
   width: 220px;
   text-align: center;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 650px;
+    margin-bottom: 65px;
+  }
 }
 
 .interest-contacts {
   padding-left: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 105px;
+  }
 }
 
 .interest-contacts__item a {
+  position: relative;
   color: $bg-yellow-d7;
 }
 
 .interest-contacts__icon {
   position: absolute;
   display: block;
-  margin-left: -50px;
-  margin-top: 0;
+  left: -60px;
+  top: -10px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: block;
+    left: -90px;
+    top: -20px;
+  }
 }
 
-.interest-contacts__icon:hover {
-  color: $bg-yellow-bd;
+.contacts__icon-2 {
+  top: -14px;
 }
-.interest-contacts__item {
-  position: relative;
+
+.interest-contacts__icon {
+  width: 45px;
+  height: 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+  }
 }
 
 .interest-contacts__item:first-child {
   margin-bottom: 30px;
-}
-
-.interest-contacts__item::before {
-  content: "";
-  position: absolute;
-  top: -11px;
-  left: -64px;
-
-  width: 45px;
-  height: 45px;
-  background-color: $bg-darkblue-12;
-  border-radius: 50%;
-}
-
-.interest-contacts__item:last-child::before {
-  top: -15px;
 }

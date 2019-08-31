@@ -1,7 +1,9 @@
 .travelmates {
+  width: 320px;
   height: 1320px;
-  margin-left: 25px;
-  margin-right: 25px;
+
+  padding-left: 25px;
+  padding-right: 25px;
   padding-top: 75px;
 
   color: $color-white;
@@ -11,11 +13,12 @@
   background-size: 320px 405px;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     height: 1166px;
-    margin-right: 75px;
-    margin-left: 0;
+
     padding-left: 75px;
-    padding-top: 150px;
+    padding-right: 75px;
+    padding-top: 145px;
 
     background-image: url("../img/travelmate-back-tablet.png");
     background-repeat: no-repeat;
@@ -25,29 +28,34 @@
 }
 
 .travelmates__headline {
+  padding-left: 25px;
   margin-top: 0;
   margin-bottom: 25px;
   color: $bg-orange;
   font-size: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 75px;
+    margin-bottom: 65px;
     font-size: 45px;
   }
 }
 
 .travelmates__description {
+  width: 230px;
+  margin-left: 25px;
   margin-top: 0;
   margin-bottom: 30px;
-  padding-right: 50px;
 
   @media (min-width: $tablet-width) {
     width: 485px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 }
 
 .travelmates__kick {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 25px;
   font-weight: bold;
 
   @media (min-width: $tablet-width) {
@@ -57,15 +65,16 @@
 }
 
 .travelmates-list {
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 20px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    width: 618px;
     height: 487px;
     display: flex;
-    margin-top: 65px;
-    margin-bottom: 37px;
+    margin-top: 66px;
+    margin-bottom: 40px;
   }
 }
 
@@ -221,7 +230,7 @@
 }
 
 .hashtag-margin2 {
-  margin-left: 40px;
+  margin-left: 25px;
 
   @media (min-width: $tablet-width) {
     margin-left: 25px;
