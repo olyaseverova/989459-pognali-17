@@ -1,6 +1,6 @@
 .container .intro {
-  height: 999px;
-  padding-top: 55px;
+  height: 969px;
+  padding-top: 20px;
   margin-top: 0px;
 
   color: $color-white;
@@ -11,8 +11,9 @@
   background-size: 100% 450px;
 
   @media (min-width: $tablet-width) {
-    height: 904px;
+    height: 865px;
 
+    padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
     background-image: url("../img/globe-back-tablet@2x.jpg");
@@ -22,29 +23,53 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 651px;
+
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    border-radius: 0 0 35px 35px;
+
     background-image: url("../img/globe-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-size: 100% 612px;
+    background-size: 100% 651px;
   }
 }
 
 .intro__healine {
   position: relative;
   width: 250px;
+  margin: 0 auto;
 
   font-size: 36px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    font-size: 60px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    margin-top: 90px;
+    margin-left: 70px;
+    text-align: left;
+    font-size: 60px;
+  }
 }
 
 .intro__healine::after {
   content: "";
   position: absolute;
-  top: 135px;
-  left: 35px;
 
   width: 195px;
   height: 255px;
+
+  top: 135px;
+  left: 35px;
 
   background-image: url("../img/traveller-illustration-mobile@1x.png");
   background-repeat: no-repeat;
@@ -53,13 +78,29 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    top: 255px;
-    left: 35px;
 
     width: 372px;
     height: 451px;
 
+    top: 236px;
+    left: 35px;
+
     background-image: url("../img/traveller-illustration-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+
+    width: 431px;
+    height: 640px;
+
+    top: -90px;
+    left: 475px;
+
+    background-image: url("../img/traveller-illustration-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -73,9 +114,16 @@
   background-color: $bg-darkblue1635;
 
   @media (min-width: $tablet-width) {
+    background: none;
     margin-top: 140px;
     padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
     background: none;
+    margin-top: -190px;
+    padding-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -87,6 +135,11 @@
   @media (min-width: $tablet-width) {
     margin-left: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 270px;
+    margin-left: 1025px;
+  }
 }
 
 .review-list blockquote {
@@ -96,6 +149,7 @@
   @media (min-width: $tablet-width) {
     width: 270px;
   }
+
 }
 
 .review-list p {
@@ -118,26 +172,12 @@
   }
 }
 
-.intro .steps {
-  position: absolute;
-  width: 100%;
-  top: -90px;
-  padding-left: 25px;
-  padding-right: 25px;
-
-  @media (min-width: $tablet-width) {
-    top: 152px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 690px;
-    height: 280px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .intro .steps-list {
-  position: relative;
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 270px;
   height: 320px;
   padding-left: 0;
   counter-reset: section;
@@ -145,10 +185,18 @@
   @media (min-width: $tablet-width) {
     width: 690px;
     height: 280px;
+    top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1320px;
+    height: 107px;
+    top: 12px;
   }
 }
 
 .steps-list__item {
+  position: relative;
   padding-top: 20px;
   padding-left: 25px;
 
@@ -157,6 +205,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 30px;
+    padding-top: 25px;
   }
 }
 
@@ -174,11 +227,27 @@
     left: 25px;
     font-size: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 25px;
+    left: 240px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .steps-list__item:nth-child(2)::after {
+    left: 260px;
+  }
+
+  .steps-list__item:nth-child(3)::after {
+    left: 260px;
+  }
 }
 
 .steps-list__item:first-child {
   position: absolute;
-  width: 100%;
+  width: 270px;
   background-color: $bg-orange;
   height: 100px;
 
@@ -187,12 +256,18 @@
     height: 140px;
     border-radius: 10px 10px 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 335px;
+    height: 107px;
+    border-radius: 10px 0 0 10px;
+  }
 }
 
 .steps-list__item:nth-child(2) {
   position: absolute;
   top: 80px;
-  width: 100%;
+  width: 270px;
   background-color: $bg-lightorange;
   height: 100px;
 
@@ -203,6 +278,13 @@
     left: 350px;
     border-radius: 10px 10px 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 365px;
+    height: 107px;
+    left: 315px;
+    border-radius: 10px 0 0 10px;
+  }
 }
 
 .steps-list__item:nth-child(3) {
@@ -210,7 +292,7 @@
   top: 160px;
   background-color: $bg-yellow-bd;
   height: 100px;
-  width: 100%;
+  width: 270px;
 
   @media (min-width: $tablet-width) {
     width: 370px;
@@ -218,13 +300,21 @@
     top: 140px;
     border-radius: 0 0 10px 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 365px;
+    height: 107px;
+    top: 0;
+    left: 660px;
+    border-radius: 10px 0 0 10px;
+  }
 }
 
 .steps-list__item:nth-child(4) {
   position: absolute;
   top: 240px;
   background-color: $bg-yellow-d7;
-  width: 100%;
+  width: 270px;
   height: 80px;
   padding-right: 100px;
 
@@ -234,5 +324,14 @@
     top: 140px;
     left: 350px;
     border-radius: 0 0 10px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 315px;
+    height: 107px;
+    padding-right: 0;
+    top: 0;
+    left: 1005px;
+    border-radius: 10px 10px 10px 10px;
   }
 }

@@ -12,6 +12,7 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 1095px;
+
     padding-left: 75px;
     padding-right: 75px;
     padding-top: 80px;
@@ -20,6 +21,64 @@
     background-repeat: no-repeat;
     background-position: 40px 80px;
     background-size: 688px 575px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+    height: 750px;
+
+    padding-top: 88px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 140px;
+
+    background-image: url("../img/countries-back-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 60px 88px;
+    background-size: 1320px 575px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .countries__start {
+    order: 2;
+    width: 360px;
+    margin-top: 80px;
+    margin-left: 175px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .countries__button {
+    position: relative;
+    display: block;
+    font-size: 24px;
+
+    width: 274px;
+    height: 81px;
+    border-radius: 15px;
+
+    padding-left: 35px;
+    padding-top: 25px;
+
+    color: $bg-blue;
+    background-color: $bg-yellow-d7;
+  }
+
+  .countries__button::after {
+    content: "";
+    position: absolute;
+
+    top: 34px;
+    left: 220px;
+
+    width: 10px;
+    height: 14px;
+
+    background-image: url("../img/countries-right.png");
+    background-repeat: no-repeat;
   }
 }
 
@@ -34,6 +93,11 @@
     font-size: 45px;
     margin-bottom: 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 60px;
+  }
 }
 
 .countries__description {
@@ -46,6 +110,12 @@
     width: 350px;
     margin-bottom: 110px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    padding: 0;
+    margin-bottom: 85px;
+  }
 }
 
 .countries-list {
@@ -55,6 +125,14 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    height: 440px;
+    margin-top: 71px;
+    margin-bottom: 0;
+    margin-left: 71px;
   }
 }
 
@@ -76,6 +154,10 @@
   @media (min-width: $tablet-width) {
     margin-left: 350px;
     border-radius: 0 15px 15px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 290px;
   }
 }
 
@@ -100,6 +182,18 @@
     width: 432px;
     height: 140px;
     padding-top: 30px;
+    top: 0;
+    border-radius: 15px 0 0 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 373px;
+    height: 140px;
+    padding-left: 30px;
+    padding-right: 0;
+    padding-top: 25px;
+    padding-bottom: 23px;
     top: 0;
     border-radius: 15px 0 0 15px;
   }
@@ -143,6 +237,19 @@
     background-image: url("../img/thailand-tablet.png");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+
+    top: -2px;
+    left: 308px;
+
+    width: 70px;
+    height: 47px;
+    background-image: url("../img/thailand-tablet.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .countries-list__item:nth-child(2) .countries-specification__name::before {
@@ -170,6 +277,19 @@
     background-image: url("../img/france-tablet.png");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+
+    top: -2px;
+    left: 308px;
+
+    width: 70px;
+    height: 47px;
+    background-image: url("../img/france-tablet.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .countries-list__item:nth-child(3) .countries-specification__name::before {
@@ -191,6 +311,19 @@
 
     top: -19px;
     left: 373px;
+
+    width: 70px;
+    height: 47px;
+    background-image: url("../img/czech-tablet.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+
+    top: -2px;
+    left: 308px;
 
     width: 70px;
     height: 47px;
@@ -233,6 +366,10 @@
 
 .countries-list__item:last-child .countries-specification__views {
   margin-left: 192px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
+  }
 }
 
 .countries-specification__quote {
@@ -276,6 +413,10 @@
 
     color: $bg-blue;
     background-color: $bg-yellow-d7;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 

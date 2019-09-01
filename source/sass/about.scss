@@ -29,6 +29,20 @@
     background-position: 40px 240px;
     background-size: 720px 596px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 750px;
+
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 75px;
+
+    background-image: url("../img/about-desktop-back.png");
+    background-repeat: no-repeat;
+    background-position: 60px 74px;
+    background-size: 1320px 679px;
+  }
 }
 
 .about__healine {
@@ -37,24 +51,16 @@
   font-size: 24px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     width: 250px;
     font-size: 45px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 71px;
+    margin-top: 45px;
+  }
 }
-
-// @media (min-width: $tablet-width) {
-//   .about__healine::after {
-//     position: absolute;
-//     content: "";
-
-//     width: 690px;
-//     height: 210px;
-
-//     background-color: $bg-darkblue14
-//   }
-// }
 
 .about__description {
   width: 210px;
@@ -65,7 +71,13 @@
     width: 335px;
     margin-top: 50px;
     margin-bottom: 40px;
-    font-size: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
+    margin-left: 71px;
+    margin-top: 60px;
+    margin-bottom: 45px;
   }
 }
 
@@ -75,6 +87,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 415px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 71px;
   }
 }
 
@@ -97,6 +116,11 @@
     color: $bg-blue;
     background-color: $bg-yellow-d7;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 90px;
+    margin-left: 75px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -104,13 +128,13 @@
     content: "";
     position: absolute;
 
-    top: 30px;
+    top: 32px;
     left: 225px;
 
     width: 10px;
     height: 14px;
 
-    background-image: url("../img/triangle-arrow-right.svg");
+    background-image: url("../img/about-arrow-right.png");
     background-repeat: no-repeat;
   }
 }

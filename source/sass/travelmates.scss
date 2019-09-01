@@ -25,6 +25,30 @@
     background-position: 40px 80px;
     background-size: 653px 489px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+    height: 751px;
+
+    padding-top: 68px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    background-image: url("../img/travelmate-back-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 60px 68px;
+    background-size: 630px 602px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travelmates__start {
+    height: 400px;
+    margin-right: 35px;
+    margin-bottom: 85px;
+  }
 }
 
 .travelmates__headline {
@@ -38,6 +62,13 @@
     margin-bottom: 65px;
     font-size: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+    margin-left: 70px;
+    margin-bottom: 60px;
+    padding: 0;
+  }
 }
 
 .travelmates__description {
@@ -50,6 +81,12 @@
     width: 485px;
     margin-bottom: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 445px;
+    margin-left: 70px;
+    margin-bottom: 45px;
+  }
 }
 
 .travelmates__kick {
@@ -61,6 +98,10 @@
   @media (min-width: $tablet-width) {
     width: 260px;
     font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
   }
 }
 
@@ -76,6 +117,12 @@
     margin-top: 66px;
     margin-bottom: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 630px;
+    margin-top: 65px;
+    margin-bottom: 0;
+  }
 }
 
 .travelmates-list__item {
@@ -87,6 +134,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     margin-right: 48px;
+    height: 483px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
   }
 }
 
@@ -282,6 +334,24 @@
     color: $bg-blue;
     background-color: $bg-yellow-d7;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: block;
+    font-size: 24px;
+
+    width: 280px;
+    height: 81px;
+
+    margin-top: -150px;
+    margin-left: 70px;
+    padding-left: 35px;
+    padding-top: 25px;
+
+    border-radius: 15px;
+    color: $bg-blue;
+    background-color: $bg-yellow-d7;
+  }
 }
 
 .travelmates__button::after {
@@ -303,6 +373,20 @@
 
     top: 32px;
     left: 580px;
+
+    width: 10px;
+    height: 14px;
+
+    background-image: url("../img/countries-right.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+
+    top: 34px;
+    left: 230px;
 
     width: 10px;
     height: 14px;
