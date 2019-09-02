@@ -12,12 +12,28 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
+
     width: 768px;
     height: 155px;
+
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 48px;
     padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1440px;
+    height: 154px;
+
+    padding-top: 48px;
+    padding-bottom: 46px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -30,10 +46,14 @@
 
   @media (min-width: $tablet-width) {
     width: 164px;
-    margin-right: 90px;
     padding-top: 15px;
     margin-left: 0;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 198px;
+    margin-right: 0;
   }
 }
 
@@ -47,7 +67,10 @@
   @media (min-width: $tablet-width) {
     width: 180px;
     margin-left: 0;
-    margin-right: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 

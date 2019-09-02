@@ -14,6 +14,18 @@
     padding-left: 75px;
     padding-right: 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1440px;
+    height: 200px;
+
+    padding-top: 58px;
+    padding-left: 134px;
+    padding-right: 134px;
+  }
 }
 
 .route__adress {
@@ -30,6 +42,16 @@
     width: 530px;
     margin-bottom: 65px;
     padding-left: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    height: 90px;
+    margin-left: 150px;
+    margin-bottom: 0;
+
+    padding-top: 30px;
+    padding-left: 120px;
   }
 }
 
@@ -57,6 +79,20 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 90px;
+    height: 90px;
+
+    background-image: url("../img/route-location-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .route__button {
@@ -76,6 +112,11 @@
   @media (min-width: $tablet-width) {
     height: 81px;
     font-size: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 324px;
+    border-radius: 15px;
   }
 }
 
@@ -120,6 +161,20 @@
     background-image: url("../img/arrow-right-white.png");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+
+    top: 33px;
+    left: 280px;
+    opacity: 1;
+
+    width: 10px;
+    height: 14px;
+    background-image: url("../img/arrow-right-white.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .route__button:active::before {
@@ -144,6 +199,19 @@
 
     top: 33px;
     left: 570px;
+
+    width: 10px;
+    height: 14px;
+    background-image: url("../img/triangle-arrow-right.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+
+    top: 33px;
+    left: 280px;
 
     width: 10px;
     height: 14px;

@@ -20,6 +20,21 @@
     background-position: 530px 185px;
     background-size: 198px 285px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 750px;
+
+    padding-top: 105px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 120px;
+
+    background-image: url("../img/rates-back-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 750px 240px;
+    background-size: 556px 300px;
+  }
 }
 
 .rates__headline {
@@ -38,6 +53,13 @@
     padding-left: 90px;
     padding-right: 100px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 155px;
+    padding: 0;
+  }
 }
 
 .rates__headline:after {
@@ -54,8 +76,12 @@
   background-position: 0 0;
 
   @media (min-width: $tablet-width) {
-    top: 365px;
+    top: 380px;
     left: 540px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -64,7 +90,14 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 90px;
-    width: 565px;
+    width: 653px;
+    height: 201px;
+    padding-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 905px;
+    height: 201px;
   }
 }
 
@@ -75,6 +108,15 @@
     width: 565px;
     justify-content: space-between;
     margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates-list__item-big {
+    display: flex;
+    width: 815px;
+    justify-content: space-between;
+    margin-bottom: 42px;
   }
 }
 
@@ -104,6 +146,18 @@
     left: 0px;
 
     width: 562px;
+    height: 1px;
+
+    background-color: $bg-lightgrey;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0px;
+
+    width: 813px;
     height: 1px;
 
     background-color: $bg-lightgrey;
@@ -138,7 +192,7 @@
     text-align: center;
     padding-top: 17px;
 
-    top: -6px;
+    top: -15px;
     left: -90px;
 
     border-radius: 50%;
@@ -176,7 +230,7 @@
     text-align: center;
     padding-top: 17px;
 
-    top: -13px;
+    top: -20px;
     left: -90px;
 
     border-radius: 50%;
@@ -214,7 +268,7 @@
     text-align: center;
     padding-top: 17px;
 
-    top: -20px;
+    top: -25px;
     left: -90px;
 
     border-radius: 50%;
@@ -290,6 +344,20 @@
     left: 0px;
 
     width: 562px;
+    height: 1px;
+
+    background-color: $bg-lightgrey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates__button::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 0px;
+
+    width: 813px;
     height: 1px;
 
     background-color: $bg-lightgrey;

@@ -8,10 +8,22 @@
   color: $color-white;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     height: 714px;
+
     padding-top: 85px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 750px;
+
+    padding-top: 100px;
+    padding-left: 132px;
+    padding-right: 134px;
+    padding-bottom: 100px;
   }
 }
 
@@ -25,7 +37,11 @@
   @media (min-width: $tablet-width) {
     width: 395px;
     font-size: 45px;
-    margin-bottom: 65px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
   }
 }
 
@@ -37,8 +53,12 @@
 
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
   }
 }
 
@@ -52,9 +72,15 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     margin-bottom: 55px;
-    margin-left: 75px;
-    margin-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 70px;
   }
 }
 
@@ -75,6 +101,7 @@
   @media (min-width: $tablet-width) {
     height: 81px;
     font-size: 24px;
+    padding-left: 35px;
   }
 }
 
@@ -102,6 +129,32 @@
     width: 82px;
     height: 81px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 324px;
+    padding-left: 37px;
+    padding-right: 36px;
+    border-radius: 0 15px 15px 0;
+  }
+}
+
+.interest-button__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 135px;
+    color: $bg-blue;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .interest-button__icon {
+    position: absolute;
+    top: 34px;
+    left: 280px;
+  }
 }
 
 .interest__questions {
@@ -111,28 +164,59 @@
 
   @media (min-width: $tablet-width) {
     width: 650px;
-    margin-bottom: 65px;
+    margin-left: -12px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 45px;
   }
 }
 
 .interest-contacts {
+  width: 230px;
+  height: 90px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 60px;
 
   @media (min-width: $tablet-width) {
-    padding: 105px;
+    width: 400px;
+    height: 136px;
+    padding-top: 20px;
+    padding-left: 90px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding-left: 120px;
+    padding-top: 16px;
+    width: 870px;
+    margin: 0 auto;
+    height: 90px;
   }
 }
 
 .interest-contacts__item a {
   position: relative;
   color: $bg-yellow-d7;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-top: 15px;
+  }
 }
 
 .interest-contacts__icon {
   position: absolute;
   display: block;
   left: -60px;
-  top: -10px;
+  top: -15px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -140,10 +224,31 @@
     left: -90px;
     top: -20px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: block;
+    left: -120px;
+    top: -31px;
+  }
 }
 
 .contacts__icon-2 {
-  top: -14px;
+  top: -15px;
+
+  @media (min-width: $tablet-width) {
+    top: -10px;
+  }
+
+  @media (min-width: $desktop-width) {
+  top: -15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__icon-2 {
+    top: -31px;
+  }
 }
 
 .interest-contacts__icon {
@@ -154,8 +259,17 @@
     width: 68px;
     height: 68px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+  }
 }
 
 .interest-contacts__item:first-child {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }

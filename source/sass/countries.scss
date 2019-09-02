@@ -50,8 +50,10 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .countries__button {
+.countries__button {
+  display: none;
+
+  @media (min-width: $desktop-width) {
     position: relative;
     display: block;
     font-size: 24px;
@@ -66,7 +68,10 @@
     color: $bg-blue;
     background-color: $bg-yellow-d7;
   }
+}
 
+
+@media (min-width: $desktop-width) {
   .countries__button::after {
     content: "";
     position: absolute;
@@ -366,6 +371,10 @@
 
 .countries-list__item:last-child .countries-specification__views {
   margin-left: 192px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: 30px;
