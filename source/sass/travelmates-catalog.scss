@@ -1,8 +1,12 @@
 .travelmates-catalog {
-  height: 1649px;
+  width: 270px;
+  // height: 1649px;
+  margin: 0 auto;
+  margin-top: 100px;
 
-  padding-left: 25px;
-  padding-right: 25px;
+  @media (min-width: $tablet-width) {
+    width: 670px;
+  }
 }
 
 .travelmate {
@@ -18,6 +22,21 @@
 
   border-radius: 15px;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 100%;
+    height: 332px;
+    margin-bottom: 10px;
+
+    padding-left: 35px;
+    padding-right: 25px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+
+    border-radius: 15px;
+    background-color: $color-white;  
+  }
 }
 
 .travelmate-short {
@@ -29,8 +48,25 @@
 }
 
 .travelmate__image img {
+  width: 70px;
+  height: 70px;
+
   border-radius: 50%;
   margin-left: -5px;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    height: 190px;
+    border-radius: 10%;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    height: 285px;
+    border-radius: 10px 0 0 10px;
+    margin-left: 0;
+  }
 }
 
 .travelmate__image::before {
@@ -91,10 +127,20 @@
   position: absolute;
   width: 80px;
   flex-wrap: wrap;
-  margin-left: 83px;
-  margin-top: -75px;
+  left: 110px;
+  top: -5px;
   font-size: 20px;
   color: $bg-blue;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 200px;
+    flex-wrap: no-wrap;
+    left: 250px;
+    top: 0px;
+    font-size: 30px;
+    color: $bg-blue;  
+  }
 }
 
 .travelmate__likes {
@@ -103,6 +149,14 @@
   left: 110px;
   color: $bg-darkblue1635;
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 200px;
+    left: 460px;
+    color: $bg-darkblue1635;
+    font-size: 20px;
+  }
 }
 
 .travelmate-description {
@@ -167,7 +221,7 @@
   content: "";
   position: absolute;
 
-  top: 0px;
+  top: 0;
   left: -40px;
 
   width: 26px;
@@ -184,7 +238,7 @@
   content: "";
   position: absolute;
 
-  top: 0px;
+  top: 0;
   left: -40px;
 
   width: 26px;
@@ -197,7 +251,7 @@
   content: "";
   position: absolute;
 
-  top: 0px;
+  top: 0;
   left: -40px;
 
   width: 26px;
@@ -215,7 +269,7 @@
   content: "";
   position: absolute;
 
-  top: 0px;
+  top: 0;
   left: -40px;
 
   width: 26px;
@@ -232,7 +286,7 @@
   content: "";
   position: absolute;
 
-  top: 0px;
+  top: 0;
   left: -40px;
 
   width: 26px;
@@ -249,7 +303,7 @@
   content: "";
   position: absolute;
 
-  top: 0px;
+  top: 0;
   left: -40px;
 
   width: 26px;
@@ -266,7 +320,7 @@
   content: "";
   position: absolute;
 
-  top: 0px;
+  top: 0;
   left: -40px;
 
   width: 26px;
@@ -279,7 +333,7 @@
   content: "";
   position: absolute;
 
-  top: 0px;
+  top: 0;
   left: -40px;
 
   width: 26px;
@@ -297,7 +351,7 @@
   content: "";
   position: absolute;
 
-  top: 0px;
+  top: 0;
   left: -40px;
 
   width: 26px;
@@ -314,7 +368,7 @@
   content: "";
   position: absolute;
 
-  top: 0px;
+  top: 0;
   left: -40px;
 
   width: 26px;

@@ -1,7 +1,7 @@
 .container .intro {
   height: 969px;
   padding-top: 20px;
-  margin-top: 0px;
+  margin-top: 0;
 
   color: $color-white;
 
@@ -149,7 +149,6 @@
   @media (min-width: $tablet-width) {
     width: 270px;
   }
-
 }
 
 .review-list p {

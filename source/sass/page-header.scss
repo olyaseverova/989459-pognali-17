@@ -12,7 +12,7 @@
   background-color: $bg-darkblue16;
 
   @media (min-width: $tablet-width) {
-    height: 133px;
+    height: 132px;
     padding-top: 40px;
     padding-right: 40px;
     background-color: $bg-blue-18;
@@ -23,6 +23,23 @@
     padding-top: 47px;
     padding-right: 60px;
     background-color: $bg-darkblue1634;
+  }
+}
+
+
+.page-header-catalog {
+  background-color: $bg-darkblue1635;
+
+  @media (min-width: $tablet-width) {
+    height: 191px;
+    padding-top: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 99px;
+    padding-top: 47px;
+    padding-right: 60px;
   }
 }
 
@@ -55,7 +72,7 @@
     width: 60px;
     height: 2px;
 
-    top: 18px;
+    top: 20px;
     left: 245px;
 
     background-color: $color-white;
@@ -100,7 +117,21 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 50px;
+    margin: 0;
     width: 289px;
+  }
+}
+
+.catalog-connection {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 
@@ -112,6 +143,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 50px;
     display: flex;
   }
 }
@@ -179,16 +211,27 @@
   border-radius: 25px;
   background-color: $bg-yellow-d7;
 
+  @media (min-width: $tablet-width) {
+    height: 50px;
+    padding-top: 15px;
+  }
+
   @media (min-width: $desktop-width) {
     height: 50px;
     padding-top: 15px;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .catalog-authorization {
+    margin-top: -10;
+  }
+}
 
 
 .scroll-menu {
   display: none;
+  // display: block;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -208,7 +251,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // display: none;
     display: block;
     width: 390px;
     height: 16px;
@@ -281,16 +323,15 @@
 
 .menu-list {
   width: 190px;
-  text-align: center;
-  font-size: 30px;
 
   margin: 0 auto;
   margin-top: 70px;
-  padding-left: 40px;
   margin-bottom: 160px;
-  padding-left: 0;
+
+  text-align: center;
   font-size: 30px;
-  color: violet;
+
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     width: 375px;
@@ -304,7 +345,7 @@
     display: flex;
     justify-content: space-between;
     width: 390px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 0;
     margin-bottom: 0;
     padding-left: 0;

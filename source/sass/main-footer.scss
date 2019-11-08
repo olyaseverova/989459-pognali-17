@@ -1,4 +1,5 @@
 .main-footer {
+  width: 320px;
   height: 239px;
 
   padding-left: 25px;
@@ -157,7 +158,7 @@
   @media (min-width: $tablet-width) {
     width: 115px;
     padding-top: 20px;
-    margin-top: 0px;
+    margin-top: 0;
     font-size: 20px;
   }
 }

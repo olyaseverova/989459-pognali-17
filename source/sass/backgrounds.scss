@@ -33,6 +33,11 @@
 }
 
 .gray-background {
-  width: 320px;
   background-color: $bg-grey;
+}
+
+.filter-back {
+  width: 100%;
+  border-radius: 20px;
+  background-color: $bg-darkblue1635;
 }
