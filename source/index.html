@@ -1,12 +1,192 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="page-header">
+    <h1 class="page-header__logo">Погнали?</h1>
+    <button class="button header-right-icon">
+      <img class="header-right-icon" src="img/header-right-icon.ai" width="25" height="11" alt="Главное меню">
+    </button>
+    <ul class="header-menu-list">
+      <li class="header-menu-item"><a href="#">О сервисе</a></li>
+      <li class="header-menu-item"><a href="form.html">Направления</a></li>
+      <li class="header-menu-item"><a href="catalog.html">Попутчики</a></li>
+    </ul>
+    <a class="page-header__authorization" href="#">Авторизация</a>
+    <ul class="header-contacts">
+      <li class="header-contacts__item"><a href="tel: +7-800-555-86-28">+7-800-555-86-28</a></li>
+      <li class="header-contacts__item"><a href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+    </ul>
+    <ul class="header-social-buttons">
+      <li><a class="social-button fb" href="#" aria-label="Facebook">
+          <!-- <img src="img/facebook-header.svg" width="11" height="21"> -->
+        </a></li>
+      <li><a class="social-button vk" href="#" aria-label="VK">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15" /> -->
+        </a></li>
+      <li><a class="social-button inst" href="#" aria-label="Instagram">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" /> -->
+        </a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+
+    <section class="intro">
+      <h2 class="intro__healine">В путешествие с крутыми попутчиками!</h2>
+      <a class="intro__authorization" href="#">АВТОРИЗАЦИЯ</a>
+      <ul class="intro__contacts">
+        <li class="intro__contacts__item"><a href="tel: 8 800 555-86-28">8 800 555-86-28</a></li>
+        <li class="intro__contacts__item"><a href="mailto: MAIL@HTMLACADEMY.RU">MAIL@HTMLACADEMY.RU</a></li>
+      </ul>
+      <ul class="review">
+        <li class="review__item">
+          <blockquote>«Лучшее приложение, что я видел в жизни!»</blockquote>
+        </li>
+        <li class="review__item">
+          <cite>Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+        </li>
+      </ul>
+      <ul class="steps">
+        <li class="steps__item">Выберите направление</li>
+        <li class="steps__item">Изучите идеи путешественников</li>
+        <li class="steps__item">Найдите тех, кто похож на вас</li>
+        <li class="steps__item">Путешествуйте вместе!</li>
+      </ul>
+    </section>
+
+    <section class="about">
+      <h2 class="about__healine">О сервисе</h2>
+      <p class="about__description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь
+        своими идеями путешествий и
+        черпайте вдохновение в чужих.</p>
+      <span class="about__kick">А если найдете кого-то близкого по духу - скорее зовите в совместный трип!</span>
+    </section>
+
+    <section class="countries">
+      <h2 class="countries__headline">Направления</h2>
+      <p class="countries__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда
+        хотели бы отправиться и чем можно
+        там заняться.</p>
+      <ul class="countries__list">
+        <li class="countries__list__item">
+          <img class="countries__foto" src="img/thailand-foto.jpg" width="270" height="110" alt="Тайланд">
+          <h3 class="countries__name">Тайланд</h3>
+          <p class="countries__quote">Джунгли зовут!</p>
+          <span class="views">18321</span>
+        </li>
+        <li class="countries__list__item">
+          <img class="countries__foto" src="img/france-foto.jpg" width="270" height="110" alt="Франция">
+          <h3 class="countries__name">Франция</h3>
+          <p class="countries__quote">Трэ бьен, манифик!</p>
+          <span class="views">12518</span>
+        </li>
+        <li class="countries__list__item">
+          <img class="countries__foto" src="img/czech-foto.jpg" width="270" height="110" alt="Чехия">
+          <h3 class="countries__name">Чехия</h3>
+          <p class="countries__quote">Закоулки старой Европы</p>
+          <span class="views">5326</span>
+        </li>
+      </ul>
+      <a class="countries__show" href="form.html">Показать все</a>
+    </section>
+
+    <section class="travelmates">
+      <h2 class="travelmates__headline">Попутчики</h2>
+      <p class="travelmates__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен
+        пляж и коктейль, а другому
+        маршрут для хайкинга.</p>
+      <span class="travelmates__kick">Теперь можно легко найти единомышленников!</span>
+      <ul class="travelmates__list">
+        <li class="travelmates__list__item">
+          <img class="travelmate__image" src="img/girl-travel.jpg" width="270" height="270" alt="Фото Тани Фирсовой">
+          <h3 class="travelmate__healine">Таня Фирсова</h3>
+          <ul class="hashtag-list">
+            <li class="hashtag-item">#ЗОЖ</li>
+            <li class="hashtag-item">#ПП</li>
+            <li class="hashtag-item">#Фитнес</li>
+            <li class="hashtag-item">#пляж</li>
+            <li class="hashtag-item">#авокадо</li>
+          </ul>
+          <ul class="travelmate__transport">
+            <!-- не вставила svg, так как не знаю как экспортить -->
+          </ul>
+        </li>
+        <li class="travelmates__list__item">
+          <img class="travelmate__image" src="img/boy-travel.jpg" width="270" height="270" alt="Фото Пети Демина">
+          <h3 class="travelmate__healine">Петя Демин</h3>
+          <ul class="hashtag-list">
+            <li class="hashtag-item">#бургер</li>
+            <li class="hashtag-item">#бар</li>
+            <li class="hashtag-item">#футбол</li>
+            <li class="hashtag-item">#концерт</li>
+            <li class="hashtag-item">#крафт</li>
+          </ul>
+          <ul class="travelmate__transport">
+            <!-- не вставила svg, так как не знаю как экспортить -->
+          </ul>
+        </li>
+      </ul>
+      <a href="catalog.html">Показать всех</a>
+    </section>
+
+    <section class="rates">
+      <h2 class="rates__headline">Добавьте свой профиль</h2>
+      <dl class="rates__list">
+        <dt class="rates__list__item">Базовое размещение</dt>
+        <dd class="rates__list__item">Бесплатно</dd>
+
+        <dt class="rates__list__item">Вывод на первых позициях</dt>
+        <dd class="rates__list__item">99 руб./мес</dd>
+
+        <dt class="rates__list__item">Кастомный цвет карточки</dt>
+        <dd class="rates__list__item">59 руб./мес</dd>
+      </dl>
+      <button class="rates__button">Показать тарифы для бизнеса</button>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <h1 class="main-footer__logo">Погнали?</h1>
+    <ul class="footer-social-buttons">
+      <li><a class="main-footer__social-button fb" href="#" aria-label="Facebook">
+          <!-- <img src="img/facebook-header.svg" width="11" height="21"> -->
+        </a></li>
+      <li><a class="main-footer__social-button vk" href="#" aria-label="VK">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15" /> -->
+        </a></li>
+      <li><a class="main-footer__social-button inst" href="#" aria-label="Instagram">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" /> -->
+        </a></li>
+    </ul>
+    <p class="Academy">Разработано</p>
+    <!-- логотип академии svg -->
+  </footer>
+
+  <section class="rates-popup">
+    <h2 class="rates-popup__healine">Бизнес-тарифы</h2>
+    <dl class="promotion-list">
+      <dt class="promotion-item">Реклама у блоггера</dt>
+      <dd class="promotion-item">300 000 руб./пост</dd>
+
+      <dt class="promotion-item">Накрутка подписчиков</dt>
+      <dd class="promotion-item">от 1 руб./шт.</dd>
+
+      <dt class="promotion-item">Лайки от ботов</dt>
+      <dd class="promotion-item">от 20 коп./лайк</dd>
+
+      <dt class="promotion-item">Ваш продакт-плейсмент</dt>
+      <dd class="promotion-item">Индивидуально</dd>
+    </dl>
+    <button class="rates-popup__button">Закрыть окно</button>
+  </section>
+
+</body>
+
 </html>
