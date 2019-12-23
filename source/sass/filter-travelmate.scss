@@ -1,0 +1,193 @@
+.filter-travelmate {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 285px;
+    height: 815px;
+
+    padding-left: 45px;
+    padding-top: 45px;
+    padding-right: 45px;
+    padding-bottom: 45px;
+
+    border-radius: 20px;
+    font-size: 20px;
+    color: $bg-blue;
+    background-color: $bg-yellow-d7;
+  }
+}
+
+.filter-travelmate__headline {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+
+.filter-travelmate__interest-headline {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+
+.bottom-arrow::after {
+  content: "";
+  position: absolute;
+
+  top: 7px;
+  left: 180px;
+
+  width: 10px;
+  height: 5px;
+
+  background-image: url("../img/dropdown-filter.png");
+}
+
+.up-arrow::after {
+  content: "";
+  position: absolute;
+
+  top: 7px;
+  left: 180px;
+
+  width: 10px;
+  height: 5px;
+
+  background-image: url("../img/dropdown-up-filter.png");
+}
+
+.filter-travelmate__music {
+  margin-bottom: 25px;
+  color: $bg-darkgrey;
+}
+
+.filter-travelmate__music-item {
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.filter-travelmate__music-item label {
+  position: relative;
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: -40px;
+
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: $color-white;
+}
+
+.filter-input-checkbox::checked + label::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: -35px;
+
+  width: 12px;
+  height: 12px;
+  background-color: $color-orange;
+  // background-image: url("../img/tick-filter.png");
+}
+
+.filter-travelmate__transport {
+  display: flex;
+  width: 172px;
+  height: 43px;
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+.filter-travelmate__level {
+  display: flex;
+  position: relative;
+  height: 46px;
+  width: 191px;
+
+  margin-bottom: 80px;
+  padding: 0;
+  border-radius: 5px;
+  background-color: $color-white;
+  border: 1px solid $bg-greyd9;
+}
+
+.filter-travelmate__level::after {
+  content: "";
+  position: absolute;
+
+  top: 75px;
+  left: 0px;
+
+  width: 191px;
+  height: 13px;
+
+  background-image: url("../img/slider-control.png");
+}
+
+.filter-travelmate__level-item {
+  position: relative;
+  width: 95px;
+  padding-top: 10px;
+  padding-left: 35px;
+}
+
+.filter-travelmate__level-item:first-of-type::after {
+  content: "";
+  position: absolute;
+
+  top: 21px;
+  left: 85px;
+
+  width: 21px;
+  height: 1px;
+
+  background-color: $bg-greyd9;
+}
+
+.filter-travelmate__level-item:last-of-type::before {
+  content: "";
+  position: absolute;
+
+  top: 0px;
+  left: 0px;
+
+  width: 1px;
+  height: 14px;
+
+  background-color: $bg-greyd9;
+}
+
+.filter-travelmate__level-item:last-of-type::after {
+  content: "";
+  position: absolute;
+
+  top: 30px;
+  left: 0px;
+
+  width: 1px;
+  height: 14px;
+
+  background-color: $bg-greyd9;
+}
+
+.filter-travelmate__button {
+  display: block;
+  width: 196px;
+  height: 50px;
+
+  padding-top: 15px;
+  text-align: center;
+  border-radius: 30px;
+  color: $bg-darkblue1635;
+  background-color: $color-white;
+}

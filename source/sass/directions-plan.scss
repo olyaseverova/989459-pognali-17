@@ -1,0 +1,50 @@
+.directions-plan {
+  width: 270px;
+  height: 400px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  padding-top: 25px;
+  color: $bg-blue;
+}
+
+.directions-plan__healine {
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-size: 24px;
+}
+
+.directions-plan--countries__list {
+  margin: 0;
+  padding: 0;
+}
+
+.directions-plan--countries__item {
+  height: 154px;
+  margin-bottom: 10px;
+
+  padding-left: 25px;
+  padding-top: 20px;
+
+  font-size: 14px;
+  border-radius: 15px;
+  background-color: $color-white;
+}
+
+.directions-plan--countries__item-healine {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.directions-plan--countries__item-description {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.directions-plan--countries__item-button {
+  padding: 0;
+  color: $bg-greyb2;
+  border: none;
+  background-color: $color-white;
+}

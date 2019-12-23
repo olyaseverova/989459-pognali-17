@@ -1,11 +1,30 @@
+@media (min-width: $desktop-width) {
+  .catalog__travelmates-filter {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1319px;
+    margin: 0 auto;
+    margin-top: 77px;
+    padding: 0;
+  }
+}
+
 .travelmates-catalog {
   width: 270px;
-  // height: 1649px;
   margin: 0 auto;
   margin-top: 100px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    width: 670px;
+    width: 688px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    width: 949px;
+    margin-bottom: 65px;
   }
 }
 
@@ -27,7 +46,7 @@
     position: relative;
     width: 100%;
     height: 332px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 
     padding-left: 35px;
     padding-right: 25px;
@@ -35,12 +54,26 @@
     padding-bottom: 25px;
 
     border-radius: 15px;
-    background-color: $color-white;  
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 950px;
+    height: 285px;
+    padding: 0;
+    margin-bottom: 30px;
   }
 }
 
 .travelmate-short {
   height: 393px;
+
+  @media (min-width: $tablet-width) {
+    height: 332px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 285px;
+  }
 }
 
 .travelmate__image {
@@ -80,6 +113,24 @@
   height: 31px;
 
   background-image: url("../img/heart-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -24px;
+    left: 368px;
+
+    width: 50px;
+    height: 50px;
+
+    background-image: url("../img/heart-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -72px;
+    left: 490px;
+  }
 }
 
 .travelmate__image-firsova::before {
@@ -92,7 +143,25 @@
   width: 31px;
   height: 31px;
 
-  background-image: url("../img/heart.png");
+  background-image: url("../img/heart-firsova-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -25px;
+    left: 368px;
+
+    width: 50px;
+    height: 50px;
+
+    background-image: url("../img/heart-firsova-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -72px;
+    left: 490px;
+  }
 }
 
 .travelmate__image::after {
@@ -107,6 +176,16 @@
 
   background-color: $bg-pink;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: -154px;
+    left: 420px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -200px;
+    left: 322px;
+  }
 }
 
 .travelmate__image-rogovaya::after {
@@ -121,6 +200,16 @@
 
   background-color: $bg-brightgreen;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: -152px;
+    left: 450px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -200px;
+    left: 322px;
+  }
 }
 
 .travelmate__headline {
@@ -128,18 +217,24 @@
   width: 80px;
   flex-wrap: wrap;
   left: 110px;
-  top: -5px;
+  top: 15px;
   font-size: 20px;
   color: $bg-blue;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    width: 200px;
+    width: 215px;
     flex-wrap: no-wrap;
-    left: 250px;
-    top: 0px;
+    top: 30px;
+    left: 253px;
     font-size: 30px;
-    color: $bg-blue;  
+    color: $bg-blue;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 45px;
+    left: 345px;
   }
 }
 
@@ -152,27 +247,69 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 200px;
+    top: 190px;
     left: 460px;
-    color: $bg-darkblue1635;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 201px;
+    left: 550px;
   }
 }
 
-.travelmate-description {
-  padding: 0;
-  margin: 0;
-}
-
 .hashtag-list {
+  display: flex;
+  flex-wrap: wrap;
+
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 0;
   color: $bg-darkgrey;
+
+  @media (min-width: $tablet-width) {
+    width: 225px;
+    font-size: 20px;
+    margin-top: -150px;
+    margin-left: 220px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin-top: -195px;
+    margin-left: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hashtag-list::after {
+    content: "";
+    position: absolute;
+
+    top: -49px;
+    left: 284px;
+
+    width: 1px;
+    height: 189px;
+
+    background-color: $bg-grey;
+  }
 }
 
 .travelmate-countries__headline {
   position: relative;
   font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 125px;
+    margin-left: 45px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .travelmate-countries__headline::before {
@@ -186,6 +323,19 @@
   height: 1px;
 
   background-color: $bg-grey;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: 9px;
+    left: -80px;
+
+    width: 71px;
+    height: 1px;
+
+    background-color: $bg-grey;
+  }
 }
 
 .travelmate-countries__headline::after {
@@ -199,6 +349,19 @@
   height: 1px;
 
   background-color: $bg-grey;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: 9px;
+    left: 110px;
+
+    width: 499px;
+    height: 1px;
+
+    background-color: $bg-grey;
+  }
 }
 
 .travelmate-countries {
@@ -207,14 +370,45 @@
   margin-top: 11px;
   margin-bottom: 13px;
   font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-left: 45px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 730px;
+    margin-top: -100px;
+    width: 130px;
+    flex-wrap: wrap;
+  }
 }
 
 .travelmate-countries__item {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .sri-lanka-firsova {
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .sri-lanka-firsova::before {
@@ -227,11 +421,32 @@
   width: 26px;
   height: 18px;
 
-  background-image: url("../img/sri-lanka-firsova.png");
+  background-image: url("../img/sri-lanka-firsova-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -2px;
+    left: -45px;
+
+    width: 35px;
+    height: 24px;
+
+    background-image: url("../img/sri-lanka-firsova-tablet.png");
+  }
 }
 
 .thailand-firsova {
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .thailand-firsova::before {
@@ -244,7 +459,20 @@
   width: 26px;
   height: 18px;
 
-  background-image: url("../img/thailand-firsova.png");
+  background-image: url("../img/thailand-firsova-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -2px;
+    left: -45px;
+
+    width: 35px;
+    height: 24px;
+
+    background-image: url("../img/thailand-firsova-tablet.png");
+  }
 }
 
 .seychelles-firsova::before {
@@ -257,12 +485,36 @@
   width: 26px;
   height: 18px;
 
-  background-image: url("../img/seychelles-firsova.png");
+  background-image: url("../img/seychelles-firsova-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -2px;
+    left: -45px;
+
+    width: 35px;
+    height: 24px;
+
+    background-image: url("../img/seychelles-firsova-tablet.png");
+  }
 }
 
 .belgium-demin {
   margin-top: 15px;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 75px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
 }
 
 .belgium-demin::before {
@@ -275,11 +527,29 @@
   width: 26px;
   height: 18px;
 
-  background-image: url("../img/belgium-demin.png");
+  background-image: url("../img/belgium-demin-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -2px;
+    left: -45px;
+
+    width: 35px;
+    height: 24px;
+
+    background-image: url("../img/belgium-demin-tablet.png");
+  }
 }
 
 .czech-demin {
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
 }
 
 .czech-demin::before {
@@ -292,11 +562,34 @@
   width: 26px;
   height: 18px;
 
-  background-image: url("../img/czech-demin.png");
+  background-image: url("../img/czech-demin-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -2px;
+    left: -45px;
+
+    width: 35px;
+    height: 24px;
+
+    background-image: url("../img/czech-demin-tablet.png");
+  }
 }
 
 .america-smolov {
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
 }
 
 .america-smolov::before {
@@ -309,11 +602,34 @@
   width: 26px;
   height: 18px;
 
-  background-image: url("../img/america-smolov.png");
+  background-image: url("../img/america-smolov-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -2;
+    left: -45px;
+
+    width: 35px;
+    height: 24px;
+
+    background-image: url("../img/america-smolov-tablet.png");
+  }
 }
 
 .australia-smolov {
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
 }
 
 .australia-smolov::before {
@@ -326,7 +642,26 @@
   width: 26px;
   height: 18px;
 
-  background-image: url("../img/australia-smolov.png");
+  background-image: url("../img/australia-smolov-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: 0px;
+    left: -45px;
+
+    width: 35px;
+    height: 24px;
+
+    background-image: url("../img/australia-smolov-tablet.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .dominica-smolov {
+    margin-right: 0;
+  }
 }
 
 .dominica-smolov::before {
@@ -339,12 +674,36 @@
   width: 26px;
   height: 18px;
 
-  background-image: url("../img/dominica-smolov.png");
+  background-image: url("../img/dominica-smolov-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: -45px;
+
+    width: 35px;
+    height: 24px;
+
+    background-image: url("../img/dominica-smolov-tablet.png");
+  }
 }
 
 .united-kindom-rogovaya {
   margin-top: 13px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
 
 .united-kindom-rogovaya::before {
@@ -357,11 +716,28 @@
   width: 26px;
   height: 18px;
 
-  background-image: url("../img/united-kindom-rogovaya.png");
+  background-image: url("../img/united-kindom-rogovaya-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -2px;
+    left: -45px;
+
+    width: 35px;
+    height: 24px;
+
+    background-image: url("../img/united-kindom-rogovaya-tablet.png");
+  }
 }
 
 .germany-rogovaya {
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .germany-rogovaya::before {
@@ -374,12 +750,29 @@
   width: 26px;
   height: 18px;
 
-  background-image: url("../img/germany-rogovaya.png");
+  background-image: url("../img/germany-rogovaya-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -2px;
+    left: -45px;
+
+    width: 35px;
+    height: 24px;
+
+    background-image: url("../img/germany-rogovaya-tablet.png");
+  }
 }
 
 .travelmate-transport__headline {
   position: relative;
   font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .travelmate-transport__headline::before {
@@ -408,15 +801,27 @@
   background-color: $bg-grey;
 }
 
-.travelmate-description__item:nth-child(3) {
-  width: 130px;
-}
-
 .travelmate-transport {
   margin-top: 10px;
   display: flex;
   padding-left: 0;
   width: 130px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: block;
+    width: 35px;
+    margin: 0;
+    top: 27px;
+    left: 615px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 130px;
+    top: 188px;
+    left: 675px;
+  }
 }
 
 .travelmate-transport__item {
@@ -427,6 +832,11 @@
 
   border-radius: 50%;
   background-color: #edeff6;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+    background-color: $color-white;
+  }
 }
 
 .long-level {
@@ -434,10 +844,20 @@
   width: 45px;
   height: 55px;
 
-  left: 207px;
-  top: 270px;
+  left: 182px;
+  top: -74px;
 
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    left: 580px;
+    top: -150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    left: 856px;
+  }
 }
 
 .short-level {
@@ -445,15 +865,29 @@
   width: 45px;
   height: 55px;
 
-  left: 207px;
-  top: 250px;
+  left: 182px;
+  top: -76px;
 
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    left: 568px;
+    top: -150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 71px;
+    left: 846px;
+  }
 }
 
 .level-headline-99 {
   font-size: 15px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    color: $color-white;
+  }
 }
 
 .level-headline-99::before {
@@ -466,7 +900,20 @@
   width: 45px;
   height: 45px;
 
-  background-image: url("../img/99-firsova.png");
+  background-image: url("../img/99-firsova-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -5px;
+    left: -8px;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/99-firsova-tablet.png");
+  }
 }
 
 .level-headline-99::after {
@@ -480,11 +927,19 @@
   height: 1px;
 
   background-color: $bg-grey;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .level-headline-80 {
   font-size: 15px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    color: $color-white;
+  }
 }
 
 .level-headline-80::before {
@@ -497,7 +952,25 @@
   width: 45px;
   height: 45px;
 
-  background-image: url("../img/80-demin.png");
+  background-image: url("../img/80-demin-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/80-demin-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -23px;
+    left: 0;
+  }
 }
 
 .level-headline-80::after {
@@ -511,11 +984,19 @@
   height: 1px;
 
   background-color: $bg-grey;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .level-headline-25 {
   font-size: 15px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    color: $color-white;
+  }
 }
 
 .level-headline-25::before {
@@ -528,7 +1009,25 @@
   width: 35px;
   height: 32px;
 
-  background-image: url("../img/25-smolov.png");
+  background-image: url("../img/25-smolov-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0px;
+
+    width: 46px;
+    height: 51px;
+
+    background-image: url("../img/25-smolov-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -5px;
+    left: 0;
+  }
 }
 
 .level-headline-25::after {
@@ -542,11 +1041,19 @@
   height: 1px;
 
   background-color: $bg-grey;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .level-headline-50 {
   font-size: 15px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    color: $color-white;
+  }
 }
 
 .level-headline-50::before {
@@ -559,7 +1066,25 @@
   width: 35px;
   height: 45px;
 
-  background-image: url("../img/50-rogovaya.png");
+  background-image: url("../img/50-rogovaya-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    top: -6px;
+    left: 10px;
+
+    width: 46px;
+    height: 60px;
+
+    background-image: url("../img/50-rogovaya-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -23px;
+    left: 13px;
+  }
 }
 
 .level-headline-50::after {
@@ -573,17 +1098,72 @@
   height: 1px;
 
   background-color: $bg-grey;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .travelmate__button {
+  position: absolute;
   display: block;
-  width: 100%;
+  width: 230px;
   height: 40px;
-  margin-top: 20px;
+  top: 360px;
+  left: 20px;
   padding-top: 10px;
 
   text-align: center;
   font-size: 17px;
   background-color: $bg-yellow-d7;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 148px;
+    height: 50px;
+    top: 175px;
+    left: 255px;
+    margin-top: 0;
+    padding-top: 13px;
+
+    font-size: 20px;
+    border-radius: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 188px;
+    left: 341px;
+  }
+}
+
+.travelmate__button-short {
+  position: absolute;
+  display: block;
+  width: 230px;
+  height: 40px;
+  top: 335px;
+  left: 20px;
+  padding-top: 10px;
+
+  text-align: center;
+  font-size: 17px;
+  background-color: $bg-yellow-d7;
+  border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 148px;
+    height: 50px;
+    top: 175px;
+    left: 255px;
+    margin-top: 0;
+    padding-top: 13px;
+
+    font-size: 20px;
+    border-radius: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 188px;
+    left: 341px;
+  }
 }

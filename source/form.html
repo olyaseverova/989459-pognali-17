@@ -11,43 +11,228 @@
 
 <body>
 
-  <header class="page-header center">
-    <a class="page-header__logo headline" href="index.html">Погнали?</a>
-    <button class="page-header__icon button">
-      <svg version="1.1" width="25" height="11" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        x="0px" y="0px" viewBox="0 0 25 11" fill="currentColor" xml:space="preserve">
+  <header class="page-header page-header-catalog center">
+    <div class="page-header__link">
+      <a class="page-header__logo healine" href="index.html">Погнали?</a>
+    </div>
+    <button class="page-header__burger button">
+      <svg version="1.1" id="Layer_1" width="25" height="11" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 11" fill="currentColor"
+        xml:space="preserve">
         <g>
           <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z" />
           <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z" />
         </g>
       </svg>
     </button>
+    <div class="page-header__connection catalog-connection">
+      <ul class="connection-contacts list">
+        <li class="connection-contacts__item"><a href="tel:+7-800-555-86-28"><img src="img/topmenu-phone.svg" width="18"
+              height="18" alt="8 800 555-86-28"></a></li>
+        <li class="connection-contacts__item"><a href="mailto:mail@htmlacademy.ru"><img src="img/topmenu-mail.svg"
+              width="18" height="14" alt="mail@htmlacademy.ru"></a></li>
+      </ul>
+      <a class="connection__authorization catalog-authorization yellow-btn up" href="#">Авторизация</a>
+    </div>
+
+    <section class="scroll-menu">
+      <div class="scroll-menu__header">
+        <a class="scroll-menu__logo healine">Погнали?</a>
+        <button class="scroll-menu__icon-close button">
+          <img class="menu-close-icon" src="img/menu-close.png" width="19" height="19" alt="Закрыть меню">
+        </button>
+        <a class="page-header__authorization yellow-btn up" href="#">Авторизация</a>
+      </div>
+      <ul class="menu-list list up">
+        <li class="menu-list__item"><a href="#">О сервисе</a></li>
+        <li class="menu-list__item"><a href="form.html">Направления</a></li>
+        <li class="menu-list__item"><a href="catalog.html">Попутчики</a></li>
+      </ul>
+      <ul class="header-contacts list">
+        <li class="header-contacts__item">
+          <a href="tel:+7-800-555-86-28"><img class="header-contacts__icon header-icon1" src="img/interest-phone.png"
+              alt="Иконка телефона">8 800 555-86-28</a>
+        </li>
+        <li class="header-contacts__item up">
+          <a href="mailto:mail@htmlacademy.ru"><img class="header-contacts__icon header-icon2"
+              src="img/interest-mail.png" alt="Иконка почты">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+      <ul class="header-social-buttons list">
+        <li class="header-social-buttons__item"><a class="fb" href="#">
+            <img src="img/fb-scroll.png" alt="Facebook">
+          </a></li>
+        <li class="header-social-buttons__item"><a class="vk" href="#">
+            <img src="img/vk-scroll.png" alt="VK">
+          </a></li>
+        <li class="header-social-buttons__item"><a class="inst" href="#">
+            <img src="img/insta-scroll.png" alt="Instagram">
+          </a></li>
+      </ul>
+    </section>
   </header>
 
   <div class="gray-background center">
     <main class="container center">
-      <section class="directions">
-        <h1 class="directions__headline">Направления</h1>
-        <!-- здесь будет форма -->
+      <h1 class="directions__headline">Направления</h1>
+      <section class="directions-travelmate">
+        <ul class="directions-travelmate--img__list list">
+          <li class="directions-travelmate--img__item">
+            <a class="directions-travelmate__level" href="#"><img src="img/demin-status-bar.png"
+                alt="Уровень Пети Демина"></a>
+          </li>
+          <li class="directions-travelmate--img__item">
+            <a class="directions-travelmate__image" href="#"><img src="img/demin-desktop@1x.jpg"
+                alt="Фото Пети Демина"></a>
+          </li>
+        </ul>
+        <a class="directions-travelmate__button up" href="#">Сменить фото</a>
+        <p class="directions-travelmate__title-tag up">Теги</p>
+        <textarea class="directions-travelmate__tags" name="text"
+          placeholder="#бургер #бар #футбол #концерт #крафт"></textarea>
+        <p class="directions-travelmate__title-transport up">Транспорт</p>
+        <ul class="directions-travelmate-transport__list list">
+          <li class="directions-travelmate-transport__item"><img src="img/plane.png" width="19" height="21"
+              alt="Иконка самолета"></li>
+          <li class="directions-travelmate-transport__item"><img src="img/bus.png" width="17" height="21"
+              alt="Иконка автобуса">
+          </li>
+          <li class="directions-travelmate-transport__item"><img src="img/bike.png" width="24" height="21"
+              alt="Иконка велосипеда"></li>
+          <li class="directions-travelmate-transport__item"><img src="img/run.png" width="20" height="21"
+              alt="Иконка бегущего человека"></li>
+        </ul>
       </section>
+      <div class="plan-steps">
+        <section class="directions-plan">
+          <h2 class="directions-plan__healine">Мои планы:</h2>
+          <ul class="directions-plan--countries__list list">
+            <li class="directions-plan--countries__item">
+              <h3 class="directions-plan--countries__item-healine">1. Франция, Италия</h3>
+              <p class="directions-plan--countries__item-description up">3 попутчика <br> 26 мар - 29 мар</p>
+              <button class="directions-plan--countries__item-button up">Изменить</button>
+            </li>
+            <li class="directions-plan--countries__item">
+              <h3 class="directions-plan--countries__item-healine">2. Тайланд, Индонезия</h3>
+              <p class="directions-plan--countries__item-description up">1 попутчик <br> 1 июл - 15 июл</p>
+              <button class="directions-plan--countries__item-button up">Изменить</button>
+            </li>
+          </ul>
+        </section>
+        <form class="directions-steps" action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="directions-steps__headline">Добавить план:</h2>
+          <ul class="directions-steps--button__list list">
+            <li class="directions-steps--button__item">
+              <button class="steps-healine-button" type="button" autofocus></button>
+            </li>
+            <li class="directions-steps--button__item">
+              <button class="steps-healine-button" type="button"></button>
+            </li>
+            <li class="directions-steps--button__item">
+              <button class="steps-healine-button" type="button"></button>
+            </li>
+          </ul>
+          <ul class="directions-steps__list list">
+            <li class="directions-steps__item">
+              <h3 class="directions-steps__item-headline">Шаг 1.<br> Даты пребывания</h3>
+              <p class="directions-steps__item-description">Укажите предпочтительное количество попутчиков, которых вы
+                хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <p class="directions-steps__item-quantity-duration item-quantity up">
+                <label for="travelmates-quantity">Ищу попутчиков:</label>
+                <button class="steps-plus-button" type="button"><img src="img/plus-form.png" alt="Добавить попутчиков"></button>
+                <button class="steps-minus-button" type="button"><img src="img/minus-form.png" alt="Убрать попутчиков"></button>
+                <input id="travelmates-quantity" class="quantity" type="text" name="quantity" value="" placeholder="2">
+              </p>
+              <p class="directions-steps__item-quantity-duration item-duration up">
+                <label for="travelmates-duration">Длительность:</label>
+                <button class="steps-plus-button" type="button"><img src="img/plus-form.png" alt="Добавить попутчиков"></button>
+                <button class="steps-minus-button" type="button"><img src="img/minus-form.png" alt="Убрать попутчиков"></button>
+                <input id="travelmates-duration" class="duration" type="text" name="duration" value="" placeholder="2">
+              </p>
+              <p class="directions-steps__item-checkbox">
+                <input class="children-checkbox" type="checkbox" name="children" id="children-checkbox" checked>
+                <label for="children-checkbox">Можно с детьми:</label>
+              </p>
+              <p class="directions-steps__item-month">Март 2019</p>
+              <ul class="directions-steps__item-day__list list up">
+                <li class="directions-steps__item-day__item">п</li>
+                <li class="directions-steps__item-day__item">в</li>
+                <li class="directions-steps__item-day__item">с</li>
+                <li class="directions-steps__item-day__item">ч</li>
+                <li class="directions-steps__item-day__item">п</li>
+                <li class="directions-steps__item-day__item">с</li>
+                <li class="directions-steps__item-day__item">в</li>
+              </ul>
+              <ul class="directions-steps__item-calendar__list list">
+                <li class="directions-steps__item-calendar__item">24</li>
+                <li class="directions-steps__item-calendar__item">25</li>
+                <li class="directions-steps__item-calendar__item">26</li>
+                <li class="directions-steps__item-calendar__item">27</li>
+                <li class="directions-steps__item-calendar__item">28</li>
+                <li class="directions-steps__item-calendar__item">1</li>
+                <li class="directions-steps__item-calendar__item">2</li>
+                <li class="directions-steps__item-calendar__item">3</li>
+                <li class="directions-steps__item-calendar__item">4</li>
+                <li class="directions-steps__item-calendar__item">5</li>
+                <li class="directions-steps__item-calendar__item">6</li>
+                <li class="directions-steps__item-calendar__item">7</li>
+                <li class="directions-steps__item-calendar__item">8</li>
+                <li class="directions-steps__item-calendar__item">9</li>
+                <li class="directions-steps__item-calendar__item">10</li>
+                <li class="directions-steps__item-calendar__item">11</li>
+                <li class="directions-steps__item-calendar__item">12</li>
+                <li class="directions-steps__item-calendar__item">13</li>
+                <li class="directions-steps__item-calendar__item">14</li>
+                <li class="directions-steps__item-calendar__item">15</li>
+                <li class="directions-steps__item-calendar__item">16</li>
+                <li class="directions-steps__item-calendar__item">17</li>
+                <li class="directions-steps__item-calendar__item">18</li>
+                <li class="directions-steps__item-calendar__item">19</li>
+                <li class="directions-steps__item-calendar__item">20</li>
+                <li class="directions-steps__item-calendar__item">21</li>
+                <li class="directions-steps__item-calendar__item">22</li>
+                <li class="directions-steps__item-calendar__item">23</li>
+                <li class="directions-steps__item-calendar__item">24</li>
+                <li class="directions-steps__item-calendar__item">25</li>
+                <li class="directions-steps__item-calendar__item">26</li>
+                <li class="directions-steps__item-calendar__item">27</li>
+                <li class="directions-steps__item-calendar__item">28</li>
+                <li class="directions-steps__item-calendar__item">29</li>
+                <li class="directions-steps__item-calendar__item">30</li>
+                <li class="directions-steps__item-calendar__item">31</li>
+                <li class="directions-steps__item-calendar__item">1</li>
+                <li class="directions-steps__item-calendar__item">2</li>
+                <li class="directions-steps__item-calendar__item">3</li>
+                <li class="directions-steps__item-calendar__item">4</li>
+                <li class="directions-steps__item-calendar__item">5</li>
+              </ul>
+            </li>
+          </ul>
+          <a class="directions-steps__step-ahead yellow-btn up">Следующий шаг</a>
+          <!-- <button class="directions-steps__button up" type="submit">Отправить</button>
+          <a class="directions-steps__step-back up">На шаг назад</a> -->
+        </form>
+      </div>
     </main>
 
     <footer class="main-footer center">
       <a class="main-footer__logo center" href="index.html">Погнали?</a>
       <ul class="main-footer-buttons center list">
         <li><a class="main-footer-buttons__item fb" href="#" aria-label="Facebook">
-            <img src="img/facebook.svg" width="11" height="21" alt="Facebook">
+            <img src="img/facebook.png" width="11" height="21" alt="Facebook">
           </a></li>
         <li><a class="main-footer-buttons__item vk" href="#" aria-label="VK">
-            <img src="img/vk.svg" width="23" height="12" alt="VK">
+            <img src="img/vk.png" width="23" height="12" alt="VK">
           </a></li>
         <li><a class="main-footer-buttons__item inst" href="#" aria-label="Instagram">
-            <img src="img/instagram.svg" width="18" height="18" alt="Instagram">
+            <img src="img/instagram.png" width="18" height="18" alt="Instagram">
           </a></li>
       </ul>
-      <p class="main-footer__academy">Разработано</p>
-      <a class="main-footer__academy-icon" href="https://htmlacademy.ru/intensive/adaptive"><img
-          src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a>
+      <div class="main-footer-copyright">
+        <p class="main-footer-copyright__academy">Разработано</p>
+        <a class="main-footer-copyright__academy-icon" href="https://htmlacademy.ru/intensive/adaptive"><img
+            src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a>
+      </div>
     </footer>
   </div>
 

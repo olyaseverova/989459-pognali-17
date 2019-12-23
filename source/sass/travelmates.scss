@@ -142,7 +142,7 @@
   }
 }
 
-.travelmate__image {
+.travelmate__avatar {
   width: 270px;
   height: 270px;
   border-radius: 15px 15px 0 0;
@@ -243,7 +243,7 @@
   }
 }
 
-.hashtag-list {
+.travelmate__interest-list {
   display: flex;
   flex-wrap: wrap;
 
@@ -264,7 +264,7 @@
   }
 }
 
-.travelmates-list__item:last-child .hashtag-list {
+.travelmates-list__item:last-child .travelmate__interest-list {
   margin-left: 50px;
 
   @media (min-width: $tablet-width) {
@@ -273,7 +273,7 @@
   }
 }
 
-.hashtag-list__item {
+.travelmate__interest-list__item {
   margin-right: 7px;
 }
 
