@@ -2,17 +2,13 @@
   width: 320px;
   height: 206px;
 
-  padding-top: 35px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 35px 25px;
+  border-radius: 20px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 325px;
-
-    padding-top: 70px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding: 70px 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,15 +18,13 @@
     width: 1440px;
     height: 200px;
 
-    padding-top: 58px;
-    padding-left: 134px;
-    padding-right: 134px;
+    padding: 58px 134px;
   }
 }
 
 .route__adress {
   position: relative;
-  width: 160px;
+  width: 200px;
 
   margin-top: 0;
   margin-bottom: 35px;
@@ -99,19 +93,16 @@
   position: relative;
   width: 100%;
   height: 62px;
-  text-align: left;
-  padding-right: 0;
-  padding-left: 21px;
 
-  font-size: 18px;
-  color: $bg-blue;
+  padding: 0 0 0 21px;
+
+  text-align: left;
+  border-radius: 10px;
   background-color: $bg-yellow-d7;
   border: 3px solid $bg-darkblue19;
-  border-radius: 10px;
 
   @media (min-width: $tablet-width) {
     height: 81px;
-    font-size: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,60 +111,53 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .route__button p {
+.route__button a {
+  color: $bg-blue;
+  font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
 
 .route__button:hover {
   background-color: $bg-darkblue19;
+}
+
+.route__button:hover a {
   color: $color-white;
 }
 
-.route__button:active p {
+.route__button:active a {
   opacity: 0.3;
 }
 
 .route__button::before {
-  content: "";
   position: absolute;
+  content: "";
+
+  width: 10px;
+  height: 14px;
 
   top: 22px;
   left: 235px;
   opacity: 1;
 
-  width: 10px;
-  height: 14px;
-  background-image: url("../img/arrow-right-white.png");
   background-repeat: no-repeat;
+  background-image: url("../img/arrow-right-white.png");
 
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-
     top: 33px;
     left: 570px;
-    opacity: 1;
-
-    width: 10px;
-    height: 14px;
-    background-image: url("../img/arrow-right-white.png");
-    background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-
     top: 33px;
     left: 280px;
-    opacity: 1;
-
-    width: 10px;
-    height: 14px;
-    background-image: url("../img/arrow-right-white.png");
-    background-repeat: no-repeat;
   }
 }
 
@@ -182,41 +166,26 @@
 }
 
 .route__button::after {
-  content: "";
   position: absolute;
+  content: "";
+
+  width: 10px;
+  height: 14px;
 
   top: 22px;
   left: 235px;
 
-  width: 10px;
-  height: 14px;
-  background-image: url("../img/triangle-arrow-right.png");
   background-repeat: no-repeat;
+  background-image: url("../img/triangle-arrow-right.png");
 
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-
     top: 33px;
     left: 570px;
-
-    width: 10px;
-    height: 14px;
-    background-image: url("../img/triangle-arrow-right.png");
-    background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-
     top: 33px;
     left: 280px;
-
-    width: 10px;
-    height: 14px;
-    background-image: url("../img/triangle-arrow-right.png");
-    background-repeat: no-repeat;
   }
 }
 

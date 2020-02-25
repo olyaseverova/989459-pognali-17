@@ -1,36 +1,25 @@
 .interest {
+  width: 270px;
   height: 504px;
-
-  padding-top: 75px;
-  padding-left: 25px;
-  padding-right: 25px;
-
+  padding: 70px 0 30px 0;
   color: $color-white;
 
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 714px;
-
-    padding-top: 85px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding: 85px 75px 0 75px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     height: 750px;
-
-    padding-top: 100px;
-    padding-left: 132px;
-    padding-right: 134px;
-    padding-bottom: 100px;
+    padding: 100px 134px 100px 132px;
   }
 }
 
 .interest__healine {
   width: 210px;
-  margin-top: 0;
-  margin-bottom: 25px;
+  margin: 0 auto 25px auto;
   color: $bg-orange;
   font-size: 24px;
 
@@ -48,13 +37,11 @@
 .interest-registration {
   text-align: center;
   width: 200px;
-  margin-top: 0;
-  margin-bottom: 33px;
-
+  margin: 0 auto 33px auto;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
     width: 100%;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,8 +54,17 @@
   text-decoration: underline;
 }
 
+.interest-registration__authorization:hover {
+  color: $bg-orange;
+}
+
+.interest-registration__authorization:active {
+  opacity: 0.3;
+}
+
 .interest-form {
   position: relative;
+  width: 270px;
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -77,10 +73,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 70px;
+    margin: 0 0 70px 0;
   }
 }
 
@@ -88,13 +81,12 @@
   position: relative;
   width: 100%;
   height: 62px;
-  padding: 0;
-  padding-left: 25px;
-  font-size: 18px;
 
+  padding: 0 0 0 25px;
 
-  border-radius: 15px;
   border: none;
+  font-size: 18px;
+  border-radius: 15px;
   color: $color-lightgrey;
   background-color: $color-white;
 
@@ -120,20 +112,23 @@
   position: absolute;
   width: 60px;
   height: 62px;
-  border-radius: 15px;
+
+  left: 210px;
+
   border: none;
   background-color: $bg-yellow-d7;
-  right: 0;
+  border-radius: 15px;
 
   @media (min-width: $tablet-width) {
     width: 82px;
     height: 81px;
+    left: 536px;
   }
 
   @media (min-width: $desktop-width) {
     width: 324px;
-    padding-left: 37px;
-    padding-right: 36px;
+    padding: 0 36px 0 37px;
+    left: 850px;
     border-radius: 0 15px 15px 0;
   }
 }
@@ -157,48 +152,131 @@
   }
 }
 
-.interest__questions {
-  width: 220px;
-  text-align: center;
-  margin-bottom: 35px;
+.interest__questions-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 230px;
+  padding: 0;
+  margin: 0 auto 30px auto;
 
   @media (min-width: $tablet-width) {
-    width: 650px;
-    margin-left: -12px;
-    margin-bottom: 35px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 625px;
+    margin: 0 auto 35px auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
-    margin-bottom: 45px;
+    width: 800px;
+    margin: 0 auto 45px auto;
+  }
+}
+
+.interest__questions-item:nth-of-type(1) {
+  width: 220px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    text-align: left;
+  }
+}
+
+.interest__questions-item:nth-of-type(3) {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .interest__questions-item:nth-of-type(2) {
+    display: none;
   }
 }
 
 .interest-contacts {
   width: 230px;
   height: 90px;
+
   margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 60px;
+  padding: 15px 0 15px 60px;
 
   @media (min-width: $tablet-width) {
     width: 400px;
     height: 136px;
-    padding-top: 20px;
-    padding-left: 90px;
+
     margin: 0;
+    padding: 20px 0 0 90px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding: 0;
-    padding-left: 120px;
-    padding-top: 16px;
+
     width: 870px;
-    margin: 0 auto;
     height: 90px;
+
+    margin: 0 auto;
+    padding: 16px 0 0 120px;
+  }
+}
+
+.interest-contacts__item {
+  position: relative;
+}
+
+.interest-contacts__item::before {
+  position: absolute;
+  content: "";
+
+  width: 45px;
+  height: 45px;
+
+  top: -14px;
+  left: -60px;
+
+  background-repeat: no-repeat;
+  background-image: url("../img/interest-phone-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+
+    top: -20px;
+    left: -88px;
+
+    background-image: url("../img/interest-phone-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+
+    top: -17px;
+    left: -120px;
+
+    background-image: url("../img/interest-phone-desktop.png");
+  }
+}
+
+.interest-contacts__item:last-child::before {
+  top: -12px;
+  background-image: url("../img/interest-mail-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+    top: -10px;
+    background-image: url("../img/interest-mail-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+    top: -17px;
+    background-image: url("../img/interest-mail-desktop.png");
   }
 }
 
@@ -212,55 +290,36 @@
   }
 }
 
-.interest-contacts__icon {
-  position: absolute;
-  display: block;
+.interest-contacts__item:hover a {
+  color: $bg-yellow-bd;
+}
 
-  width: 45px;
-  height: 45px;
-
-  left: -60px;
-  top: -15px;
+.interest-contacts__item:first-child:hover::before {
+  background-image: url("../img/interest-phone-mobile-hvr.png");
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    display: block;
-
-    width: 68px;
-    height: 68px;
-
-    left: -90px;
-    top: -20px;
+    background-image: url("../img/interest-phone-tablet-hvr.png");
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    display: block;
-
-    width: 90px;
-    height: 90px;
-
-    left: -120px;
-    top: -31px;
+    background-image: url("../img/interest-phone-desktop-hvr.png");
   }
 }
 
-.contacts__icon-2 {
-  top: -15px;
+.interest-contacts__item:last-child:hover::before {
+  background-image: url("../img/interest-mail-mobile-hvr.png");
 
   @media (min-width: $tablet-width) {
-    top: -10px;
+    background-image: url("../img/interest-mail-tablet-hvr.png");
   }
 
   @media (min-width: $desktop-width) {
-    top: -15px;
+    background-image: url("../img/interest-mail-desktop-hvr.png");
   }
 }
 
-@media (min-width: $desktop-width) {
-  .contacts__icon-2 {
-    top: -31px;
-  }
+.interest-contacts__item:active {
+  opacity: 0.3;
 }
 
 .interest-contacts__item:first-child {

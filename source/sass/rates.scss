@@ -1,79 +1,63 @@
 .rates {
   width: 320px;
   height: 451px;
-
-  padding-top: 37px;
-  padding-left: 50px;
-  padding-right: 25px;
-
+  padding: 37px 25px 0 50px;
   color: $bg-darkblue19;
 
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 644px;
-    padding-top: 75px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 75px 40px 0 40px;
 
-    background-image: url("../img/rates-back-tablet.png");
     background-repeat: no-repeat;
-    background-position: 530px 185px;
     background-size: 198px 285px;
+    background-position: 530px 185px;
+    background-image: url("../img/rates-back-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     height: 750px;
+    padding: 105px 130px 120px 130px;
 
-    padding-top: 105px;
-    padding-left: 130px;
-    padding-right: 130px;
-    padding-bottom: 120px;
-
-    background-image: url("../img/rates-back-desktop.png");
-    background-repeat: no-repeat;
     background-position: 750px 240px;
     background-size: 556px 300px;
+    background-image: url("../img/rates-back-desktop.png");
   }
 }
 
 .rates__headline {
   position: relative;
-  margin: 0;
-  color: $bg-orange;
+  margin: 15px 0 60px 0;
   padding-right: 140px;
-  margin-top: 15px;
-  margin-bottom: 60px;
+
+  color: $bg-orange;
 
   @media (min-width: $tablet-width) {
     font-size: 45px;
-
-    margin-top: 0;
-    margin-bottom: 105px;
-    padding-left: 90px;
-    padding-right: 100px;
+    margin: 0 0 105px 0;
+    padding: 0 100px 0 90px;
   }
 
   @media (min-width: $desktop-width) {
     width: 500px;
-    margin: 0 auto;
-    margin-bottom: 155px;
+    margin: 0 auto 155px auto;
     padding: 0;
   }
 }
 
 .rates__headline::after {
-  content: "";
   position: absolute;
-  top: -10px;
-  left: 145px;
-
+  content: "";
   width: 99px;
   height: 99px;
 
-  background-image: url("../img/rates.png");
-  background-repeat: no-repeat;
+  top: -10px;
+  left: 145px;
+
   background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/rates.png");
 
   @media (min-width: $tablet-width) {
     top: 380px;
@@ -89,10 +73,9 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-left: 90px;
     width: 653px;
     height: 201px;
-    padding-top: 15px;
+    padding: 15px 0 0 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,12 +84,12 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .rates-list__item-big {
     display: flex;
-    width: 565px;
     justify-content: space-between;
+
+    width: 565px;
     margin-bottom: 45px;
   }
 }
@@ -114,8 +97,9 @@
 @media (min-width: $desktop-width) {
   .rates-list__item-big {
     display: flex;
-    width: 815px;
     justify-content: space-between;
+
+    width: 815px;
     margin-bottom: 42px;
   }
 }
@@ -129,159 +113,76 @@
 }
 
 .rates-list dt::before {
-  content: "";
   position: absolute;
-  top: -15px;
-  left: 0;
-
+  content: "";
   width: 200px;
   height: 1px;
+
+  top: -15px;
+  left: 0;
 
   background-color: $bg-lightgrey;
 
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: 0;
-
     width: 562px;
-    height: 1px;
-
-    background-color: $bg-lightgrey;
   }
 
   @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: 0;
-
     width: 813px;
-    height: 1px;
-
-    background-color: $bg-lightgrey;
   }
 }
 
-.rate-number-1 {
+.rates-list__item-big .rates-list__item:first-child {
   position: relative;
 }
 
-.rate-number-1::after {
-  content: "1";
+.rates-list__item-big .rates-list__item:first-child::after {
   position: absolute;
+  content: "1";
   width: 34px;
   height: 34px;
-  text-align: center;
+
   padding-top: 7px;
 
   top: -7px;
   left: 210px;
 
+  text-align: center;
   border-radius: 50%;
-
   color: $color-white;
   background-color: $bg-lightorange;
 
   @media (min-width: $tablet-width) {
-    content: "1";
-    position: absolute;
     width: 67px;
     height: 67px;
-    text-align: center;
+
     padding-top: 17px;
 
     top: -15px;
     left: -90px;
-
-    border-radius: 50%;
-
-    color: $color-white;
-    background-color: $bg-lightorange;
   }
 }
 
-.rate-number-2 {
-  position: relative;
-}
-
-.rate-number-2::after {
+.rates-list__item-big:nth-of-type(2) .rates-list__item:first-child::after {
   content: "2";
-  position: absolute;
-  width: 34px;
-  height: 34px;
-  text-align: center;
-  padding-top: 7px;
-
-  top: -7px;
-  left: 210px;
-
-  border-radius: 50%;
-
-  color: $color-white;
-  background-color: $bg-yellow-bd;
 
   @media (min-width: $tablet-width) {
-    content: "2";
-    position: absolute;
-    width: 67px;
-    height: 67px;
-    text-align: center;
-    padding-top: 17px;
-
     top: -20px;
-    left: -90px;
-
-    border-radius: 50%;
-
-    color: $color-white;
-    background-color: $bg-yellow-bd;
   }
 }
 
-.rate-number-3 {
-  position: relative;
-}
-
-.rate-number-3::after {
+.rates-list__item-big:nth-of-type(3) .rates-list__item:first-child::after {
   content: "3";
-  position: absolute;
-  width: 34px;
-  height: 34px;
-  text-align: center;
-  padding-top: 7px;
-
-  top: -7px;
-  left: 210px;
-
-  border-radius: 50%;
-
-  color: $color-white;
-  background-color: $bg-yellow-d7;
 
   @media (min-width: $tablet-width) {
     content: "3";
-    position: absolute;
-    width: 67px;
-    height: 67px;
-    text-align: center;
-    padding-top: 17px;
-
     top: -25px;
-    left: -90px;
-
-    border-radius: 50%;
-
-    color: $color-white;
-    background-color: $bg-yellow-d7;
   }
 }
 
 .rates-list dd {
   position: relative;
-  margin-left: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 
   @media (min-width: $tablet-width) {
     height: 25px;
@@ -290,8 +191,8 @@
 }
 
 .rates-list dd:last-child::after {
-  content: "";
   position: absolute;
+  content: "";
   top: 35px;
   left: 0;
 
@@ -308,6 +209,7 @@
 .rates__button {
   margin-top: 10px;
   padding: 0;
+
   border: none;
   font-weight: bold;
   color: $bg-darkblue19;
@@ -315,15 +217,15 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    font-size: 20px;
     margin-top: 33px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .rates__button::before {
-    content: "";
     position: absolute;
+    content: "";
 
     width: 67px;
     height: 67px;
@@ -331,20 +233,20 @@
     top: -20px;
     left: -87px;
 
-    background-image: url("../img/business-rates-tablet.png");
     background-repeat: no-repeat;
+    background-image: url("../img/business-rates-tablet.png");
   }
 }
 
 @media (min-width: $tablet-width) {
   .rates__button::after {
-    content: "";
     position: absolute;
-    top: -60px;
-    left: 0;
-
+    content: "";
     width: 562px;
     height: 1px;
+
+    top: -60px;
+    left: 0;
 
     background-color: $bg-lightgrey;
   }
@@ -352,13 +254,13 @@
 
 @media (min-width: $desktop-width) {
   .rates__button::after {
-    content: "";
     position: absolute;
-    top: -60px;
-    left: 0;
-
+    content: "";
     width: 813px;
     height: 1px;
+
+    top: -60px;
+    left: 0;
 
     background-color: $bg-lightgrey;
   }

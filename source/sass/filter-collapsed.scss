@@ -1,0 +1,322 @@
+.catalog-filter__collapsed {
+  display: none;
+  position: relative;
+
+  width: 270px;
+  height: 560px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: $bg-grey-f2;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    height: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1320px;
+    height: 2600px;
+  }
+}
+
+.catalog-filter__collapsed-block {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.catalog-filter__collapsed-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 220px;
+  height: 247px;
+  margin: 135px auto 0 auto;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 345px;
+    height: 390px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 2325px;
+    margin: 0 auto;
+  }
+}
+
+.catalog-filter__collapsed-item {
+  width: 44px;
+  height: 42px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 240px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-filter__collapsed-item:nth-child(-n+22) {
+    height: 665px;
+  }
+}
+
+.alphabet-collapsed {
+  display: none;
+}
+
+.alphabet-collapsed + label {
+  display: block;
+  width: 44px;
+  height: 42px;
+
+  padding-top: 11px;
+
+  border: 1px solid $bg-greyd9;
+  background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 65px;
+
+    padding: 0;
+
+    border: none;
+    font-size: 60px;
+    color: $bg-grey-cf;
+    background-color: $bg-grey-f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    height: 90px;
+    color: $bg-darkblue19;
+  }
+}
+
+.alphabet-collapsed + label:hover {
+  border: 1px solid $bg-greybb2;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    color: $bg-grey-8a;
+  }
+}
+
+.alphabet-collapsed:checked + label {
+  border: none;
+  color: $color-white;
+  background-color: $bg-blue;
+
+  @media (min-width: $tablet-width) {
+    color: $bg-darkblue19;
+    background-color: $bg-grey-f2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-filter__collapsed-item:nth-of-type(7) {
+    display: none;
+  }
+
+  .catalog-filter__collapsed-item:nth-of-type(8) {
+    display: none;
+  }
+
+  .catalog-filter__collapsed-item:nth-of-type(11) {
+    display: none;
+  }
+
+  .catalog-filter__collapsed-item:nth-of-type(24) {
+    display: none;
+  }
+
+  .catalog-filter__collapsed-item:nth-of-type(27) {
+    display: none;
+  }
+}
+
+.alphabet-land__list {
+  display: none;
+  position: absolute;
+
+  width: auto;
+  height: auto;
+
+  top: 275px;
+  left: 25px;
+
+  padding: 0;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    top: 5px;
+    left: 450px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    display: block;
+  }
+}
+
+.alphabet-land__item:not(:last-of-type) {
+  margin-bottom: 1px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-filter__collapsed-item:nth-of-type(18) {
+    display: none;
+  }
+}
+
+.catalog-filter__collapsed-item:nth-of-type(2) .alphabet-land__item:nth-of-type(2n) {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-filter__collapsed-item:nth-of-type(2) .alphabet-land__item:nth-of-type(4n) {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-filter__collapsed-item:nth-of-type(2) .alphabet-land__item:nth-of-type(2n) {
+    display: block;
+  }
+}
+
+.catalog-filter__collapsed-item:nth-of-type(4) .alphabet-land__item:nth-of-type(4n) {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.catalog-filter__collapsed-item:nth-of-type(12) .alphabet-land__item:nth-of-type(2n) {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-filter__collapsed-item:nth-of-type(12) .alphabet-land__item:nth-of-type(4n) {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-filter__collapsed-item:nth-of-type(12) .alphabet-land__item:nth-of-type(2n) {
+    display: block;
+  }
+}
+
+.catalog-filter__collapsed-item:nth-of-type(14) .alphabet-land__item:nth-of-type(2n) {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.catalog-filter__collapsed-item:nth-of-type(19) .alphabet-land__item:nth-of-type(2n) {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-filter__collapsed-item:nth-of-type(19) .alphabet-land__item:nth-of-type(4n) {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-filter__collapsed-item:nth-of-type(19) .alphabet-land__item:nth-of-type(2n) {
+    display: block;
+  }
+}
+
+.alphabet-land__item a {
+  color: $bg-darkgrey;
+}
+
+.alphabet-land__item a:hover {
+  color: $bg-blue;
+}
+
+.alphabet-land__item a:active {
+  color: $bg-greycd;
+}
+
+.catalog-filter__collapsed-button {
+  position: absolute;
+
+  width: 100%;
+  height: 40px;
+
+  top: 495px;
+  padding-left: 30px;
+
+  border: none;
+  font-size: 17px;
+  border-radius: 25px;
+  color: $bg-darkblue1635;
+  background-color: $bg-grey-aed;
+
+  background-position: 85px 15px;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-image: url("../img/exit-menu-filter-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    height: 100px;
+    font-size: 20px;
+    color: $bg-blue;
+
+    top: 465px;
+
+    padding-left: 40px;
+
+    background-size: 18px 18px;
+    background-position: 245px 41px;
+    background-image: url("../img/exit-menu-filter-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 2425px;
+    padding-left: 45px;
+    background-position: 595px 42px;
+  }
+}
+
+.catalog-filter__collapsed-button:hover {
+  background-color: $bg-grey-e8;
+}
+
+.catalog-filter__collapsed-button:active {
+  color: $bg-grey-ebd;
+  background-image: url("../img/exit-menu-filter-mobile-hvr.png");
+}
+
+.block {
+  display: block;
+}

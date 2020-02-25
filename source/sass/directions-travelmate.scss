@@ -1,41 +1,60 @@
+.directions-travelmate {
+  position: relative;
+  width: 270px;
+  height: 370px;
+  margin: 23px auto 33px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    height: 351px;
+    margin: 65px auto 60px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1324px;
+    height: 95px;
+
+    margin: 73px auto 65px auto;
+    padding-left: 65px;
+  }
+}
+
 .directions__headline {
   position: relative;
   height: 71px;
-  margin: 0;
-  padding-top: 20px;
-  padding-left: 25px;
 
-  border-radius: 0 0 15px 15px;
-  color: $color-white;
-  background-color: $bg-darkblue1635;
+  margin: 0;
+  padding: 20px 0 0 25px;
+
   font-size: 36px;
+  color: $color-white;
+  border-radius: 0 0 15px 15px;
+  background-color: $bg-darkblue1635;
 
   @media (min-width: $tablet-width) {
     height: 220px;
-    padding-top: 85px;
-    padding-left: 75px;
+    padding: 85px 0 0 75px;
     font-size: 60px;
   }
 
   @media (min-width: $desktop-width) {
     height: 253px;
-    padding-top: 120px;
-    padding-left: 125px;
+    padding: 120px 0 0 125px;
   }
 }
 
 .directions__headline::after {
-  content: "";
   position: absolute;
-
-  top: 68px;
-  left: 25px;
+  content: "";
 
   width: 214px;
   height: 5px;
 
-  background-color: $bg-orange;
+  top: 68px;
+  left: 25px;
+
   border-radius: 5px;
+  background-color: $bg-orange;
 
   @media (min-width: $tablet-width) {
     width: 355px;
@@ -51,38 +70,105 @@
   }
 }
 
-.directions-travelmate {
-  position: relative;
-  width: 270px;
-  height: 370px;
-
-  margin: 0 auto;
-  margin-top: 23px;
-  margin-bottom: 33px;
-}
-
 .directions-travelmate--img__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   width: 233px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
   padding: 0;
-}
-
-.directions-travelmate__image img {
-  width: 98px;
-  height: 98px;
-  border-radius: 50%;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 94px;
 
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
 
+    width: 329px;
+    height: 190px;
+
+    top: -263px;
+    left: 900px;
+
+    margin-bottom: 0;
+  }
+}
+
+.directions-travelmate__level {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/demin-status-bar-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+    background-image: url("../img/demin-status-bar-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 43px;
+    background-image: url("../img/demin-status-bar-desktop.png");
+  }
+}
+
+.directions-travelmate__image {
+  display: block;
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+  background-size: 100px 100px;
+  background-image: url("../img/demin-tablet@1x.jpg");
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+    border-radius: 5px;
+    background-size: 94px 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    border-radius: 10px 10px 0 0;
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+}
+
+.directions-travelmate__image-button {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 190px;
+    height: 47px;
+
+    color: $bg-blue;
+    font-size: 20px;
+    text-align: center;
+
+    border: none;
+    border-radius: 0 0 10px 10px;
+    background-color: $bg-greyf0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .directions-travelmate__image-button:hover {
+    background-color: $bg-greye9;
+  }
+
+  .directions-travelmate__image-button:active {
+    padding: 0;
+    color: $bg-greybe;
   }
 }
 
@@ -90,38 +176,94 @@
   display: block;
   width: 100%;
   height: 40px;
-  margin-bottom: 25px;
 
+  margin-bottom: 25px;
   padding-top: 10px;
+
+  font-size: 17px;
   text-align: center;
   border-radius: 20px;
-  font-size: 17px;
   background-color: $bg-greyf0;
+
+  @media (min-width: $tablet-width) {
+    height: 60px;
+
+    margin-bottom: 50px;
+    padding-top: 20px;
+
+    color: $bg-blue;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .directions-travelmate__title-tag {
   position: absolute;
   width: 70px;
 
-  top: 165px;
+  top: 175px;
   left: 95px;
 
+  margin: 0;
   text-align: center;
   font-size: 16px;
   color: $bg-blue;
   background-color: $bg-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 83px;
+
+    top: 335px;
+    left: 260px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 83px;
+    left: 80px;
+  }
 }
 
 .directions-travelmate__tags {
   width: 100%;
   height: 89px;
-  margin-bottom: 25px;
 
-  font-size: 16px;
+  margin-bottom: 25px;
   padding: 25px;
+
+  resize: none;
+  font-size: 16px;
+
+  color: $bg-grey-8b;
   border-radius: 10px;
   border: 1px solid $bg-greyd9;
   background-color: $bg-grey;
+
+  @media (min-width: $tablet-width) {
+    height: 94px;
+    margin: 0;
+    padding: 34px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+    height: 94px;
+  }
+}
+
+.directions-travelmate__tags:hover {
+  border: 1px solid $bg-greycb;
+}
+
+.directions-travelmate__tags:focus {
+  color: $bg-darkgrey;
+  border: 1px solid $bg-darkblue1635;
 }
 
 .directions-travelmate__title-transport {
@@ -135,25 +277,154 @@
   font-size: 16px;
   color: $bg-blue;
   background-color: $bg-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+    z-index: 1;
+
+    top: 80px;
+    left: 230px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 1057px;
+  }
 }
 
 .directions-travelmate-transport__list {
   display: flex;
+  justify-content: space-between;
   width: 270px;
   height: 63px;
-  margin: 0;
 
-  padding-left: 68px;
-  padding-top: 15px;
-  background-image: url("../img/transport-wrap.png");
+  margin: 0;
+  padding: 20px 68px 0 68px;
+
+  background-image: url("../img/transport-wrap-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+
+    width: 308px;
+    height: 94px;
+
+    top: 0;
+    left: 154px;
+
+    padding: 24px 55px 0 55px;
+    background-image: url("../img/transport-wrap-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 384px;
+    height: 94px;
+
+    left: 940px;
+
+    padding: 24px 103px 0 107px;
+    background-image: url("../img/transport-wrap-desktop.png");
+  }
 }
 
 .directions-travelmate-transport__item {
   width: 32px;
   height: 32px;
-  text-align: center;
-  padding-top: 5px;
 
+  padding: 0;
+  margin: 0;
   border-radius: 50%;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+.directions-travelmate-transport__item:hover {
+  box-shadow: 0 0 7px $bg-greyb2;
+}
+
+.directions-travelmate-transport__item:active {
+  box-shadow: none;
+  background-color: $bg-grey5f1;
+}
+
+.transport-button {
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+  background-color: $color-white;
+
+  background-repeat: no-repeat;
+  background-size: 14px 16px;
+  background-position: 8px 7px;
+  background-image: url("../img/plane-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
+
+    background-position: 10px 10px;
+    background-size: 19px 21px;
+    background-image: url("../img/plane.png");
+  }
+}
+
+.transport-button:active {
+  opacity: 0.7;
+}
+
+.directions-travelmate-transport__item:active .transport-button {
+  background-color: $bg-grey5f1;
+}
+
+.directions-travelmate-transport__item:nth-child(2) .transport-button {
+  background-size: 13px 16px;
+  background-position: 10px 7px;
+  background-image: url("../img/bus-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background-position: 13px 11px;
+    background-size: 17px 21px;
+    background-image: url("../img/bus.png");
+  }
+}
+
+.directions-travelmate-transport__item:nth-child(3) .transport-button {
+  opacity: 0.15;
+  background-size: 19px 17px;
+  background-position: 7px 7px;
+  background-image: url("../img/bike-black-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background-size: 24px 21px;
+    background-position: 10px 11px;
+    background-image: url("../img/bike-black.png");
+  }
+}
+
+.directions-travelmate-transport__item:nth-child(3):hover .transport-button {
+  opacity: 0.3;
+}
+
+.directions-travelmate-transport__item:nth-child(3):active .transport-button {
+  opacity: 0.1;
+}
+
+.directions-travelmate-transport__item:nth-child(4) .transport-button {
+  background-size: 15px 17px;
+  background-position: 8px 7px;
+  background-image: url("../img/run-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background-position: 10px 10px;
+    background-size: 20px 21px;
+    background-image: url("../img/run.png");
+  }
 }

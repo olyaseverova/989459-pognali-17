@@ -1,30 +1,19 @@
-@media (min-width: $desktop-width) {
-  .catalog__travelmates-filter {
-    display: flex;
-    justify-content: space-between;
-
-    width: 1319px;
-    margin: 0 auto;
-    margin-top: 77px;
-    padding: 0;
-  }
-}
-
 .travelmates-catalog {
+  position: relative;
   width: 270px;
   margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 15px;
+  margin-top: 28px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     width: 688px;
+    margin-top: 40px;
     margin-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
-    width: 949px;
-    margin-bottom: 65px;
+    width: 1320px;
+    margin: 0 auto 65px auto;
   }
 }
 
@@ -32,39 +21,32 @@
   position: relative;
   width: 100%;
   height: 415px;
-  margin-bottom: 10px;
 
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 16px;
-  padding-bottom: 22px;
+  margin-bottom: 10px;
+  padding: 16px 25px 22px 25px;
 
   border-radius: 15px;
   background-color: $color-white;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    width: 100%;
     height: 332px;
     margin-bottom: 40px;
-
-    padding-left: 35px;
-    padding-right: 25px;
-    padding-top: 35px;
-    padding-bottom: 25px;
-
-    border-radius: 15px;
+    padding: 35px 25px 25px 35px;
   }
 
   @media (min-width: $desktop-width) {
     width: 950px;
     height: 285px;
-    padding: 0;
     margin-bottom: 30px;
+    padding: 45px 44px 42px 0;
   }
 }
 
-.travelmate-short {
+.travelmate:hover {
+  box-shadow: 0 0 10px $bg-grey-ed;
+}
+
+.travelmate:nth-of-type(even) {
   height: 393px;
 
   @media (min-width: $tablet-width) {
@@ -76,8 +58,52 @@
   }
 }
 
+.travelmate__top-list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 165px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 430px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 560px;
+    height: 285px;
+    margin-top: -45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travelmate__top-list::after {
+    position: absolute;
+    content: "";
+
+    width: 1px;
+    height: 189px;
+
+    top: 50px;
+    left: 632px;
+
+    background: linear-gradient($color-white 0%, $bg-grey 50%, $color-white 100%);
+  }
+}
+
 .travelmate__image {
   position: relative;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+  }
 }
 
 .travelmate__image img {
@@ -85,157 +111,170 @@
   height: 70px;
 
   border-radius: 50%;
-  margin-left: -5px;
 
   @media (min-width: $tablet-width) {
     width: 190px;
     height: 190px;
     border-radius: 10%;
-    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 285px;
     height: 285px;
+
     border-radius: 10px 0 0 10px;
-    margin-left: 0;
   }
 }
 
 .travelmate__image::before {
-  content: "";
   position: absolute;
-
-  top: -16px;
-  left: 45px;
+  content: "";
 
   width: 31px;
   height: 31px;
 
-  background-image: url("../img/heart-mobile.png");
+  top: 40px;
+  left: 45px;
+
+  background-repeat: no-repeat;
+  background-image: url("../img/heart-catalog-mobile.png");
 
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-
-    top: -24px;
-    left: 368px;
-
     width: 50px;
     height: 50px;
 
-    background-image: url("../img/heart-tablet.png");
+    top: 140px;
+    left: 370px;
+
+    background-image: url("../img/heart-catalog-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
-    top: -72px;
-    left: 490px;
+    top: 190px;
+    left: 495px;
   }
 }
 
-.travelmate__image-firsova::before {
-  content: "";
-  position: absolute;
+.travelmate__image:hover::before {
+  background-image: url("../img/heart-catalog-mobile-hvr.png");
 
-  top: -16px;
-  left: 45px;
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/heart-catalog-tablet-hvr.png");
+  }
+}
 
-  width: 31px;
-  height: 31px;
+.travelmate__image:active::before {
+  background-image: url("../img/heart-catalog-mobile-act.png");
 
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/heart-catalog-tablet-act.png");
+  }
+}
+
+.travelmate:first-of-type .travelmate__image::before {
   background-image: url("../img/heart-firsova-mobile.png");
 
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-
-    top: -25px;
-    left: 368px;
-
-    width: 50px;
-    height: 50px;
-
     background-image: url("../img/heart-firsova-tablet.png");
   }
+}
 
-  @media (min-width: $desktop-width) {
-    top: -72px;
-    left: 490px;
+.travelmate:first-of-type .travelmate__image:hover::before {
+  background-image: url("../img/heart-firsova-mobile-hvr.png");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/heart-firsova-tablet-hvr.png");
   }
 }
 
-.travelmate__image::after {
-  content: "";
-  position: absolute;
-
-  top: -45px;
-  left: 218px;
-
-  width: 6px;
-  height: 6px;
-
-  background-color: $bg-pink;
-  border-radius: 50%;
+.travelmate:first-of-type .travelmate__image:active::before {
+  background-image: url("../img/heart-firsova-mobile-act.png");
 
   @media (min-width: $tablet-width) {
-    top: -154px;
-    left: 420px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: -200px;
-    left: 322px;
-  }
-}
-
-.travelmate__image-rogovaya::after {
-  content: "";
-  position: absolute;
-
-  top: -45px;
-  left: 218px;
-
-  width: 6px;
-  height: 6px;
-
-  background-color: $bg-brightgreen;
-  border-radius: 50%;
-
-  @media (min-width: $tablet-width) {
-    top: -152px;
-    left: 450px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: -200px;
-    left: 322px;
+    background-image: url("../img/heart-firsova-tablet-act.png");
   }
 }
 
 .travelmate__headline {
-  position: absolute;
+  position: relative;
   width: 80px;
-  flex-wrap: wrap;
-  left: 110px;
-  top: 15px;
-  font-size: 20px;
-  color: $bg-blue;
   margin: 0;
 
+  font-size: 20px;
+  color: $bg-blue;
+
   @media (min-width: $tablet-width) {
-    position: absolute;
     width: 215px;
-    flex-wrap: no-wrap;
-    top: 30px;
-    left: 253px;
     font-size: 30px;
-    color: $bg-blue;
   }
 
   @media (min-width: $desktop-width) {
-    top: 45px;
-    left: 345px;
+    margin-top: 45px;
   }
+}
+
+.travelmate__headline:hover {
+  opacity: 0.6;
+}
+
+.travelmate__headline:active {
+  opacity: 0.3;
+}
+
+.travelmate__headline::after {
+  position: absolute;
+  content: "";
+
+  width: 6px;
+  height: 6px;
+
+  top: 8px;
+  left: 133px;
+
+  border-radius: 50%;
+  background-color: $bg-pink;
+
+  @media (min-width: $tablet-width) {
+    top: 13px;
+    left: 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 14px;
+    left: -21px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .travelmate:nth-of-type(2) .travelmate__headline::after {
+    left: 180px;
+  }
+
+  .travelmate:nth-of-type(3) .travelmate__headline::after {
+    left: 195px;
+  }
+
+  .travelmate:last-of-type .travelmate__headline::after {
+    left: 235px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travelmate:nth-of-type(2) .travelmate__headline::after {
+    left: -25px;
+  }
+
+  .travelmate:nth-of-type(3) .travelmate__headline::after {
+    left: -23px;
+  }
+
+  .travelmate:last-of-type .travelmate__headline::after {
+    left: -24px;
+  }
+}
+
+.travelmate:last-of-type .travelmate__headline::after {
+  background-color: $bg-brightgreen;
 }
 
 .travelmate__likes {
@@ -258,42 +297,27 @@
   }
 }
 
-.hashtag-list {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 0;
-  color: $bg-darkgrey;
+.travelmate__hashtag-list {
+  width: 180px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-size: 15px;
 
   @media (min-width: $tablet-width) {
-    width: 225px;
+    position: absolute;
+    width: 235px;
+    margin: 0;
+
+    top: 80px;
+    left: 250px;
+
     font-size: 20px;
-    margin-top: -150px;
-    margin-left: 220px;
-    padding: 0;
+    color: $bg-darkgrey;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
-    margin-top: -195px;
-    margin-left: 350px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .hashtag-list::after {
-    content: "";
-    position: absolute;
-
-    top: -49px;
-    left: 284px;
-
-    width: 1px;
-    height: 189px;
-
-    background-color: $bg-grey;
+    top: 95px;
+    left: 345px;
   }
 }
 
@@ -302,7 +326,6 @@
   font-size: 15px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 125px;
     margin-left: 45px;
     margin-bottom: 0;
   }
@@ -372,16 +395,19 @@
   font-size: 15px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     display: flex;
-    margin-top: 15px;
-    margin-bottom: 0;
-    margin-left: 45px;
+
+    top: 285px;
+    left: 80px;
+
+    margin: 0;
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 730px;
-    margin-top: -100px;
+    top: 50px;
+    left: 725px;
     width: 130px;
     flex-wrap: wrap;
   }
@@ -648,7 +674,7 @@
     content: "";
     position: absolute;
 
-    top: 0px;
+    top: 0;
     left: -45px;
 
     width: 35px;
@@ -801,42 +827,187 @@
   background-color: $bg-grey;
 }
 
-.travelmate-transport {
-  margin-top: 10px;
+.travelmate__transport-list {
   display: flex;
-  padding-left: 0;
   width: 130px;
+  height: 32px;
+
+  margin-top: 10px;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     display: block;
-    width: 35px;
-    margin: 0;
+
+    width: 30px;
+    height: 120px;
+
     top: 27px;
     left: 615px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 130px;
-    top: 188px;
-    left: 675px;
+    width: 120px;
+    top: 200px;
+    left: 680px;
   }
 }
 
-.travelmate-transport__item {
+.travelmate__transport-item {
+  position: relative;
   width: 32px;
   height: 32px;
-  text-align: center;
-  padding-top: 5px;
 
+  text-align: center;
   border-radius: 50%;
-  background-color: #edeff6;
+  background-color: $bg-grey;
 
   @media (min-width: $tablet-width) {
-    padding-top: 7px;
+    width: 30px;
+    height: 30px;
     background-color: $color-white;
   }
+}
+
+.travelmate__transport-item button {
+  display: block;
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+
+  background-position: 8px 7px;
+  background-size: 14px 16px;
+  background-repeat: no-repeat;
+  background-image: url("../img/plane-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+
+    background-color: $color-white;
+    background-position: 4px 5px;
+    background-size: 19px 21px;
+    background-image: url("../img/plane.png");
+  }
+}
+
+.travelmate__transport-item:hover::after {
+  position: absolute;
+  content: "Авиаперелёт";
+  padding-top: 25px;
+
+  width: 147px;
+  height: 65px;
+
+  top: 27px;
+  left: -57px;
+
+  z-index: 1;
+  font-size: 20px;
+  color: $color-white;
+  background-image: url("../img/plane-index-icon-hvr.png");
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+    left: -60px;
+  }
+}
+
+.travelmate__transport-item:nth-child(2) button {
+  opacity: 0.15;
+  background-position: 10px 7px;
+  background-size: 13px 16px;
+  background-image: url("../img/bus-black-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background-position: 6px 7px;
+    background-size: 17px 21px;
+    background-image: url("../img/bus-black.png");
+  }
+}
+
+.travelmate:nth-child(even) .travelmate__transport-item:nth-child(2) button {
+  opacity: 1;
+  background-image: url("../img/bus-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bus.png");
+  }
+}
+
+.travelmate__transport-item:nth-child(2):hover::after {
+  content: "Автотранспорт";
+  width: 171px;
+  left: -70px;
+  background-image: url("../img/bus-index-icon-hvr.png");
+
+  @media (min-width: $tablet-width) {
+    top: 32px;
+    left: -71px;
+  }
+}
+
+.travelmate__transport-item:nth-child(3) button {
+  opacity: 0.15;
+  background-position: 7px 7px;
+  background-size: 19px 17px;
+  background-image: url("../img/bike-black-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background-position: 3px 5px;
+    background-size: 24px 21px;
+    background-image: url("../img/bike-black.png");
+  }
+}
+
+.travelmate:nth-child(3) .travelmate__transport-item:nth-child(3) button {
+  opacity: 1;
+  background-image: url("../img/bike-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bike.png");
+  }
+}
+
+.travelmate__transport-item:nth-child(3):hover::after {
+  content: "Велосипед";
+  width: 131px;
+  left: -50px;
+  background-image: url("../img/bike-index-icon-hvr.png");
+}
+
+.travelmate__transport-item:last-of-type button {
+  opacity: 0.15;
+  background-position: 8px 7px;
+  background-size: 15px 17px;
+  background-image: url("../img/run-black-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background-position: 3px 5px;
+    background-size: 20px 21px;
+    background-image: url("../img/run-black.png");
+  }
+}
+
+.travelmate:nth-child(2) .travelmate__transport-item:last-of-type button {
+  opacity: 1;
+  background-image: url("../img/run-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/run.png");
+  }
+}
+
+.travelmate__transport-item:last-child:hover::after {
+  content: "Пешком";
+  width: 109px;
+  left: -38px;
+  background-image: url("../img/run-index-icon-hvr.png");
 }
 
 .long-level {
@@ -850,12 +1021,12 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    left: 580px;
-    top: -150px;
+    top: -105px;
+    left: 575px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 20px;
+    top: 0;
     left: 856px;
   }
 }
@@ -871,60 +1042,66 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    left: 568px;
-    top: -150px;
+    top: -107px;
+    left: 567px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 71px;
+    top: 0;
     left: 846px;
   }
 }
 
-.level-headline-99 {
+.level-headline {
   font-size: 15px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     color: $color-white;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 0;
+  }
 }
 
-.level-headline-99::before {
-  content: "";
+.level-headline::before {
   position: absolute;
-
-  top: 20px;
-  left: -3px;
+  content: "";
 
   width: 45px;
   height: 45px;
 
+  top: 20px;
+  left: -3px;
+
   background-image: url("../img/99-firsova-mobile.png");
 
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
+    width: 60px;
+    height: 60px;
 
     top: -5px;
     left: -8px;
 
-    width: 60px;
-    height: 60px;
-
     background-image: url("../img/99-firsova-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -102px;
+    left: -10px;
   }
 }
 
-.level-headline-99::after {
-  content: "";
+.level-headline::after {
   position: absolute;
-
-  top: 11px;
-  left: 52px;
+  content: "";
 
   width: 11px;
   height: 1px;
+
+  top: 11px;
+  left: 52px;
 
   background-color: $bg-grey;
 
@@ -933,37 +1110,12 @@
   }
 }
 
-.level-headline-80 {
-  font-size: 15px;
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    color: $color-white;
-  }
-}
-
-.level-headline-80::before {
-  content: "";
-  position: absolute;
-
-  top: 20px;
-  left: -3px;
-
-  width: 45px;
-  height: 45px;
-
+.travelmate:nth-of-type(2) .level-headline::before {
   background-image: url("../img/80-demin-mobile.png");
 
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-
     top: 0;
     left: 0;
-
-    width: 60px;
-    height: 60px;
-
     background-image: url("../img/80-demin-tablet.png");
   }
 
@@ -971,152 +1123,78 @@
     top: -23px;
     left: 0;
   }
-}
 
-.level-headline-80::after {
-  content: "";
-  position: absolute;
-
-  top: 11px;
-  left: 52px;
-
-  width: 11px;
-  height: 1px;
-
-  background-color: $bg-grey;
-
-  @media (min-width: $tablet-width) {
-    display: none;
+  @media (min-width: $desktop-width) {
+    top: -127px;
+    left: 1px;
   }
 }
 
-.level-headline-25 {
-  font-size: 15px;
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    color: $color-white;
-  }
-}
-
-.level-headline-25::before {
-  content: "";
-  position: absolute;
+.travelmate:nth-of-type(3) .level-headline::before {
+  width: 35px;
+  height: 32px;
 
   top: 20px;
   left: 3px;
 
-  width: 35px;
-  height: 32px;
-
   background-image: url("../img/25-smolov-mobile.png");
 
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-
-    top: 0;
-    left: 0px;
-
     width: 46px;
     height: 51px;
+
+    top: 0;
+    left: 0;
 
     background-image: url("../img/25-smolov-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
-    top: -5px;
-    left: 0;
+    top: -100px;
+    left: 6px;
   }
 }
 
-.level-headline-25::after {
-  content: "";
-  position: absolute;
-
-  top: 11px;
-  left: 52px;
-
-  width: 11px;
-  height: 1px;
-
-  background-color: $bg-grey;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.level-headline-50 {
-  font-size: 15px;
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    color: $color-white;
-  }
-}
-
-.level-headline-50::before {
-  content: "";
-  position: absolute;
+.travelmate:last-of-type .level-headline::before {
+  width: 35px;
+  height: 45px;
 
   top: 20px;
   left: 5px;
 
-  width: 35px;
-  height: 45px;
-
   background-image: url("../img/50-rogovaya-mobile.png");
 
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
+    width: 46px;
+    height: 60px;
 
     top: -6px;
     left: 10px;
-
-    width: 46px;
-    height: 60px;
 
     background-image: url("../img/50-rogovaya-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
-    top: -23px;
-    left: 13px;
-  }
-}
-
-.level-headline-50::after {
-  content: "";
-  position: absolute;
-
-  top: 11px;
-  left: 52px;
-
-  width: 11px;
-  height: 1px;
-
-  background-color: $bg-grey;
-
-  @media (min-width: $tablet-width) {
-    display: none;
+    top: -102px;
+    left: 16px;
   }
 }
 
 .travelmate__button {
   position: absolute;
   display: block;
+
   width: 230px;
   height: 40px;
+
   top: 360px;
   left: 20px;
-  padding-top: 10px;
 
-  text-align: center;
+  padding-top: 10px;
   font-size: 17px;
-  background-color: $bg-yellow-d7;
+  text-align: center;
   border-radius: 20px;
+  background-color: $bg-yellow-d7;
 
   @media (min-width: $tablet-width) {
     width: 148px;
@@ -1131,8 +1209,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 188px;
-    left: 341px;
+    top: 190px;
+    left: 345px;
   }
 }
 
@@ -1163,7 +1241,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 188px;
-    left: 341px;
+    top: 190px;
+    left: 345px;
   }
 }

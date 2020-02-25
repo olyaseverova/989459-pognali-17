@@ -1,73 +1,97 @@
 .main-footer {
-  width: 320px;
+  width: 100%;
   height: 239px;
-
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 38px;
-  padding-bottom: 15px;
+  padding: 38px 25px 15px 25px;
 
   color: $bg-darkblue19;
   background-color: $color-white;
-  border-radius: 15px 15px 0 0;
+  border-radius: 20px 20px 0 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
 
-    width: 100%;
     height: 155px;
-
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 48px;
-    padding-bottom: 45px;
+    padding: 48px 40px 45px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-
-    width: 100%;
     height: 154px;
+    padding: 48px 60px 46px 60px;
+  }
+}
 
-    padding-top: 48px;
-    padding-bottom: 46px;
-    padding-left: 60px;
-    padding-right: 60px;
+.index-footer {
+  margin-top: -10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -20px;
+  }
+}
+
+.form-footer {
+  margin-top: -25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -40px;
   }
 }
 
 .main-footer__logo {
   display: block;
   width: 120px;
+
+  margin: 0 auto 41px auto;
   font-size: 27px;
-  margin-top: 0;
-  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    width: 164px;
-    padding-top: 15px;
-    margin-left: 0;
-    margin-bottom: 0;
+    width: 166px;
+    height: 42px;
+
+    font-size: 0;
+    margin: 13px 0 0 0;
+    background-image: url("../img/logo-tablet-blue@1x.png");
   }
 
   @media (min-width: $desktop-width) {
-    width: 198px;
-    margin-right: 0;
+    width: 200px;
+    height: 55px;
+
+    margin: 8px 0 0 0;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-image: url("../img/logo-desktop-blue@1x.png");
   }
 }
 
-.main-footer-buttons {
+.main-footer__logo:hover {
+  opacity: 0.7;
+
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+    background-image: url("../img/logo-tablet-white@1x.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/logo-desktop-white@1x.png");
+  }
+}
+
+.main-footer-buttons-list {
   position: relative;
   display: flex;
+  width: 135px;
+
   padding: 0;
-  width: 140px;
   margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
     width: 180px;
-    margin-left: 0;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,15 +99,15 @@
   }
 }
 
-.main-footer-buttons::after {
-  content: "";
+.main-footer-buttons-list::after {
   position: absolute;
-
-  top: 70px;
-  left: -65px;
+  content: "";
 
   width: 270px;
   height: 1px;
+
+  top: 70px;
+  left: -65px;
 
   background-color: $bg-lightgrey-f2;
 
@@ -96,80 +120,134 @@
   display: block;
   width: 45px;
   height: 45px;
-  text-align: center;
-  padding-top: 11px;
 
   border-radius: 50%;
   background-color: $bg-yellow-d7;
 
+  background-size: 11px 21px;
+  background-repeat: no-repeat;
+  background-position: 17px 12px;
+  background-image: url("../img/facebook-mobile.png");
+
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
+
+    background-size: 14px 28px;
+    background-position: 23.5px 15px;
+    background-image: url("../img/facebook-tablet.png");
   }
 }
 
-.main-footer-buttons .fb img {
-  width: 11px;
-  height: 21px;
+.main-footer-buttons__item:nth-child(2) {
+  background-size: 23px 13px;
+  background-position: 11px 17px;
+  background-image: url("../img/vk-mobile.png");
 
   @media (min-width: $tablet-width) {
-    width: 14px;
-    height: 28px;
-    margin-top: 5px;
+    background-size: 31px 16px;
+    background-position: 14px 22px;
+    background-image: url("../img/vk-tablet.png");
   }
 }
 
-.main-footer-buttons .vk img {
-  width: 23px;
-  height: 12px;
-  margin-top: 7px;
+.main-footer-buttons__item:last-child {
+  background-size: 18px 18px;
+  background-position: 14px 14px;
+  background-image: url("../img/instagram-mobile.png");
 
   @media (min-width: $tablet-width) {
-    width: 31px;
-    height: 16px;
-    margin-top: 10px;
-  }
-}
-
-.main-footer-buttons .inst img {
-  width: 18px;
-  height: 18px;
-  margin-top: 2px;
-
-  @media (min-width: $tablet-width) {
-    width: 24px;
-    height: 24px;
-    margin-top: 7px;
+    background-size: 24px 24px;
+    background-position: 18px 18px;
+    background-image: url("../img/instagram-tablet.png");
   }
 }
 
 .main-footer-buttons__item:hover {
   background-color: $bg-darkblue19;
+  background-image: url("../img/facebook-mobile-hvr.png");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/facebook-tablet-hvr.png");
+  }
+}
+
+.main-footer-buttons__item:nth-child(2):hover {
+  background-image: url("../img/vk-mobile-hvr.png");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/vk-tablet-hvr.png");
+  }
+}
+
+.main-footer-buttons__item:last-child:hover {
+  background-image: url("../img/instagram-mobile-hvr.png");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/instagram-tablet-hvr.png");
+  }
+}
+
+.main-footer-buttons__item:active {
+  background-image: url("../img/facebook-mobile-act.png");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/facebook-tablet-act.png");
+  }
+}
+
+.main-footer-buttons__item:nth-child(2):active {
+  background-image: url("../img/vk-mobile-act.png");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/vk-tablet-act.png");
+  }
+}
+
+.main-footer-buttons__item:last-child:active {
+  background-image: url("../img/instagram-mobile-act.png");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/instagram-tablet-act.png");
+  }
 }
 
 .main-footer-copyright {
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-footer-copyright__academy {
-  width: 85px;
+  position: relative;
+  display: block;
+  width: 100%;
   margin-top: -20px;
 
   @media (min-width: $tablet-width) {
-    width: 115px;
-    padding-top: 20px;
-    margin-top: 0;
+    width: 155px;
+    height: 40px;
+    margin-top: 20px;
     font-size: 20px;
   }
 }
 
-.main-footer-copyright__academy-icon {
-  display: block;
-  margin-top: -26px;
+.main-footer-copyright::after {
+  position: absolute;
+  content: "";
+
+  width: 27px;
+  height: 34px;
+
+  top: -5px;
+  left: 90%;
+
+  background-image: url("../img/htmlacademy.png");
 
   @media (min-width: $tablet-width) {
-    margin-left: 10px;
-    margin-top: 15px;
+    top: -3px;
+    left: 127px;
   }
+}
+
+.main-footer-copyright:hover {
+  opacity: 0.6;
+}
+
+.main-footer-copyright:active {
+  opacity: 0.3;
 }

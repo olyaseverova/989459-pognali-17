@@ -1,17 +1,34 @@
 .directions-plan {
   width: 270px;
   height: 400px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-
+  margin: 0 auto 30px auto;
   padding-top: 25px;
+
   color: $bg-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    height: 455px;
+
+    margin-bottom: 74px;
+    padding-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1256px;
+    height: 349px;
+    margin-bottom: 63px;
+  }
 }
 
 .directions-plan__healine {
-  margin-top: 0;
-  margin-bottom: 29px;
+  margin: 0 0 29px 0;
   font-size: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .directions-plan--countries__list {
@@ -21,25 +38,131 @@
 
 .directions-plan--countries__item {
   height: 154px;
-  margin-bottom: 10px;
 
-  padding-left: 25px;
-  padding-top: 20px;
+  margin-bottom: 10px;
+  padding: 20px 0 0 25px;
 
   font-size: 14px;
   border-radius: 15px;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    height: 152px;
+
+    padding: 35px 0 18px 30px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 97px;
+    margin-bottom: 15px;
+    padding: 35px 0 30px 95px;
+    font-size: 24px;
+  }
 }
 
 .directions-plan--countries__item-healine {
-  margin-top: 0;
-  margin-bottom: 20px;
+  position: relative;
+  margin: 0 0 20px 15px;
   font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 50px 0;
+    font-size: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    margin-bottom: 0;
+  }
+}
+
+.directions-plan--countries__item:first-of-type .directions-plan--countries__item-healine::before {
+  position: absolute;
+  content: "1.";
+
+  top: 0;
+  left: -15px;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: 545px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 5px;
+    left: -55px;
+  }
+}
+
+.directions-plan--countries__item:last-of-type .directions-plan--countries__item-healine::before {
+  position: absolute;
+  content: "2.";
+
+  top: 0;
+  left: -15px;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    left: 545px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 5px;
+    left: -55px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .directions-plan--countries__item-healine::after {
+    position: absolute;
+    content: "";
+
+    width: 618px;
+    height: 1px;
+
+    top: 64px;
+    left: -30px;
+
+    background-color: $bg-greyf4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .directions-plan--countries__item-healine::after {
+    display: none;
+  }
+}
+
+.directions-plan--countries__item-description__list {
+  padding: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+
+    width: 365px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+
+    top: 40px;
+    left: 625px;
+    font-size: 20px;
+  }
 }
 
 .directions-plan--countries__item-description {
   margin-top: 0;
-  margin-bottom: 25px;
 }
 
 .directions-plan--countries__item-button {
@@ -47,4 +170,26 @@
   color: $bg-greyb2;
   border: none;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+
+    top: 111px;
+    left: 475px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 37px;
+    left: 1110px;
+  }
+}
+
+.directions-plan--countries__item-button:hover {
+  color: $bg-grey62;
+}
+
+.directions-plan--countries__item-button:active {
+  color: $bg-greydd;
 }

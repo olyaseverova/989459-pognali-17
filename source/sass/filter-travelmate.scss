@@ -1,193 +1,839 @@
 .filter-travelmate {
-  display: none;
+  width: 270px;
+  height: 624px;
+
+  margin: 0 auto;
+  padding: 25px 25px 22px 25px;
+
+  color: $bg-blue;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: $bg-yellow-d7;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    height: 550px;
+    padding: 35px 35px 38px 35px;
+  }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    position: absolute;
+    z-index: 1;
+
+    top: 425px;
+    left: 76%;
     width: 285px;
     height: 815px;
 
-    padding-left: 45px;
-    padding-top: 45px;
-    padding-right: 45px;
-    padding-bottom: 45px;
-
-    border-radius: 20px;
+    padding: 45px;
     font-size: 20px;
-    color: $bg-blue;
-    background-color: $bg-yellow-d7;
   }
 }
 
 .filter-travelmate__headline {
-  margin-top: 0;
-  margin-bottom: 35px;
-  font-size: 30px;
+  position: relative;
+  margin: 0 0 30px 0;
+  font-size: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.filter-travelmate__headline::after {
+  position: absolute;
+  content: "";
+
+  width: 220px;
+  height: 1px;
+
+  top: 95px;
+  left: 0;
+
+  background-color: $color-yellow-2b;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    top: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.filter-travelmate__interest-headline-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+
+  margin: 0 0 20px 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 191px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter-travelmate__description-list:nth-of-type(2) .filter-travelmate__interest-headline-list {
+    width: 77px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(3) .filter-travelmate__interest-headline-list {
+    width: 40px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(4) .filter-travelmate__interest-headline-list {
+    width: 105px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-travelmate__description-list:nth-of-type(2) .filter-travelmate__interest-headline-list {
+    width: 191px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(3) .filter-travelmate__interest-headline-list {
+    width: 191px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(4) .filter-travelmate__interest-headline-list {
+    width: 191px;
+  }
+}
+
+.filter-travelmate__interest-headline-list:hover {
+  opacity: 0.6;
+}
+
+.filter-travelmate__interest-headline-list:active {
+  opacity: 0.3;
 }
 
 .filter-travelmate__interest-headline {
   position: relative;
-  margin-top: 0;
-  margin-bottom: 23px;
+  margin: 0;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
-.bottom-arrow::after {
-  content: "";
+@media (min-width: $tablet-width) {
+  .filter-travelmate__interest-headline::after {
+    position: absolute;
+    content: ":";
+
+    top: 0;
+    left: 56px;
+
+    font-size: 20px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(2) .filter-travelmate__interest-headline::after {
+    left: 73px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(3) .filter-travelmate__interest-headline::after {
+    left: 34px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(4) .filter-travelmate__interest-headline::after {
+    left: 98px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(n+4) .filter-travelmate__interest-headline {
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-travelmate__interest-headline::after {
+    display: none;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(n+4) .filter-travelmate__interest-headline {
+    margin: 0;
+  }
+}
+
+.bottom-arrow {
+  display: block;
+  width: 8px;
+  height: 4px;
+
+  margin-top: 5px;
+  padding: 0;
+
+  border: none;
+  background-color: $bg-yellow-d7;
+  background-image: url("../img/dropdown-filter-mobile.png");
+
+  @media (min-width: $desktop-width) {
+    width: 10px;
+    height: 5px;
+
+    background-image: url("../img/dropdown-filter-desktop.png");
+  }
+}
+
+.up-arrow {
+  display: block;
+  width: 8px;
+  height: 4px;
+
+  margin-top: 5px;
+  padding: 0;
+
+  border: none;
+  background-color: $bg-yellow-d7;
+  background-repeat: no-repeat;
+  background-image: url("../img/dropdown-up-filter-mobile.png");
+
+  @media (min-width: $desktop-width) {
+    width: 10px;
+    height: 5px;
+    background-image: url("../img/dropdown-up-filter-desktop.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter-travelmate__interest-headline-item button {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-travelmate__interest-headline-item button {
+    display: block;
+  }
+}
+
+.filter-travelmate__interest-headline-list::after {
   position: absolute;
-
-  top: 7px;
-  left: 180px;
-
-  width: 10px;
-  height: 5px;
-
-  background-image: url("../img/dropdown-filter.png");
-}
-
-.up-arrow::after {
   content: "";
-  position: absolute;
 
-  top: 7px;
-  left: 180px;
+  width: 220px;
+  height: 1px;
 
-  width: 10px;
-  height: 5px;
+  top: 26px;
+  left: 0;
 
-  background-image: url("../img/dropdown-up-filter.png");
+  background-color: $color-yellow-2b;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.filter-travelmate__music {
+.filter-travelmate__description-list:nth-of-type(2) .filter-travelmate__interest-headline-list::after {
+  top: 134px;
+}
+
+.filter-travelmate__description-list:nth-of-type(4) .filter-travelmate__interest-headline-list::after {
+  top: 83px;
+}
+
+.filter-travelmate__description-list:last-of-type .filter-travelmate__interest-headline-list::after {
+  display: none;
+}
+
+.filter-travelmate__description-list {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 555px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 195px;
+    margin-bottom: 23px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter-travelmate__description-list:nth-of-type(2) {
+    width: 580px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(3) {
+    width: 620px;
+    margin-bottom: 24px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(4) {
+    width: 295px;
+    margin-bottom: 20px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(5) {
+    width: 618px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-travelmate__description-list:nth-of-type(2) {
+    width: 195px;
+    height: 150px;
+    margin-bottom: 30px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(2) .filter-travelmate__description-item:first-of-type {
+    margin-bottom: 30px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(3) {
+    width: 195px;
+    margin-bottom: 20px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(4) {
+    width: 195px;
+    height: 80px;
+    margin-bottom: 30px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(4) .filter-travelmate__description-item:first-of-type {
+    margin-bottom: 10px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(5) {
+    width: 195px;
+    margin-bottom: 35px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(5) .filter-travelmate__description-item:first-of-type {
+    margin-bottom: 20px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(5) .filter-travelmate__description-item:nth-of-type(2) {
+    height: 46px;
+    margin-bottom: 25px;
+  }
+}
+
+.filter-travelmate__description-list:nth-of-type(odd):not(:last-of-type) .filter-travelmate__description-item:last-of-type {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.filter-travelmate__description-list:last-of-type .filter-travelmate__description-item:nth-of-type(2) {
+  order: 1;
+}
+
+@media (min-width: $desktop-width) {
+  .filter-travelmate__description-list:last-of-type .filter-travelmate__description-item:nth-of-type(2) {
+    order: 0;
+  }
+}
+
+.filter-travelmate__checkbox-list {
+  width: 115px;
+
   margin-bottom: 25px;
+  padding-left: 27px;
   color: $bg-darkgrey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    margin: 0;
+    padding-left: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    width: 145px;
+  }
 }
 
-.filter-travelmate__music-item {
+@media (min-width: $tablet-width) {
+  .filter-travelmate__description-list:nth-of-type(2) .filter-travelmate__checkbox-list {
+    width: 455px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(3) .filter-travelmate__checkbox-list {
+    width: 495px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-travelmate__description-list:nth-of-type(2) .filter-travelmate__checkbox-list {
+    width: 150px;
+    height: 104px;
+  }
+
+  .filter-travelmate__description-list:nth-of-type(3) .filter-travelmate__checkbox-list {
+    width: 145px;
+  }
+}
+
+.filter-travelmate__checkbox-item {
+  display: block;
   margin-bottom: 15px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
-.filter-travelmate__music-item label {
+@media (min-width: $tablet-width) {
+  .filter-travelmate__description-list:nth-of-type(3) .filter-travelmate__checkbox-list .filter-travelmate__checkbox-item:nth-of-type(1) {
+    margin-right: 58px;
+  }
+}
+
+.filter-travelmate__checkbox-item:hover {
+  opacity: 0.6;
+}
+
+.filter-travelmate__checkbox-item:active {
+  opacity: 0.3;
+}
+
+.filter-travelmate__checkbox-item label {
   position: relative;
   display: block;
-
   cursor: pointer;
   user-select: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.filter-input-checkbox {
+  display: none;
 }
 
 .filter-input-checkbox + label::before {
-  content: "";
   position: absolute;
+  content: "";
+
+  width: 18px;
+  height: 18px;
 
   top: 0;
-  left: -40px;
+  left: -27px;
 
-  width: 24px;
-  height: 24px;
   border-radius: 5px;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+    left: -35px;
+  }
 }
 
-.filter-input-checkbox::checked + label::before {
-  content: "";
+.filter-input-checkbox:checked + label::before {
   position: absolute;
+  content: "";
+
+  width: 18px;
+  height: 18px;
 
   top: 0;
-  left: -35px;
+  left: -27px;
 
-  width: 12px;
-  height: 12px;
-  background-color: $color-orange;
-  // background-image: url("../img/tick-filter.png");
+  background-image: url("../img/tick-filter-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+
+    left: -35px;
+    background-image: url("../img/tick-filter-desktop.png");
+  }
 }
 
-.filter-travelmate__transport {
+.filter-travelmate__transport-list {
   display: flex;
-  width: 172px;
-  height: 43px;
-  margin-bottom: 35px;
+  width: 132px;
+  height: 33px;
+
+  margin: 0 0 20px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 172px;
+    height: 43px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
 }
 
-.filter-travelmate__level {
-  display: flex;
+.filter-travelmate__transport-item {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+.filter-travelmate__transport-item:hover {
+  box-shadow: 0 0 7px $bg-greyb2;
+}
+
+.filter-travelmate__transport-item:active {
+  box-shadow: none;
+  background-color: $bg-grey5f1;
+}
+
+.filter-transport-button {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+  background-color: $color-white;
+  background-repeat: no-repeat;
+
+  background-size: 14px 16px;
+  background-position: 9px 7px;
+  background-image: url("../img/plane-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
+
+    background-position: 10px 10px;
+    background-size: 19px 21px;
+    background-image: url("../img/plane.png");
+  }
+}
+
+.filter-transport-button:active {
+  opacity: 0.7;
+}
+
+.filter-travelmate__transport-item:active .filter-transport-button {
+  background-color: $bg-grey5f1;
+}
+
+.filter-travelmate__transport-item:nth-child(2) .filter-transport-button {
+  background-size: 13px 16px;
+  background-position: 10px 7px;
+  background-image: url("../img/bus-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background-position: 13px 11px;
+    background-size: 17px 21px;
+    background-image: url("../img/bus.png");
+  }
+}
+
+.filter-travelmate__transport-item:nth-child(3) .filter-transport-button {
+  opacity: 0.15;
+  background-size: 19px 17px;
+  background-position: 7px 7px;
+  background-image: url("../img/bike-black-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background-size: 24px 21px;
+    background-position: 10px 11px;
+    background-image: url("../img/bike-black.png");
+  }
+}
+
+.filter-travelmate__transport-item:nth-child(3):hover .filter-transport-button {
+  opacity: 0.3;
+}
+
+.filter-travelmate__transport-item:nth-child(3) .filter-transport-button:active {
+  opacity: 0.1;
+}
+
+.filter-travelmate__transport-item:nth-child(4) .filter-transport-button {
+  background-size: 15px 17px;
+  background-position: 8px 7px;
+  background-image: url("../img/run-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background-position: 10px 10px;
+    background-size: 20px 21px;
+    background-image: url("../img/run.png");
+  }
+}
+
+.filter-travelmate__level-list {
   position: relative;
-  height: 46px;
-  width: 191px;
+  display: flex;
+  width: 220px;
+  height: 35px;
 
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   padding: 0;
+
   border-radius: 5px;
   background-color: $color-white;
-  border: 1px solid $bg-greyd9;
-}
 
-.filter-travelmate__level::after {
-  content: "";
-  position: absolute;
+  @media (min-width: $tablet-width) {
+    width: 149px;
+    height: 46px;
+    margin: 0;
+  }
 
-  top: 75px;
-  left: 0px;
-
-  width: 191px;
-  height: 13px;
-
-  background-image: url("../img/slider-control.png");
+  @media (min-width: $desktop-width) {
+    width: 190px;
+    margin-bottom: 80px;
+  }
 }
 
 .filter-travelmate__level-item {
   position: relative;
-  width: 95px;
-  padding-top: 10px;
-  padding-left: 35px;
+  width: 110px;
+
+  padding: 10px 0 0 45px;
+  border: 1px solid $bg-greyd9;
+
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    padding: 11px 0 0 25px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 95px;
+    padding-left: 35px;
+  }
+}
+
+.filter-travelmate__level-item:hover {
+  border-color: $bg-greybb2;
+}
+
+.filter-travelmate__level-item:active {
+  border-color: $bg-darkblue1635;
 }
 
 .filter-travelmate__level-item:first-of-type::after {
-  content: "";
   position: absolute;
+  content: "";
+  z-index: 1;
 
-  top: 21px;
-  left: 85px;
+  width: 16px;
+  height: 11px;
 
-  width: 21px;
-  height: 1px;
+  top: 13px;
+  left: 101px;
 
-  background-color: $bg-greyd9;
+  background-color: $color-white;
+  background-size: 16px 1px;
+  background-position: 0 5px;
+  background-repeat: no-repeat;
+  background-image: url("../img/partition-filter-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    width: 21px;
+    height: 15px;
+
+    top: 15px;
+    left: 63px;
+
+    background-size: 21px 1px;
+    background-position: 0 7px;
+    background-image: url("../img/partition-filter-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 21px;
+
+    top: 16px;
+    left: 84px;
+  }
 }
 
-.filter-travelmate__level-item:last-of-type::before {
-  content: "";
-  position: absolute;
+.filter-travelmate__slider-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  height: 20px;
 
-  top: 0px;
-  left: 0px;
+  margin: -43px 0 0 0;
+  padding: 0;
 
-  width: 1px;
-  height: 14px;
+  background-size: 220px 2px;
+  background-position: 0 13px;
+  background-repeat: no-repeat;
+  background-image: url("../img/slider-base-filter-mobile.png");
 
-  background-color: $bg-greyd9;
+  @media (min-width: $tablet-width) {
+    width: 277px;
+    height: 20px;
+
+    margin-top: 8px;
+
+    background-size: 277px 3px;
+    background-position: 0 11px;
+    background-image: url("../img/slider-base-filter-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 191px;
+
+    margin: 0;
+    background-size: 191px 3px;
+    background-position: 0 10px;
+    background-image: url("../img/slider-base-filter-desktop.png");
+  }
 }
 
-.filter-travelmate__level-item:last-of-type::after {
-  content: "";
+.filter-travelmate__slider-list::after {
   position: absolute;
+  content: "";
 
-  top: 30px;
-  left: 0px;
+  width: 136px;
+  height: 2px;
 
-  width: 1px;
-  height: 14px;
+  top: 13px;
+  left: 75px;
 
-  background-color: $bg-greyd9;
+  background-color: $bg-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 201px;
+    height: 3px;
+
+    top: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 132px;
+
+    top: 10px;
+    left: 58px;
+  }
+}
+
+.filter-travelmate__slider-item button {
+  width: 10px;
+  height: 10px;
+
+  margin-left: 65px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+  background-color: $bg-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 5px 0 0 45px;
+  }
+}
+
+.filter-travelmate__slider-item:last-of-type button {
+  margin-left: 0;
+}
+
+.filter-travelmate__slider-item:hover button {
+  width: 19px;
+  height: 19px;
+  margin: 2px 0 0 43px;
+}
+
+.filter-travelmate__slider-item:active button {
+  box-shadow: 0 0 10px $color-yellow-af;
 }
 
 .filter-travelmate__button {
   display: block;
-  width: 196px;
-  height: 50px;
+  width: 230px;
+  height: 40px;
 
-  padding-top: 15px;
+  margin: 20px 0 0 -5px;
+  padding-top: 12px;
+
   text-align: center;
   border-radius: 30px;
   color: $bg-darkblue1635;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 618px;
+    height: 50px;
+
+    margin: 65px 0 0 0;
+    padding-top: 15px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 196px;
+    height: 50px;
+
+    margin: 0;
+    padding-top: 14px;
+  }
+}
+
+.filter-travelmate__button:active {
+  color: $color-yellow-2e;
+  background-color: $color-yellow-2b;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-travelmate__button::before {
+    position: absolute;
+    content: "";
+
+    width: 618px;
+    height: 1px;
+
+    top: -35px;
+    left: 0;
+
+    background-color: $color-yellow-2b;
+  }
+}
+
+.filter-travelmate__button::before {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

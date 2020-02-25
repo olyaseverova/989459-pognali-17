@@ -2,82 +2,68 @@
   width: 320px;
   height: 352px;
 
-  padding-top: 33px;
-  padding-left: 45px;
-  padding-right: 60px;
+  padding: 33px 60px 0 45px;
 
   color: $color-white;
   background-color: $bg-darkblue19;
   border-radius: 0 0 25px 25px;
 
-  background-image: url("../img/about-mobile@1x.png");
-  background-repeat: no-repeat;
   background-position: 20px 0;
+  background-repeat: no-repeat;
   background-size: 292px 352px;
+  background-image: url("../img/about-mobile@1x.png");
 
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 920px;
-    padding-top: 280px;
-    padding-left: 75px;
-    padding-right: 75px;
-    background-color: $bg-darkblue19;
-    border-radius: 0 0 25px 25px;
 
-    background-image: url("../img/about-back-tablet.png");
-    background-repeat: no-repeat;
-    background-position: 40px 240px;
+    padding: 280px 75px 0 75px;
+
     background-size: 720px 596px;
+    background-position: 40px 240px;
+    background-image: url("../img/about-back-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     height: 750px;
 
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 75px;
+    padding: 75px 60px 0 60px;
 
-    background-image: url("../img/about-desktop-back.png");
-    background-repeat: no-repeat;
-    background-position: 60px 74px;
     background-size: 1320px 679px;
+    background-position: 60px 74px;
+    background-image: url("../img/about-desktop-back.png");
   }
 }
 
 .about__healine {
   width: 110px;
-  color: $color-orange;
   font-size: 24px;
+  color: $color-orange;
 
   @media (min-width: $tablet-width) {
     width: 250px;
-    font-size: 45px;
     margin: 0;
+    font-size: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 71px;
-    margin-top: 45px;
+    margin: 45px 0 0 71px;
   }
 }
 
 .about__description {
   width: 210px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
 
   @media (min-width: $tablet-width) {
     width: 335px;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin: 50px 0 40px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 650px;
-    margin-left: 71px;
-    margin-top: 60px;
-    margin-bottom: 45px;
+    margin: 60px 0 45px 71px;
   }
 }
 
@@ -92,9 +78,7 @@
 
   @media (min-width: $desktop-width) {
     width: 415px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 71px;
+    margin: 0 0 0 71px;
   }
 }
 
@@ -104,38 +88,40 @@
   @media (min-width: $tablet-width) {
     position: relative;
     display: block;
-    font-size: 24px;
 
     width: 274px;
     height: 81px;
-    border-radius: 15px;
 
     margin-top: 50px;
-    padding-left: 25px;
-    padding-top: 22px;
+    padding: 22px 0 0 25px;
 
+    font-size: 24px;
     color: $bg-blue;
+    border-radius: 15px;
     background-color: $bg-yellow-d7;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 90px;
-    margin-left: 75px;
+    margin: 90px 0 0 75px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .about__link::after {
-    content: "";
     position: absolute;
-
-    top: 32px;
-    left: 225px;
+    content: "";
 
     width: 10px;
     height: 14px;
 
-    background-image: url("../img/about-arrow-right.png");
+    top: 32px;
+    left: 225px;
+
     background-repeat: no-repeat;
+    background-image: url("../img/about-arrow-right.png");
+  }
+
+  .about__link:active::after {
+    opacity: 0.3;
   }
 }

@@ -1,0 +1,219 @@
+.modal-rates-popup {
+  position: fixed;
+  background-color: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.rates-popup {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+
+  width: 270px;
+  height: 443px;
+
+  margin: 0 auto;
+  padding: 32px 25px 0 25px;
+
+  color: $bg-grey76;
+  font-size: 16px;
+  border-radius: 15px;
+  background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    height: 526px;
+
+    padding: 50px 90px 0 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 750px;
+    height: 526px;
+    padding: 50px 60px 0 60px;
+  }
+}
+
+.rates-popup__healine {
+  position: relative;
+  width: 170px;
+  margin: 0 auto 40px auto;
+
+  font-size: 24px;
+  color: $bg-orange;
+
+  @media (min-width: $tablet-width) {
+    width: 305px;
+    margin: 0 auto 55px auto;
+    font-size: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 312px;
+    font-size: 45px;
+  }
+}
+
+.rates-popup__healine::after {
+  position: absolute;
+  content: "";
+
+  width: 219px;
+  height: 1px;
+
+  top: 57px;
+  left: -25px;
+
+  background-color: $bg-lightgrey-f2;
+
+  @media (min-width: $tablet-width) {
+    width: 506px;
+    top: 90px;
+    left: -100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 630px;
+    top: 97px;
+    left: -160px;
+  }
+}
+
+.promotion-list {
+  margin: 0;
+}
+
+.promotion-list__wrapper {
+  position: relative;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 504px;
+    margin-bottom: 35px;
+
+    font-size: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 628px;
+  }
+}
+
+.promotion-list__wrapper::after {
+  position: absolute;
+  content: "";
+
+  width: 219px;
+  height: 1px;
+
+  top: 60px;
+  left: 0;
+
+  background-color: $bg-lightgrey-f2;
+
+  @media (min-width: $tablet-width) {
+    width: 506px;
+    top: 35px;
+    left: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 630px;
+  }
+}
+
+.promotion-list__value {
+  margin: 0;
+}
+
+.rates-popup__button {
+  width: 270px;
+  height: 59px;
+  margin: 20px 0 0 -25px;
+
+  border: none;
+  border-radius: 0 0 15px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: $bg-blue;
+  background-color: $bg-lightgrey-f8;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    height: 108px;
+    margin: 25px 0 0 -90px;
+
+    font-size: 24px;
+    text-transform: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 750px;
+    margin: 15px 0 0 -60px;
+  }
+}
+
+.rates-popup__button:hover {
+  background-color: $bg-grey;
+}
+
+.rates-popup__button:active {
+  padding: 0;
+  color: $bg-grey-c7;
+}

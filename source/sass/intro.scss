@@ -1,40 +1,31 @@
 .container .intro {
   height: 969px;
+  margin-top: -1px;
   padding-top: 20px;
-  margin-top: 0;
 
   color: $color-white;
 
-  background-image: url("../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100% 450px;
+  background-repeat: no-repeat;
+  background-image: url("../img/globe-back-mobile@1x.jpg");
 
   @media (min-width: $tablet-width) {
     height: 865px;
+    padding: 40px 40px 0 40px;
 
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-image: url("../img/globe-back-tablet@2x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
     background-size: 2958px 904px;
+    background-image: url("../img/globe-back-tablet@2x.jpg");
   }
 
   @media (min-width: $desktop-width) {
     height: 651px;
 
-    padding-top: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
-
+    padding: 10px 60px 0 60px;
     border-radius: 0 0 35px 35px;
 
-    background-image: url("../img/globe-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
     background-size: 100% 651px;
+    background-image: url("../img/globe-back-desktop@1x.jpg");
   }
 }
 
@@ -54,16 +45,16 @@
 
   @media (min-width: $desktop-width) {
     width: 400px;
-    margin-top: 90px;
-    margin-left: 70px;
+    margin: 90px 0 0 70px;
+
     text-align: left;
     font-size: 60px;
   }
 }
 
 .intro__healine::after {
-  content: "";
   position: absolute;
+  content: "";
 
   width: 195px;
   height: 255px;
@@ -71,14 +62,11 @@
   top: 135px;
   left: 35px;
 
-  background-image: url("../img/traveller-illustration-mobile@1x.png");
-  background-repeat: no-repeat;
   background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/traveller-illustration-mobile@1x.png");
 
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-
     width: 372px;
     height: 451px;
 
@@ -86,14 +74,9 @@
     left: 35px;
 
     background-image: url("../img/traveller-illustration-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-
     width: 431px;
     height: 640px;
 
@@ -101,8 +84,6 @@
     left: 475px;
 
     background-image: url("../img/traveller-illustration-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
   }
 }
 
@@ -123,7 +104,6 @@
     background: none;
     margin-top: -190px;
     padding-top: 0;
-    margin-bottom: 0;
   }
 }
 
@@ -173,13 +153,15 @@
 
 .intro .steps-list {
   position: absolute;
+  counter-reset: section;
+  width: 270px;
+  height: 320px;
+
   top: -80px;
   left: 50%;
   transform: translateX(-50%);
-  width: 270px;
-  height: 320px;
+
   padding-left: 0;
-  counter-reset: section;
 
   @media (min-width: $tablet-width) {
     width: 690px;
@@ -196,8 +178,7 @@
 
 .steps-list__item {
   position: relative;
-  padding-top: 20px;
-  padding-left: 25px;
+  padding: 20px 0 0 25px;
 
   border-radius: 10px;
   color: $bg-darkblue1635;
@@ -207,17 +188,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 30px;
-    padding-top: 25px;
+    padding: 25px 0 0 30px;
   }
 }
 
 .steps-list__item::after {
   position: absolute;
-  color: $color-white;
-  right: 20px;
+
   top: 20px;
+  right: 20px;
+
   font-size: 18px;
+  color: $color-white;
   counter-increment: section;
   content: counter(section);
 
@@ -247,8 +229,9 @@
 .steps-list__item:first-child {
   position: absolute;
   width: 270px;
-  background-color: $bg-orange;
   height: 100px;
+
+  background-color: $bg-orange;
 
   @media (min-width: $tablet-width) {
     width: 370px;
@@ -265,22 +248,26 @@
 
 .steps-list__item:nth-child(2) {
   position: absolute;
-  top: 80px;
   width: 270px;
-  background-color: $bg-lightorange;
   height: 100px;
 
+  top: 80px;
+  background-color: $bg-lightorange;
+
   @media (min-width: $tablet-width) {
-    height: 140px;
     width: 345px;
+    height: 140px;
+
     top: 0;
     left: 350px;
+
     border-radius: 10px 10px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 365px;
     height: 107px;
+
     left: 315px;
     border-radius: 10px 0 0 10px;
   }
@@ -288,10 +275,11 @@
 
 .steps-list__item:nth-child(3) {
   position: absolute;
+  width: 270px;
+  height: 100px;
+
   top: 160px;
   background-color: $bg-yellow-bd;
-  height: 100px;
-  width: 270px;
 
   @media (min-width: $tablet-width) {
     width: 370px;
@@ -311,26 +299,31 @@
 
 .steps-list__item:nth-child(4) {
   position: absolute;
-  top: 240px;
-  background-color: $bg-yellow-d7;
   width: 270px;
   height: 80px;
+
+  top: 240px;
   padding-right: 100px;
+  background-color: $bg-yellow-d7;
 
   @media (min-width: $tablet-width) {
     width: 345px;
     height: 140px;
+
     top: 140px;
     left: 350px;
+
     border-radius: 0 0 10px 10px;
   }
 
   @media (min-width: $desktop-width) {
     width: 315px;
     height: 107px;
-    padding-right: 0;
+
     top: 0;
     left: 1005px;
+
+    padding-right: 0;
     border-radius: 10px 10px 10px 10px;
   }
 }
