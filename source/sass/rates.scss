@@ -190,7 +190,7 @@
   }
 }
 
-.rates-list dd:last-child::after {
+.rates-list .rates-list__item-big:last-of-type dd::after {
   position: absolute;
   content: "";
   top: 35px;

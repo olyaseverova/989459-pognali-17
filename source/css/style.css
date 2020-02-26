@@ -169,7 +169,7 @@ a {
   display: flex;
   z-index: 1;
   width: 269px;
-  top: 465px;
+  top: 460px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1865,7 +1865,7 @@ a {
       height: 25px;
       margin-bottom: 0; } }
 
-.rates-list dd:last-child::after {
+.rates-list .rates-list__item-big:last-of-type dd::after {
   position: absolute;
   content: "";
   top: 35px;
@@ -1874,7 +1874,7 @@ a {
   height: 1px;
   background-color: #d6d9e6; }
   @media (min-width: 768px) {
-    .rates-list dd:last-child::after {
+    .rates-list .rates-list__item-big:last-of-type dd::after {
       display: none; } }
 
 .rates__button {
@@ -4515,10 +4515,10 @@ a {
           justify-content: space-between;
   width: 220px;
   height: 20px;
-  margin: -43px 0 0 0;
+  margin: -40px 0 0 0;
   padding: 0;
   background-size: 220px 2px;
-  background-position: 0 13px;
+  background-position: 0 7px;
   background-repeat: no-repeat;
   background-image: url("../img/slider-base-filter-mobile.png"); }
   @media (min-width: 768px) {
@@ -4542,7 +4542,7 @@ a {
   content: "";
   width: 136px;
   height: 2px;
-  top: 13px;
+  top: 7px;
   left: 75px;
   background-color: #1d2e5b; }
   @media (min-width: 768px) {
@@ -6864,7 +6864,7 @@ a {
 .rates-popup {
   position: absolute;
   left: 50%;
-  top: 25%;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 270px;
